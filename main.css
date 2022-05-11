@@ -1,5 +1,27 @@
-body{
+body {
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: linear-gradient(to bottom, rgba(4, 14, 65, 1), rgba(48, 59, 114, 1))
+}
+
+/*---------- Nav bar ----------*/
+.navbar {
+    color: #040e41;
+    background: #efefef
+}
+
+.navbar-brand{
+    font-family: "Montserrat";
+    color: #040e41;
+    font-size: 200%;
+}
+
+.nav-link{
+    font-family: "Source Sans Pro";
+    color: #040e41;  
+    font-size: 150%;
+}
+
+.navbar-nav li{
+    padding: 0px 15px;
 }
