@@ -10,18 +10,39 @@ body {
     background: #efefef
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: "Montserrat";
-    color: #040e41;
+    color: #040e41 !important;
     font-size: 200%;
 }
 
-.nav-link{
+.nav-link {
     font-family: "Source Sans Pro";
-    color: #040e41;  
+    color: #040e41 !important;
     font-size: 150%;
+    position: relative;
+    
 }
 
-.navbar-nav li{
+/* Animating Link Underlines */
+.nav-link::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #040e41;
+    transform: scaleX(0); /* Create a line underneath with a transformation of zero so no line is visible */
+    transition: transform 0.3s ease; 
+}
+.nav-link:hover::before {
+    color: #0152b1 !important;
+    transform: scaleX(1); /*Transform the line so it becomes visible*/
+    
+}
+
+.navbar-nav li {
     padding: 0px 15px;
 }
