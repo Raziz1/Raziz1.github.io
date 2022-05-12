@@ -50,3 +50,31 @@ section {
 .navbar-nav li {
     padding: 0px 15px;
 }
+
+/* ---------- Intro Section ----------*/
+.name{
+    font-family: "Montserrat";
+    color: #f5de34 !important;
+    font-size: 8vw;
+    text-shadow: -3px -3px 0 #040e41, 3px -3px 0 #040e41, -3px 3px 0 #040e41, 6px 6px 0 #040e41; /*Add a text shadow in all directions to create a text outline stroke*/
+
+    /*-- name animation --*/
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+/*-- animation keyframes --*/
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.intro-image{
+    width:25vw;
+    filter:drop-shadow(5px 5px 2px #000000)
+}
