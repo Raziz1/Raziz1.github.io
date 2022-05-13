@@ -58,17 +58,19 @@ section {
 .name {
     font-family: "Montserrat";
     color: #f5de34 !important;
-    font-size: 6vw;
-    text-shadow: -0.25vw -0.25vw 0 #040e41, 0.25vw -0.25vw 0 #040e41, -0.25vw 0.25vw 0 #040e41, 0.5vw 0.5vw 0 #040e41;
+    font-size: 450%;
+    /*font-size: 6vw;*/
+    text-shadow: -3px -3px 0 #040e41, 3px -3px 0 #040e41, -3px 3px 0 #040e41, 6px 6px 0 #040e41;
+    /* text-shadow: -0.25vw -0.25vw 0 #040e41, 0.25vw -0.25vw 0 #040e41, -0.25vw 0.25vw 0 #040e41, 0.5vw 0.5vw 0 #040e41;*/
     /*Add a text shadow in all directions to create a text outline stroke*/
 
 }
 
-
 .intro-descri {
     font-family: "Source Sans Pro";
     color: #efefef !important;
-    font-size: 2vw;
+    font-size: 150%;
+    /*font-size: 2vw;*/
 }
 
 .intro-image {
@@ -80,14 +82,14 @@ section {
     position: absolute;
     width: 20vw;
     left: 0;
-    top:20%;
+    top: 20%;
 }
 
 .wire-2 {
     position: absolute;
     width: 20vw;
     right: 0;
-    top:20%
+    top: 20%
 }
 
 .chevron-down {
