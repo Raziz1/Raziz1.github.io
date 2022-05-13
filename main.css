@@ -58,7 +58,7 @@ section {
 .name {
     font-family: "Montserrat";
     color: #f5de34 !important;
-    font-size: 450%;
+    font-size: 4em;
     text-shadow: -3px -3px 0 #040e41, 3px -3px 0 #040e41, -3px 3px 0 #040e41, 6px 6px 0 #040e41;
     /*Add a text shadow in all directions to create a text outline stroke*/
 
@@ -67,7 +67,7 @@ section {
 .intro-descri {
     font-family: "Source Sans Pro";
     color: #efefef !important;
-    font-size: 150%;
+    font-size: 1.5em;
 }
 
 .intro-image {
