@@ -76,6 +76,20 @@ section {
     filter: drop-shadow(5px 5px 3px #000000);
 }
 
+.wire-1 {
+    position: absolute;
+    width: 20vw;
+    left: 0;
+    top:20%;
+}
+
+.wire-2 {
+    position: absolute;
+    width: 20vw;
+    right: 0;
+    top:20%
+}
+
 .chevron-down {
     font-size: 2vw;
     color: #f5de34;
