@@ -114,3 +114,22 @@ section {
         transform: translate(0, 0);
     }
 }
+
+/* ---------- About section ---------- */
+.about-title {
+    font-family: "Montserrat";
+    color: #efefef !important;
+    font-size: 4rem;
+}
+
+.about-text {
+    font-family: "Source Sans Pro";
+    color: #efefef !important;
+    font-size: 1.25rem;
+    line-height: rem;
+}
+
+.about-image {
+    filter: drop-shadow(5px 5px 3px #000000);
+
+}
