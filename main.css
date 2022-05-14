@@ -1,13 +1,15 @@
-html { 
-    margin:0; 
-    padding:0; 
-    height:100%; /* Allows divs to extend full height of screen */
-  }
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* Allows divs to extend full height of screen */
+}
 
 body {
-    height:100%;
-    margin:0; /* Allows divs to extend full height of screen */
-    background-repeat:no-repeat; /* Prevents background gradient from repeating due to extneded height */
+    margin: 0;
+    /* Allows divs to extend full height of screen */
+    background-repeat: no-repeat;
+    /* Prevents background gradient from repeating due to extneded height */
     background-attachment: fixed;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: linear-gradient(to bottom, rgba(4, 14, 65, 1), rgba(48, 59, 114, 1));
@@ -17,8 +19,8 @@ section {
     padding: 60px 0;
 }
 
-#intro{
-    height:75%;
+#intro {
+    height: 75%;
 }
 
 /*---------- Nav bar ----------*/
@@ -145,5 +147,44 @@ section {
 
 .about-image {
     filter: drop-shadow(5px 5px 3px #000000);
+    /*-- name animation --*/
+    animation-name: floating_space;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 
+@keyframes floating_space {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(1vw, 1vw);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* ----- Cards ----- */
+.about-card {
+    /*width: 8vw;*/
+    /*height: 7.5vw;*/
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
+}
+
+.about-card:hover {
+    filter: drop-shadow(5px 5px 3px #000000);
+
+}
+
+.intrest-image {
+    width: 6vw;
+    height: 6vw;
 }
