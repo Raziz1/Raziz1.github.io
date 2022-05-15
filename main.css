@@ -3,6 +3,7 @@ html {
     padding: 0;
     height: 100%;
     /* Allows divs to extend full height of screen */
+    
 }
 
 body {
@@ -200,8 +201,7 @@ section {
     font-family: "Montserrat";
     color: #000000 !important;
     font-size: 1.5rem;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
-    border-radius: 10px;
+    /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;*/
 }
 
 
@@ -220,6 +220,11 @@ section {
     background-color: #303b72;
     text-align: start;
     width: 100%;
+
+    /* Aligns footer text to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-title {
@@ -231,7 +236,7 @@ section {
 .card-text {
     font-family: "Source Sans Pro";
     color: #efefef !important;
-    
+
 }
 
 .card-img-top {
