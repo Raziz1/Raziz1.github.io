@@ -204,3 +204,54 @@ section {
     border-radius: 10px;
 }
 
+
+/* ---------- Cards ---------- */
+.projects-cards {
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #ffffff;
+    filter: drop-shadow(5px 5px 3px #000000);
+    border: none !important;
+    height: 100%;
+}
+
+.card-body {
+    background-color: #303b72;
+    text-align: start;
+    width: 100%;
+}
+
+.card-title {
+    font-family: "Montserrat";
+    color: #f5de34 !important;
+    font-size: 2em;
+}
+
+.card-text {
+    font-family: "Source Sans Pro";
+    color: #efefef !important;
+    
+}
+
+.card-img-top {
+    width: 15rem;
+}
+
+.badges-group {
+    text-align: center;
+}
+
+.projects-badge {
+    background-color: #f5de34;
+    color: #000000;
+    filter: drop-shadow(5px 5px 3px #000000);
+}
+
+.evoborne {
+    background-image: linear-gradient(to top, rgba(254, 124, 0, 1), rgba(41, 10, 88, 1));
+}
+
+.hill-climb {
+    background-color: #6d9eeb;
+}
