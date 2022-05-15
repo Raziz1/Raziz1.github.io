@@ -112,33 +112,44 @@
                         alt="Space Bitmoji">
                 </div>
             </div>
-            <div class="row justify-content-start align-items-center">
-                <!-- about me cards -->
-                <div class="col-3 mb-2">
-                    <div class="card about-card">
-                        <a href="https://www.eng.mcmaster.ca/">
-                            <!-- Clicking on the card takes you to the link -->
+            <div class="col-12 col-md-7">
+                <!-- Limit the buttons to under the text only -->
+                <div class="row justify-content-start align-items-center">
+                    <!-- about me buttons -->
+                    <div class="col-3 mb-2">
+                        <button type="button" class="btn-about"
+                            onclick="window.location.href='https://www.eng.mcmaster.ca/'">
+                            <!-- Clicking on the button takes you to the link -->
                             <img src="/assets/mcmaster-crest-bold.png" alt="McMaster Crest" class="intrest-image">
-                        </a>
+                        </button>
                     </div>
-                </div>
-                <div class="col-3 mb-2">
-                    <div class="card about-card">
-                        <img src="/assets/mac-formula.png" alt="McMaster Crest" class="intrest-image">
+                    <div class="col-3 mb-2">
+                        <button type="button" class="btn-about"
+                            onclick="window.location.href='https://macformularacing.com/'">
+                            <img src="/assets/mac-formula.png" alt="McMaster Crest" class="intrest-image">
+                        </button>
                     </div>
-                </div>
-                <div class="col-3 mb-2">
-                    <div class="card about-card">
-                        <img src="/assets/midi.png" alt="McMaster Crest" class="intrest-image">
-
+                    <div class="col-3 mb-2">
+                        <button type="button" class="btn-about"
+                            onclick="window.location.href='https://open.spotify.com/user/raherm%3F'">
+                            <img src="/assets/midi.png" alt="McMaster Crest" class="intrest-image">
+                        </button>
                     </div>
-                </div>
-                <div class="col-3 mb-2">
-                    <div class="card about-card ">
-                        <img src="/assets/code.png" alt="McMaster Crest" class="intrest-image">
+                    <div class="col-3 mb-2">
+                        <button type="button" class="btn-about"
+                            onclick="window.location.href='https://github.com/Raziz1'">
+                            <img src="/assets/code.png" alt="McMaster Crest" class="intrest-image">
+                        </button>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!---------- projects section ---------->
+    <section id="projects">
+        <div class="container pt-5">
+            <h1 class="projects-title">Projects</h1>
         </div>
     </section>
 

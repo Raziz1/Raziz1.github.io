@@ -23,7 +23,7 @@ section {
     height: 75%;
 }
 
-/*---------- Nav bar ----------*/
+/* ========== Nav bar ========== */
 .navbar {
     color: #040e41;
     background: #efefef
@@ -69,7 +69,7 @@ section {
     padding: 0px 15px;
 }
 
-/* ---------- Intro Section ----------*/
+/* ========== Intro Section ========== */
 .name {
     font-family: "Montserrat";
     color: #f5de34 !important;
@@ -131,7 +131,7 @@ section {
     }
 }
 
-/* ---------- About section ---------- */
+/* ========== About section ========== */
 .about-title {
     font-family: "Montserrat";
     color: #efefef !important;
@@ -152,6 +152,7 @@ section {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    width: 30vw;
 }
 
 @keyframes floating_space {
@@ -169,9 +170,7 @@ section {
 }
 
 /* ----- Cards ----- */
-.about-card {
-    /*width: 8vw;*/
-    /*height: 7.5vw;*/
+.btn-about {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
@@ -179,12 +178,19 @@ section {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
 }
 
-.about-card:hover {
+.btn-about:hover {
     filter: drop-shadow(5px 5px 3px #000000);
-
+    transform: translateY(-5px);
 }
 
 .intrest-image {
-    width: 6vw;
-    height: 6vw;
+    width: 7vw;
+    height: 7vw;
+}
+
+/* ========== Project section ========== */
+.projects-title {
+    font-family: "Montserrat";
+    color: #efefef !important;
+    font-size: 4rem;
 }
