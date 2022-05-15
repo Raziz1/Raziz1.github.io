@@ -3,7 +3,7 @@ html {
     padding: 0;
     height: 100%;
     /* Allows divs to extend full height of screen */
-    
+
 }
 
 body {
@@ -201,7 +201,15 @@ section {
     font-family: "Montserrat";
     color: #000000 !important;
     font-size: 1.5rem;
-    /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;*/
+}
+
+.btn-projects:focus {
+    background-color: #dedede;
+    box-shadow: none;
+}
+
+.btn-icon {
+    font-size: 3rem;
 }
 
 
