@@ -89,6 +89,20 @@ section {
 .intro-image {
     width: 25vw;
     filter: drop-shadow(5px 5px 3px #000000);
+    animation: onLoad 2s; /* Adds a sliding in animation for the intro image*/
+}
+
+@keyframes onLoad {
+    from {
+        opacity: 0;
+        transform: translate(-100px);
+
+    }
+    /* Slide in the image and fade it in */
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
 
 .wire-1 {
@@ -170,7 +184,7 @@ section {
     }
 }
 
-/* ----- Cards ----- */
+/* ----- Buttons ----- */
 .btn-about {
     align-items: center;
     justify-content: center;
@@ -208,6 +222,11 @@ section {
     box-shadow: none;
 }
 
+.btn-projects:hover {
+    background-color: #dedede;
+
+}
+
 .btn-icon {
     font-size: 3rem;
 }
@@ -216,19 +235,23 @@ section {
 /* ---------- Cards ---------- */
 .projects-cards {
     align-items: center;
-    border-radius: 50px;
-    overflow: hidden;
+    border-radius: 10px;
+    overflow: auto;
     background-color: #ffffff;
-    filter: drop-shadow(5px 5px 3px #000000);
     border: none !important;
     height: 100%;
+}
+
+.projects-cards:hover {
+    filter: drop-shadow(5px 5px 3px #000000);
+    transform: translateY(-5px);
+
 }
 
 .card-body {
     background-color: #303b72;
     text-align: start;
     width: 100%;
-
     /* Aligns footer text to the bottom */
     display: flex;
     flex-direction: column;
@@ -249,8 +272,10 @@ section {
 
 .card-img-top {
     width: 15rem;
+    padding: 2rem;
 }
 
+/* -- Badges --*/
 .badges-group {
     text-align: center;
 }
@@ -258,9 +283,10 @@ section {
 .projects-badge {
     background-color: #f5de34;
     color: #000000;
-    filter: drop-shadow(5px 5px 3px #000000);
+
 }
 
+/* -- card backgrounds --*/
 .evoborne {
     background-image: linear-gradient(to top, rgba(254, 124, 0, 1), rgba(41, 10, 88, 1));
 }
