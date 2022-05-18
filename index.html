@@ -149,19 +149,23 @@
     <!---------- projects section ---------->
     <section id="projects">
         <div class="container pt-5">
+
+
             <!-- Project buttons -->
             <h1 class="projects-title">Projects</h1>
-            <div class="btn-group mb-5 btn-light rounded-pill" role="group">
-                <button type="button" class="btn btn-projects rounded-pill"> <span
-                        class="align-middle material-icons-outlined btn-icon">
-                        sports_esports
-                    </span> Games</button>
-                <button type="button" class="btn btn-projects rounded-pill"><span
-                        class="align-middle material-icons-outlined btn-icon">
-                        memory</span> Hardware</button>
-                <button type="button" class="btn btn-projects rounded-pill"><span
-                        class="align-middle material-icons-outlined btn-icon">
-                        terminal</span> Other</button>
+            <div class="btn-group mb-5" role="group">
+                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiogames" autocomplete="off"
+                    checked>
+                <label for="btnradiogames" class="btn btn-projects"><span
+                        class="align-middle material-icons-outlined btn-icon">sports_esports</span> Games</label>
+
+                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiohardware" autocomplete="off">
+                <label for="btnradiohardware" class="btn btn-projects"><span
+                        class="align-middle material-icons-outlined btn-icon">memory</span> Hardware</label>
+
+                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradioother" autocomplete="off">
+                <label for="btnradioother" class="btn btn-projects"><span
+                        class="align-middle material-icons-outlined btn-icon">terminal</span> Other</label>
             </div>
 
             <!---------- Cards ---------->
@@ -169,7 +173,7 @@
 
                 <!-- Games -->
                 <div class="col-lg-4 mb-5">
-                    <div class="card projects-cards">
+                    <div class="card projects-cards" card-group="games">
                         <img src="/assets/speed-trap.png" alt="Speed Trap Logo" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Speed Trap</h5>
@@ -187,7 +191,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
-                    <div class="card projects-cards evoborne">
+                    <div class="card projects-cards evoborne" card-group="games">
                         <img src="/assets/evoborne.png" alt="EvoBorne Logo" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">EvoBorne</h5>
@@ -204,7 +208,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
-                    <div class="card projects-cards hill-climb">
+                    <div class="card projects-cards hill-climb" card-group="games">
                         <img src="/assets/hill-climb.png" alt="Hill Climb Racing" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Hill Climb Remake</h5>
@@ -230,8 +234,7 @@
                             <h5 class="card-title">Bluetooth RGB Strip</h5>
                             <p class="card-text">Adding bluetooth functionality to a RGB strip using an Arduino
                             </p>
-                            <a href="https://github.com/Raziz1/Bluetooth_RGB_Strip"
-                                class="stretched-link"></a>
+                            <a href="https://github.com/Raziz1/Bluetooth_RGB_Strip" class="stretched-link"></a>
                             <!-- A stretched link adds a clickable link to all parent containers-->
                             <div class="badges-group">
                                 <span class="badge rounded-pill projects-badge">Arduino</span>
@@ -249,8 +252,7 @@
                             <p class="card-text">A TFT display that shows the current weather using an API & a wifi
                                 module for the arduino board
                             </p>
-                            <a href="https://github.com/Raziz1/Arduino_Weatherstation"
-                                class="stretched-link"></a>
+                            <a href="https://github.com/Raziz1/Arduino_Weatherstation" class="stretched-link"></a>
                             <!-- A stretched link adds a clickable link to all parent containers-->
                             <div class="badges-group">
                                 <span class="badge rounded-pill projects-badge">Arduino</span>
@@ -285,8 +287,7 @@
                         <div class="card-body">
                             <h5 class="card-title">School Display</h5>
                             <p class="card-text">Created a informative school display that webscrapes using Java</p>
-                            <a href="https://github.com/Raziz1/School_Display"
-                                class="stretched-link"></a>
+                            <a href="https://github.com/Raziz1/School_Display" class="stretched-link"></a>
                             <!-- A stretched link adds a clickable link to all parent containers-->
                             <div class="badges-group">
                                 <span class="badge rounded-pill projects-badge">Java</span>
@@ -302,8 +303,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Audio Visualizer</h5>
                             <p class="card-text">A simple audio visualizer that uses your mic as an input</p>
-                            <a href="https://github.com/Raziz1/Audio_Visualizer"
-                                class="stretched-link"></a>
+                            <a href="https://github.com/Raziz1/Audio_Visualizer" class="stretched-link"></a>
                             <!-- A stretched link adds a clickable link to all parent containers-->
                             <div class="badges-group">
                                 <span class="badge rounded-pill projects-badge">Java</span>
@@ -322,6 +322,8 @@
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -89,7 +89,8 @@ section {
 .intro-image {
     width: 25vw;
     filter: drop-shadow(5px 5px 3px #000000);
-    animation: onLoad 2s; /* Adds a sliding in animation for the intro image*/
+    animation: onLoad 2s;
+    /* Adds a sliding in animation for the intro image*/
 }
 
 @keyframes onLoad {
@@ -98,6 +99,7 @@ section {
         transform: translate(-100px);
 
     }
+
     /* Slide in the image and fade it in */
     to {
         opacity: 1;
@@ -211,20 +213,22 @@ section {
     padding-bottom: 1rem;
 }
 
-.btn-projects {
-    font-family: "Montserrat";
-    color: #000000 !important;
-    font-size: 1.5rem;
+
+input[name="btnradioprojects"]:checked+label {
+    background-color: #cccccc !important;
 }
 
-.btn-projects:focus {
-    background-color: #dedede;
-    box-shadow: none;
+.btn-projects {
+    font-family: "Montserrat";
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 1.5rem;
+    box-shadow: none !important;
+
 }
 
 .btn-projects:hover {
-    background-color: #dedede;
-
+    background-color: #cccccc !important;
 }
 
 .btn-icon {
