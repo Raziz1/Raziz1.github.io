@@ -292,7 +292,8 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .projects-badge {
-    background-color: #f5de34;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
+    filter: drop-shadow(3px 3px 1px #000000);
     color: #000000;
 
 }
