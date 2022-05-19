@@ -213,7 +213,6 @@ section {
     padding-bottom: 1rem;
 }
 
-
 input[name="btnradioprojects"]:checked+label {
     background-color: #cccccc !important;
 }
@@ -246,6 +245,14 @@ input[name="btnradioprojects"]:checked+label {
     height: 100%;
 }
 
+.card-container.active {
+    display: block;
+}
+
+.card-container.hide {
+    display: none;
+}
+
 .projects-cards:hover {
     filter: drop-shadow(5px 5px 3px #000000);
     transform: translateY(-5px);
@@ -275,8 +282,8 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .card-img-top {
-    width: 15rem;
-    padding: 2rem;
+    width: 13rem;
+    padding: 1rem;
 }
 
 /* -- Badges --*/
