@@ -198,6 +198,8 @@ section {
 .btn-about:hover {
     filter: drop-shadow(5px 5px 3px #000000);
     transform: translateY(-5px);
+    transition: 0.2s ease-in-out;
+
 }
 
 .intrest-image {
@@ -215,6 +217,7 @@ section {
 
 input[name="btnradioprojects"]:checked+label {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgb(140, 140, 140)) !important;
+
 }
 
 .btn-projects {
@@ -240,17 +243,21 @@ input[name="btnradioprojects"]:checked+label {
     align-items: center;
     border-radius: 10px;
     overflow: auto;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(145, 145, 145, 1)) !important;    border: none !important;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(145, 145, 145, 1)) !important;
+    border: none !important;
     height: 100%;
     outline: #000000;
     outline-style: solid;
     outline-width: 4px;
+    transition: 0.2s ease-in-out;
 }
 
+/* Show the card */
 .card-container.active {
     display: block;
 }
 
+/* Hide the card */
 .card-container.hide {
     display: none;
 }
@@ -303,3 +310,5 @@ input[name="btnradioprojects"]:checked+label {
     color: #000000;
 
 }
+
+/* ========== Tools ========== */
