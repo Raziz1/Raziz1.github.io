@@ -315,23 +315,44 @@ input[name="btnradioprojects"]:checked+label {
 
 /* ----- Carousel ----- */
 #carouselTools{
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
     border-radius: 10px;
+}
+
+.card-carousel{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
 }
 
 .tools-icon{
     position: relative;
     font-size: 10rem;
-    padding: 1rem;
+    line-height: 75%;
 }
 
-.circle{
-    width: 30%;
-    height: 100%;
-    background: red;
+.btn-carousel{
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
+    border: none!important;
+    background-color: #ffffff;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;    margin: 2rem;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon{    
     filter: invert(100%);
+    
+
 }
+
+.card-tools-title{
+    font-family: "Montserrat";
+    color: #040e41 !important;
+    font-size: 3rem; 
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0.25;
+    transition-duration: 0.6s;
+    transition-property: opacity;
+   }
+
+   
