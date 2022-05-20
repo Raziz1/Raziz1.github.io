@@ -356,10 +356,12 @@ input[name="btnradioprojects"]:checked+label {
 
 /* ----- Tools button ----- */
 .btn-tools{
-    border-radius: 50px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
     font-family: "Source Sans Pro";
     color:#ffffff!important;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .btn-tools:hover{
