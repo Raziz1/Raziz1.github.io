@@ -312,3 +312,26 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 /* ========== Tools ========== */
+
+/* ----- Carousel ----- */
+#carouselTools{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
+    border-radius: 10px;
+}
+
+.tools-icon{
+    position: relative;
+    font-size: 10rem;
+    padding: 1rem;
+}
+
+.circle{
+    width: 30%;
+    height: 100%;
+    background: red;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{    
+    filter: invert(100%);
+}
