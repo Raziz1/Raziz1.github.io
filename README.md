@@ -9,7 +9,7 @@ Personal Portfolio Website
 
 ## Color Palette
 | Color  | Hex |
-| ------------- | ------------- |
+|  :---: |  :---: |
 | White  | #ffffff  |
 | Dark Purple  | #040e41  |
 | Light Gray  | #efefef  |
