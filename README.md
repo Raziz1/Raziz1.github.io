@@ -17,3 +17,7 @@ Personal Portfolio Website
 | Dark Yellow  | #f5de34  |
 | Dark Blue  | #0152b1  |
 | Black  | #000000  |
+
+## 🔠 Font
+* Montserrat
+* Source Sans Pro
