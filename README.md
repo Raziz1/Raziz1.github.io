@@ -2,10 +2,10 @@
 Personal Portfolio Website
 
 ## 📃 To-Do List
-* View counter 👁️‍🗨️
+* View counter (*Maybe*) 👁️‍🗨️
 * Contact me form 📧
-* Social links at the top
-* Improve footer with horizontal line?
+* <s>Social links at the top</s>
+* Footer
 
 ## 🎨 Color Palette
 | Color  | Hex |
@@ -17,3 +17,7 @@ Personal Portfolio Website
 | Dark Yellow  | #f5de34  |
 | Dark Blue  | #0152b1  |
 | Black  | #000000  |
+
+## 🔠 Font
+* Montserrat
+* Source Sans Pro
