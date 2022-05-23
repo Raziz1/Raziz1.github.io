@@ -4,8 +4,8 @@ Personal Portfolio Website
 ## 📃 To-Do List
 * View counter 👁️‍🗨️
 * Contact me form 📧
-* Social links at the top
-* Improve footer with horizontal line?
+* <s>Social links at the top</s>
+* Footer
 
 ## 🎨 Color Palette
 | Color  | Hex |
