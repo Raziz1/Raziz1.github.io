@@ -14,7 +14,6 @@ Personal Portfolio Website
 | Dark Purple  | #040e41  |
 | Light Gray  | #efefef  |
 | Dark Purple  | #303b72  |
-| Dark Purple  | #303b72  |
 | Dark Yellow  | #f5de34  |
 | Dark Blue  | #0152b1  |
 | Black  | #000000  |
