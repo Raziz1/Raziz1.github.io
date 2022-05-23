@@ -2,7 +2,7 @@
 Personal Portfolio Website
 
 ## 📃 To-Do List
-* View counter 👁️‍🗨️
+* View counter (*Maybe*) 👁️‍🗨️
 * Contact me form 📧
 * <s>Social links at the top</s>
 * Footer
