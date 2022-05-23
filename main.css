@@ -195,13 +195,19 @@ section {
     width: 20%;
     margin: 0.5rem;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
+
+    border: 0;
+
+    outline-style: outset;
+    outline-color: rgb(118,118,118) !important;
+    outline-width: 4px;
+    
 }
 
 .btn-about:hover {
     filter: drop-shadow(5px 5px 3px #000000);
     transform: translateY(-5px);
     transition: 0.2s ease-in-out;
-
 }
 
 .intrest-image {
@@ -209,6 +215,16 @@ section {
 }
 
 /* ========== Project section ========== */
+
+.btn-group{
+    border: 0;
+    border-radius: 5px;
+    
+    outline-style: outset;
+    outline-color: rgb(118,118,118) !important;
+    outline-width: 4px;
+}
+
 .projects-title {
     font-family: "Montserrat";
     color: #efefef !important;
@@ -227,7 +243,9 @@ input[name="btnradioprojects"]:checked+label {
     color: #000000 !important;
     font-size: 1.5rem;
     box-shadow: none !important;
-
+    outline: none!important;
+    border: none!important;
+    border-radius: 5px;
 }
 
 .btn-projects:hover {
@@ -247,10 +265,12 @@ input[name="btnradioprojects"]:checked+label {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(145, 145, 145, 1)) !important;
     border: none !important;
     height: 100%;
-    outline: #000000;
-    outline-style: solid;
-    outline-width: 4px;
     transition: 0.2s ease-in-out;
+    border: 0;
+
+    outline-style: outset;
+    outline-color: rgb(118,118,118) !important;
+    outline-width: 4px;
 }
 
 /* Show the card */
@@ -309,7 +329,6 @@ input[name="btnradioprojects"]:checked+label {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
     filter: drop-shadow(3px 3px 1px #000000);
     color: #000000;
-
 }
 
 /* ========== Tools ========== */
@@ -318,13 +337,16 @@ input[name="btnradioprojects"]:checked+label {
 #carouselTools {
     border-radius: 10px;
     outline: #000000;
-    outline-style: solid;
-    outline-width: 5px;
+    border: 0;
+    outline-style: outset;
+    outline-color: rgb(118,118,118) !important;
+    outline-width: 4px;
 }
 
 .card-carousel {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
     padding: 2rem;
+    border-radius: 10px;
 }
 
 .tools-icon {
@@ -363,7 +385,7 @@ input[name="btnradioprojects"]:checked+label {
     max-width: 200px;
     font-family: "Source Sans Pro";
     color: #ffffff !important;
-    margin: 0.5rem;
+    margin: 0.5rem;    
 }
 
 .btn-tools:hover {
@@ -380,7 +402,7 @@ input[name="btnradioprojects"]:checked+label {
     }
 
     25% {
-        transform: translate(2px, 2px)
+        transform: translate(0px, 2px)
     }
 
     50% {
@@ -388,7 +410,7 @@ input[name="btnradioprojects"]:checked+label {
     }
 
     75% {
-        transform: translate(2px, 2px)
+        transform: translate(0px, 2px)
     }
 
     100% {
@@ -414,6 +436,7 @@ input[name="btnradioprojects"]:checked+label {
     margin: 1rem;
     border: none!important;
     background-color: transparent;
+    border: 0;
 }
 
 .btn-footer:hover{
