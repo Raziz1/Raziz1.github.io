@@ -1,13 +1,13 @@
 # Raziz1.github.io
 Personal Portfolio Website
 
-## To-Do List
+## 📃 To-Do List
 * View counter 👁️‍🗨️
 * Contact me form 📧
 * Social links at the top
 * Improve footer with horizontal line?
 
-## Color Palette
+## 🎨 Color Palette
 | Color  | Hex |
 |  :---: |  :---: |
 | White  | #ffffff  |
