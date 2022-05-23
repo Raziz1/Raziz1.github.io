@@ -148,6 +148,25 @@ section {
     }
 }
 
+.btn-footer{
+    margin: 1rem;
+    border: none!important;
+    background-color: transparent;
+    border: 0;
+    filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(59deg) brightness(106%) contrast(101%);
+}
+
+.btn-footer:hover{
+    filter: invert(97%) sepia(74%) saturate(2632%) hue-rotate(330deg) brightness(106%) contrast(92%);
+    animation-name: float;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.footer-img{
+    width: 3rem;
+}
+
 /* ========== About section ========== */
 .about-title {
     font-family: "Montserrat";
@@ -310,7 +329,7 @@ input[name="btnradioprojects"]:checked+label {
 
 .card-text {
     font-family: "Source Sans Pro";
-    color: #ffffff !important;
+    color: #efefef !important;
     /*color: #000000!important;*/
 
 }
@@ -361,7 +380,7 @@ input[name="btnradioprojects"]:checked+label {
     height: 15rem;
     border-radius: 50%;
     border: none !important;
-    background-color: #ffffff;
+    background-color: #efefef;
     box-shadow: rgba(4, 14, 65, 0.4) -5px 5px, rgba(4, 14, 65, 0.3) -10px 10px, rgba(4, 14, 65, 0.2) -15px 15px, rgba(4, 14, 65, 0.1) -20px 20px, rgba(4, 14, 65, 0.05) -25px 25px;
     margin: 2rem;
 }
@@ -384,7 +403,7 @@ input[name="btnradioprojects"]:checked+label {
     width: 100%;
     max-width: 200px;
     font-family: "Source Sans Pro";
-    color: #ffffff !important;
+    color: #efefef !important;
     margin: 0.5rem;    
 }
 
@@ -427,25 +446,5 @@ input[name="btnradioprojects"]:checked+label {
     width: 5%
 }
 
-/* ========== Footer ========== */
-.footer{
-    background-color: #ffffff;
-}
+/* ========== Form ========== */
 
-.btn-footer{
-    margin: 1rem;
-    border: none!important;
-    background-color: transparent;
-    border: 0;
-}
-
-.btn-footer:hover{
-    filter: invert(21%) sepia(31%) saturate(1202%) hue-rotate(193deg) brightness(97%) contrast(93%);
-    animation-name: float;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-.footer-img{
-    width: 3rem;
-}
