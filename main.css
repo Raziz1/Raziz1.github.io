@@ -24,6 +24,7 @@ section {
     height: 75%;
 }
 
+
 /* ========== Nav bar ========== */
 .navbar {
     color: #040e41;
@@ -355,7 +356,6 @@ input[name="btnradioprojects"]:checked+label {
 /* ----- Carousel ----- */
 #carouselTools {
     border-radius: 10px;
-    outline: #000000;
     border: 0;
     outline-style: outset;
     outline-color: rgb(118,118,118) !important;
@@ -447,4 +447,25 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 /* ========== Form ========== */
+.form-control{
+    outline-style: outset;
+    outline-color: rgb(118,118,118) !important;
+    outline-width: 4px;
+
+    font-family: "Montserrat";
+    font-size: 1rem;
+}
+
+.btn-contact{
+    font-family: "Montserrat";
+    font-size: 1rem;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
+    outline-style: outset;
+    outline-color: rgb(118,118,118) !important;
+    outline-width: 4px;  
+}
+
+.img-contact{
+    width: 20rem;
+}
 

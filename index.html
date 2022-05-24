@@ -526,21 +526,35 @@
     <!-- Forms -->
     <section id="contact">
         <div class="container">
-            <h1 class="projects-title">Contact</h1>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-sm-6">
+                    <h1 class="projects-title">Contact</h1>
+                    <form class="message" action="https://formspree.io/f/xwkyypnq" method="POST">
+                        <div class="mb-3">
+                            <input name="email" class="form-control" id="inputEmail" placeholder="Email"
+                                aria-describedby="emailHelp" style="max-width: 450px;">
+                        </div>
+                        <div class="mb-3">
+                            <input name="subject" class="form-control" placeholder="Subject" id="subjectMessage">
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control" placeHolder="Message" rows="5"
+                                id="inputMessage"></textarea>
+                        </div>
+                        <div class="text-end mb-5">
+                            <button type="submit" class="btn btn-contact">Submit <span
+                                    class="material-icons-outlined align-middle">
+                                    send
+                                </span></button>
+                        </div>
+                    </form>
+                </div>
 
-            <form class="message" action="https://formspree.io/f/xwkyypnq"method="POST">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div class="col-sm-6 text-center">
+                    <img src="assets/mail.png" alt="Bitmoji Email" class="img-contact">
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            
-        </div>
+
+            </div>
     </section>
 
 
