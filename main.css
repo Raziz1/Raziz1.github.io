@@ -211,7 +211,7 @@ section {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    -webkit-border-radius: 15px;
+    overflow:hidden;
     padding: 1rem;
     width: 20%;
     margin: 0.5rem;
@@ -220,7 +220,6 @@ section {
     outline-style: outset;
     outline-color: rgb(118,118,118) !important;
     outline-width: 4px;
-    
 }
 
 .btn-about:hover {
