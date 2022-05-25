@@ -149,7 +149,7 @@ section {
     }
 }
 
-.btn-footer {
+.btn-header {
     margin: 1rem;
     border: none !important;
     background-color: transparent;
@@ -157,14 +157,14 @@ section {
     filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(59deg) brightness(106%) contrast(101%);
 }
 
-.btn-footer:hover {
+.btn-header:hover {
     filter: invert(97%) sepia(74%) saturate(2632%) hue-rotate(330deg) brightness(106%) contrast(92%);
     animation-name: float;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
-.footer-img {
+.header-img {
     width: 3rem;
 }
 
@@ -458,4 +458,44 @@ input[name="btnradioprojects"]:checked+label {
 .img-contact {
     filter: drop-shadow(5px 5px 3px #000000);
     width: 20rem;
+}
+
+/* ========== Footer ========== */
+.footer {
+    background-color: rgba(255, 255, 255, 0.75);
+    outline: none !important;
+    border: none !important
+}
+
+.footer-img {
+    width: 3rem;
+}
+
+.btn-footer {
+    padding: 1rem;
+    border: none !important;
+    background-color: transparent;
+    border: 0;
+}
+
+.btn-footer:hover {
+    filter: invert(21%) sepia(24%) saturate(1621%) hue-rotate(191deg) brightness(95%) contrast(88%);
+    animation-name: float;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.footer-nav{
+    padding-top: 1rem;
+}
+
+.footer-links {
+    font-family: "Source Sans Pro";
+    color: #000000 !important;
+    font-size: 150%;
+    text-decoration: none !important;
+}
+
+.footer-links:hover {
+    color: #303b72!important;
 }
