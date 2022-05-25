@@ -8,6 +8,12 @@ Personal Portfolio Website
 * Add tab logo
 * Add individual project pages (Future)
 
+## 🛠️ Tools
+* HTML
+* CSS
+* JS
+* Boostrap 5
+
 ## 🎨 Color Palette
 | Color  | Hex |
 |  :---: |  :---: |
