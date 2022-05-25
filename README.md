@@ -1,6 +1,10 @@
 # Raziz1.github.io
 Personal Portfolio Website
 
+<p> 
+    <img align='Left' src="Website_preview.png? raw=true" >
+</p>
+
 ## 📃 To-Do List
 * <s>Add contact me form 📧</s>
 * <s>Add social links at the top</s>
