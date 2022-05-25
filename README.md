@@ -2,10 +2,11 @@
 Personal Portfolio Website
 
 ## 📃 To-Do List
-* View counter (*Maybe*) 👁️‍🗨️
-* Contact me form 📧
-* <s>Social links at the top</s>
-* Footer
+* <s>Add contact me form 📧</s>
+* <s>Add social links at the top</s>
+* <s>Add footer</s>
+* Add tab logo
+* Add individual project pages (Future)
 
 ## 🎨 Color Palette
 | Color  | Hex |
