@@ -171,6 +171,13 @@ section {
 }
 
 /* ========== About section ========== */
+.svg-rect {
+    width: 40%;
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+
 .about-title {
     font-family: "Montserrat";
     color: #efefef !important;
@@ -185,6 +192,7 @@ section {
 }
 
 .about-image {
+    position: relative;
     /*filter: drop-shadow(5px 5px 3px #000000);*/
     /*-- name animation --*/
     /*
@@ -194,7 +202,7 @@ section {
     animation-timing-function: ease-in-out;
     */
 
-    width: 25vw;
+    width: 25rem;
     border-radius: 50%;
 
     /*Center the image*/
@@ -203,11 +211,8 @@ section {
     margin-left: auto;
     margin-right: auto;
 
-    /*
-    box-shadow: 12px 0 rgba(217, 200, 241,0.4), 24px 0 rgba(226, 214, 243,0.3), 36px 0 rgba(236, 230, 245,0.2);
-    */
     box-shadow: rgba(4, 14, 65, 0.4) 5px 5px, rgba(4, 14, 65, 0.3) 10px 10px, rgba(4, 14, 65, 0.2) 15px 15px, rgba(4, 14, 65, 0.1) 20px 20px, rgba(4, 14, 65, 0.05) 25px 25px;
-    
+
     /*
     border-style: outset;
     border-color: rgb(118, 118, 118) !important;
@@ -238,7 +243,7 @@ section {
     width: 20%;
     margin: 0.5rem;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
-    
+
     /* Button Borders */
     border-style: outset;
     border-color: rgb(118, 118, 118) !important;
@@ -510,7 +515,7 @@ input[name="btnradioprojects"]:checked+label {
     animation-iteration-count: infinite;
 }
 
-.footer-nav{
+.footer-nav {
     padding-top: 1rem;
 }
 
@@ -522,5 +527,5 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .footer-links:hover {
-    color: #303b72!important;
+    color: #303b72 !important;
 }
