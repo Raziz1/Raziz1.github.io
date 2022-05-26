@@ -1,11 +1,24 @@
 # Raziz1.github.io
 Personal Portfolio Website
 
+<p> 
+    <img align='Left' src="Website_preview.png? raw=true" >
+</p>
+
 ## 📃 To-Do List
-* View counter (*Maybe*) 👁️‍🗨️
-* Contact me form 📧
-* <s>Social links at the top</s>
-* Footer
+* Remove Bitmoji
+* Change Color Scheme
+* Change Font
+* Remove Rounded Corners
+* Change Icons
+* Remove Outlines
+* Change Project section
+
+## 🛠️ Tools
+* HTML
+* CSS
+* JS
+* Boostrap 5
 
 ## 🎨 Color Palette
 | Color  | Hex |
