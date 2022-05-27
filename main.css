@@ -36,6 +36,7 @@ section {
     font-family: "Montserrat";
     color: #efefef !important;
     font-size: 200%;
+    padding-left: 15px;
 }
 
 .nav-link {
