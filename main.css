@@ -26,6 +26,7 @@ section {
 
 
 /* ========== Nav bar ========== */
+
 .navbar {
     background: #383838
 }
@@ -171,6 +172,16 @@ section {
 }
 
 /* ========== About section ========== */
+
+.svg-rect {
+    width: auto !important;
+    height: auto !important;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    z-index: -1;
+    
+}
 
 .about-title {
     font-family: "Montserrat";
