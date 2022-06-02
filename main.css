@@ -13,20 +13,25 @@ body {
     /* Prevents background gradient from repeating due to extneded height */
     background-attachment: fixed;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(73, 97, 220));
+    /*background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(73, 97, 220));*/
+    background-color: rgb(73, 97, 220)!important;
 }
 
-section {
-    padding: 60px 0;
-}
-
+/* ========== Section Padding ========== */
 #intro {
     /*margin-bottom: 50%;*/
-    height: 100%;
+    padding: 60px 0;
+    background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(73, 97, 220));
+
 }
 
 #about{
-padding-bottom: 10%;
+    padding: 60px 0;
+    background-color: rgb(73, 97, 220)!important;
+}
+
+#projects{
+    background-color: #efefef;
 }
 
 /* ========== Nav bar ========== */
@@ -176,7 +181,7 @@ padding-bottom: 10%;
 
 .svg-background {
     position: absolute;
-    z-index: -1;
+    /*z-index: -1;*/
     width: 40%!important;
     height: auto !important;
     top: 100%;
@@ -260,9 +265,6 @@ padding-bottom: 10%;
 }
 
 /* ========== Project section ========== */
-#projects{
-    background-color: #efefef;
-}
 .projects-title {
     font-family: "Montserrat";
     color: #383838 !important;
