@@ -91,7 +91,7 @@ section {
 
 .intro-image {
     width: 25vw;
-    filter: drop-shadow(4px 4px 1.5px #000000);
+    filter: drop-shadow(3px 3px 1px #000000);
     animation: onLoad 2s;
     /* Adds a sliding in animation for the intro image*/
 }
@@ -174,14 +174,12 @@ section {
 
 /* ========== About section ========== */
 
-.svg-rect {
-    width: auto !important;
-    height: auto !important;
+.svg-background {
     position: absolute;
-    top: 100%;
-    right: 0px;
     z-index: -1;
-    
+    width: 40%!important;
+    height: auto !important;
+    top: 100%;
 }
 
 .about-title {
@@ -214,6 +212,8 @@ section {
     /*Center the image*/
     display: block;
     margin-left: auto;
+    margin-right: auto;
+
 
 
     box-shadow: rgba(4, 14, 65, 0.4) 10px 5px, rgba(4, 14, 65, 0.3) 20px 10px, rgba(4, 14, 65, 0.2) 30px 15px, rgba(4, 14, 65, 0.1) 40px 20px, rgba(4, 14, 65, 0.05) 50px 25px;
