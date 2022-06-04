@@ -285,8 +285,8 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 
-/* ---------- Cards ---------- */
-.projects-cards {
+/* ---------- Large Cards ---------- */
+.projects-large-cards {
     align-items: center;
     border-radius: 10px;
     overflow: auto;
@@ -306,7 +306,7 @@ input[name="btnradioprojects"]:checked+label {
     display: none;
 }
 
-.projects-cards:hover {
+.projects-large-cards:hover {
     filter: drop-shadow(5px 5px 3px #000000);
     transform: translateY(-5px);
 
@@ -316,6 +316,7 @@ input[name="btnradioprojects"]:checked+label {
     /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;*/
     text-align: start;
     width: 100%;
+    padding: 2rem;
 }
 
 .card-title {
@@ -334,20 +335,65 @@ input[name="btnradioprojects"]:checked+label {
 .card-img-projects {
     width: 100%;
     opacity: 50%;
-    filter:grayscale(100%)
+    filter: grayscale(100%)
 }
 
-.card-img-body{
-    background: linear-gradient(to bottom, rgba(106, 152, 240,0.80), rgba(73, 97, 220,0.80)), url(assets/speed-trap-poster.png) no-repeat top center;
+#speed-trap-img-body {
+    background: linear-gradient(to bottom, rgba(106, 152, 240, 0.80), rgba(73, 97, 220, 0.80)), url(assets/speed-trap-poster.png) no-repeat top center;
     background-size: contain;
     overflow: hidden;
-  
 }
 
-.projects-cards:hover .card-img-projects{
+#evoborne-img-body{
+    background: linear-gradient(to bottom, rgba(106, 152, 240, 0.80), rgba(73, 97, 220, 0.80)), url(assets/evoborne-poster.jpg) no-repeat top center;
+    background-size: contain;
+    overflow: hidden;
+}
+
+#hill-climb-img-body{
+    background: linear-gradient(to bottom, rgba(106, 152, 240, 0.80), rgba(73, 97, 220, 0.80)), url(assets/hill-climb-remake.png) no-repeat top center;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.projects-large-cards:hover .card-img-projects {
     opacity: 100%;
-    filter:grayscale(0%);
+    filter: grayscale(0%);
     transition: 0.5s ease-in-out;
+}
+
+
+/* ---------- Smaller Cards ----------*/
+.projects-small-cards{
+    background-color: #efefef;
+    align-items: center;
+    border-radius: 10px;
+    overflow: auto;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+    border: none;
+    margin: 1rem;
+}
+
+.projects-small-cards:hover {
+    filter: drop-shadow(5px 5px 3px #000000);
+    transform: translateY(-5px);
+
+}
+
+.card-body {
+    text-align: start;
+    width: 100%;
+    /* Aligns footer text to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.small-cards-img{
+    width: 10rem;
+    padding: 1rem;  
 }
 
 /* -- Badges --*/
@@ -357,12 +403,18 @@ input[name="btnradioprojects"]:checked+label {
 
 .projects-badge {
     padding: 10px;
-    background-image: linear-gradient(to bottom, rgba(106, 152, 240,1), rgba(73, 97, 220,1)) !important;
+    background-image: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1)) !important;
     /*filter: drop-shadow(2px 2px 2px #000000);*/
     color: #ffffff;
 }
 
-/* ========== Tools ========== */
+/* ========== Skills ========== */
+.skills-title{
+    font-family: "Montserrat";
+    color: #ffffff !important;
+    font-size: 4rem;
+    padding-bottom: 1rem;    
+}
 
 /* ----- Carousel ----- */
 #carouselTools {

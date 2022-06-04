@@ -170,6 +170,7 @@
     </section>
 
     <!---------- projects section ---------->
+
     <section id="projects">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#4961dc" fill-opacity="1"
@@ -179,7 +180,8 @@
         <div class="container pt-5">
             <!-- Project buttons -->
             <h1 class="projects-title">Projects</h1>
-            <div class="mb-3" role="group">
+
+            <div class="btn-group mb-3" role="group">
                 <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiogames" autocomplete="off"
                     button-target="games" checked>
                 <label for="btnradiogames" class="btn btn-projects"><span
@@ -199,90 +201,84 @@
             <!---------- Cards ---------->
             <div class="row g-0 justify-content-start">
 
-                <div class="card projects-cards mb-5">
+                <!-- Games -->
+                <div class="card projects-large-cards mb-5 card-container" card-group="games">
                     <div class="row g-0">
-                        <div class="col-md-5 d-flex flex-column justify-content-end mb-3">
+                        <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">Speed Trap</h5>
                                 <p class="card-text">A high speed racing game where swarms of cops chase your vehicle.
-                                    Featuring a variety of vehicles, day and night cycles, and a live leaderboard</p>
-                                <!--<a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.SpeedTrap"
-                                    class="stretched-link"></a>-->
+                                    Featuring a variety of vehicles, day and night cycles, and a live leaderboard.
+                                    Developped in the Unity Game engine using the C# scripting language.</p>
+                                <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.SpeedTrap"
+                                    class="stretched-link"></a>
                                 <!-- A stretched link adds a clickable link to all parent containers-->
                             </div>
-                                <div class="badges-group ">
-                                    <span class="badge projects-badge ">Java</span>
-                                    <span class="badge projects-badge">Box2D</span>
-                                    <span class="badge projects-badge">Processing</span>
-                                </div>
+                            <div class="badges-group">
+                                <span class="badge projects-badge ">Unity</span>
+                                <span class="badge projects-badge">C#</span>
+                                <span class="badge projects-badge">Android</span>
+                            </div>
                         </div>
-                        <div class="col-md-7">
-                            <div class="card-img-body"><img class="card-img-projects" src="assets/speed-trap-poster.png"
-                                    alt="speed-trap-poster"></div>
+                        <div class="col-lg-7">
+                            <div class="card-img-body" id="speed-trap-img-body"><img class="card-img-projects"
+                                    src="assets/speed-trap-poster.png" alt="speed-trap-poster"></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Games -->
-                <div class="col-lg-4 mb-5 card-container" card-group="games">
-                    <div class="card projects-cards">
-                        <img src="/assets/speed-trap.png" alt="Speed Trap Logo" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Speed Trap</h5>
-                            <p class="card-text">A high speed racing game where swarms of cops chase your vehicle
-                            </p>
-                            <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.SpeedTrap"
+                <div class="card projects-large-cards mb-5 card-container" card-group="games">
+                    <div class="row g-0">
+                        <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">EvoBorne</h5>
+                                <p class="card-text">An arcade missile dodging game featuring a variety of vehicles.
+                                    This was all developped in Android Studio while utilizing Java and the Processing
+                                    graphics library</p>
+                                <!-- A stretched link adds a clickable link to all parent containers-->
+                                <a href="https://play.google.com/store/apps/details?id=processing.test.spaceship_game"
                                 class="stretched-link"></a>
-                            <!-- A stretched link adds a clickable link to all parent containers-->
-                            <div class="badges-group">
-                                <span class="badge rounded-pill projects-badge">Unity</span>
-                                <span class="badge rounded-pill projects-badge">C#</span>
-                                <span class="badge rounded-pill projects-badge">Android</span>
                             </div>
+                            <div class="badges-group">
+                                <span class="badge projects-badge ">Java</span>
+                                <span class="badge projects-badge">Box2D</span>
+                                <span class="badge projects-badge">Android Studio</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="card-img-body" id="evoborne-img-body"><img class="card-img-projects"
+                                    src="assets/evoborne-poster.jpg" alt="speed-trap-poster"></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 mb-5 card-container" card-group="games">
-                    <div class="card projects-cards evoborne">
-                        <img src="/assets/evoborne.png" alt="EvoBorne Logo" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">EvoBorne</h5>
-                            <p class="card-text">An arcade missile dodging game </p>
-                            <a href="https://play.google.com/store/apps/details?id=processing.test.spaceship_game"
-                                class="stretched-link"></a>
-                            <!-- A stretched link adds a clickable link to all parent containers-->
-                            <div class="badges-group">
-                                <span class="badge rounded-pill projects-badge">Java</span>
-                                <span class="badge rounded-pill projects-badge">Box2D</span>
-                                <span class="badge rounded-pill projects-badge">Android</span>
+                <div class="card projects-large-cards mb-5 card-container" card-group="games">
+                    <div class="row g-0">
+                        <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Hill Climbing Remake</h5>
+                                <p class="card-text">A remake of the Hill Climb Racing mobile game using the Box2D
+                                    physics engine</p>
+                                <a href="https://github.com/Raziz1/Hill-Climbing_Processing" class="stretched-link"></a>
+                                <!-- A stretched link adds a clickable link to all parent containers-->
                             </div>
+                            <div class="badges-group">
+                                <span class="badge projects-badge ">Java</span>
+                                <span class="badge projects-badge">Box2D</span>
+                                <span class="badge projects-badge">Processing</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="card-img-body" id="hill-climb-img-body"><img class="card-img-projects"
+                                    src="assets/hill-climb-remake.png" alt="speed-trap-poster"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-5 card-container" card-group="games">
-                    <div class="card projects-cards hill-climb">
-                        <img src="/assets/hill-climb.png" alt="Hill Climb Racing" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Hill Climb Remake</h5>
-                            <p class="card-text">A remake of the Hill Climb Racing mobile game using a 2D physics engine
-                            </p>
-                            <a href="https://github.com/Raziz1/Hill-Climbing_Processing" class="stretched-link"></a>
-                            <!-- A stretched link adds a clickable link to all parent containers-->
-                            <div class="badges-group">
-                                <span class="badge rounded-pill projects-badge ">Java</span>
-                                <span class="badge rounded-pill projects-badge">Box2D</span>
-                                <span class="badge rounded-pill projects-badge">Processing</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
 
                 <!-- Hardware projects -->
                 <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-cards">
-                        <img src="/assets/led.png" alt="Led Icon" class="card-img-top">
+                    <div class="card projects-small-cards">
+                        <img src="/assets/led.png" alt="Led Icon" class="small-cards-img">
                         <div class="card-body">
                             <h5 class="card-title">Bluetooth RGB Strip</h5>
                             <p class="card-text">Adding bluetooth functionality to a RGB strip using an Arduino
@@ -290,16 +286,16 @@
                             <a href="https://github.com/Raziz1/Bluetooth_RGB_Strip" class="stretched-link"></a>
                             <!-- A stretched link adds a clickable link to all parent containers-->
                             <div class="badges-group">
-                                <span class="badge rounded-pill projects-badge">Arduino</span>
-                                <span class="badge rounded-pill projects-badge">C++</span>
-                                <span class="badge rounded-pill projects-badge">RGB</span>
+                                <span class="badge projects-badge">Arduino</span>
+                                <span class="badge projects-badge">C++</span>
+                                <span class="badge projects-badge">RGB</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-cards">
-                        <img src="/assets/weather-news.png" alt="Weather Station Icon" class="card-img-top">
+                    <div class="card projects-small-cards">
+                        <img src="/assets/weather-news.png" alt="Weather Station Icon" class="small-cards-img">
                         <div class="card-body">
                             <h5 class="card-title">Arduino Weather Station</h5>
                             <p class="card-text">A TFT display that shows the current weather using an API & a wifi
@@ -308,16 +304,16 @@
                             <a href="https://github.com/Raziz1/Arduino_Weatherstation" class="stretched-link"></a>
                             <!-- A stretched link adds a clickable link to all parent containers-->
                             <div class="badges-group">
-                                <span class="badge rounded-pill projects-badge">Arduino</span>
-                                <span class="badge rounded-pill projects-badge">C++</span>
-                                <span class="badge rounded-pill projects-badge">OpenWeatherMap</span>
+                                <span class="badge projects-badge">Arduino</span>
+                                <span class="badge projects-badge">C++</span>
+                                <span class="badge projects-badge">OpenWeatherMap</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-cards">
-                        <img src="/assets/sonar.png" alt="Ultrasonic Sonar Icon" class="card-img-top">
+                    <div class="card projects-small-cards">
+                        <img src="/assets/sonar.png" alt="Ultrasonic Sonar Icon" class="small-cards-img">
                         <div class="card-body">
                             <h5 class="card-title">Ultrasonic Sonar</h5>
                             <p class="card-text">A remake of the Hill Climb Racing mobile game using a 2D physics engine
@@ -325,9 +321,9 @@
                             <a href="https://github.com/Raziz1/Ultrasonic_Sonar" class="stretched-link"></a>
                             <!-- A stretched link adds a clickable link to all parent containers-->
                             <div class="badges-group">
-                                <span class="badge rounded-pill projects-badge ">Raspberry PI</span>
-                                <span class="badge rounded-pill projects-badge">Python</span>
-                                <span class="badge rounded-pill projects-badge">Ultrasonic</span>
+                                <span class="badge projects-badge ">Raspberry PI</span>
+                                <span class="badge projects-badge">Python</span>
+                                <span class="badge projects-badge">Ultrasonic</span>
                             </div>
                         </div>
                     </div>
@@ -335,33 +331,33 @@
 
                 <!-- Other -->
                 <div class="col-lg-4 mb-5 card-container hide" card-group="other">
-                    <div class="card projects-cards">
-                        <img src="/assets/flight-information.png" alt="School Display Icon" class="card-img-top">
+                    <div class="card projects-small-cards">
+                        <img src="/assets/flight-information.png" alt="School Display Icon" class="small-cards-img">
                         <div class="card-body">
                             <h5 class="card-title">School Display</h5>
                             <p class="card-text">Created a informative school display that webscrapes using Java</p>
                             <a href="https://github.com/Raziz1/School_Display" class="stretched-link"></a>
                             <!-- A stretched link adds a clickable link to all parent containers-->
                             <div class="badges-group">
-                                <span class="badge rounded-pill projects-badge">Java</span>
-                                <span class="badge rounded-pill projects-badge">Twitter API</span>
-                                <span class="badge rounded-pill projects-badge">Processing</span>
+                                <span class="badge projects-badge">Java</span>
+                                <span class="badge projects-badge">Twitter API</span>
+                                <span class="badge projects-badge">Processing</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5 card-container hide" card-group="other">
-                    <div class="card projects-cards">
-                        <img src="/assets/desktop-computer.png" alt="Music Icon" class="card-img-top">
+                    <div class="card projects-small-cards">
+                        <img src="/assets/desktop-computer.png" alt="Music Icon" class="small-cards-img">
                         <div class="card-body">
                             <h5 class="card-title">Audio Visualizer</h5>
                             <p class="card-text">A simple audio visualizer that uses your mic as an input</p>
                             <a href="https://github.com/Raziz1/Audio_Visualizer" class="stretched-link"></a>
                             <!-- A stretched link adds a clickable link to all parent containers-->
                             <div class="badges-group">
-                                <span class="badge rounded-pill projects-badge">Java</span>
-                                <span class="badge rounded-pill projects-badge">Minim</span>
-                                <span class="badge rounded-pill projects-badge">Processing</span>
+                                <span class="badge projects-badge">Java</span>
+                                <span class="badge projects-badge">Minim</span>
+                                <span class="badge projects-badge">Processing</span>
                             </div>
                         </div>
                     </div>
@@ -369,12 +365,14 @@
             </div>
 
         </div>
+        
     </section>
 
     <!---------- Skills section ---------->
     <section id="skills">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L48,202.7C96,181,192,139,288,144C384,149,480,203,576,208C672,213,768,171,864,176C960,181,1056,235,1152,245.3C1248,256,1344,224,1392,208L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
         <div class="container">
-            <h1 class="projects-title">Skills</h1>
+            <h1 class="skills-title">Skills</h1>
 
             <!-- Carousel skills -->
             <div id="carouselTools" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
