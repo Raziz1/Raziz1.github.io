@@ -402,6 +402,7 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .projects-badge {
+    width: 7rem;
     padding: 10px;
     background-image: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1)) !important;
     /*filter: drop-shadow(2px 2px 2px #000000);*/
