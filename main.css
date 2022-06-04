@@ -340,7 +340,14 @@ input[name="btnradioprojects"]:checked+label {
 
 .card-img-top {
     width: 100%;
+    visibility: hidden;
+}
 
+.card-img-body{
+    background: linear-gradient(to bottom, rgba(106, 152, 240,0.5), rgba(73, 97, 220,0.5)), url(assets/speed-trap-poster.png) no-repeat top center;
+    background-size: contain;
+    overflow: hidden;
+    color: #FFFFFF
 }
 
 /* -- Badges --*/
