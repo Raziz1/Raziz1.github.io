@@ -34,6 +34,10 @@ body {
     background-color: #ffffff;
 }
 
+#contact {
+    padding: 60px 0;
+}
+
 /* ========== Nav bar ========== */
 
 .navbar {
@@ -344,13 +348,13 @@ input[name="btnradioprojects"]:checked+label {
     overflow: hidden;
 }
 
-#evoborne-img-body{
+#evoborne-img-body {
     background: linear-gradient(to bottom, rgba(106, 152, 240, 0.80), rgba(73, 97, 220, 0.80)), url(assets/evoborne-poster.jpg) no-repeat top center;
     background-size: contain;
     overflow: hidden;
 }
 
-#hill-climb-img-body{
+#hill-climb-img-body {
     background: linear-gradient(to bottom, rgba(106, 152, 240, 0.80), rgba(73, 97, 220, 0.80)), url(assets/hill-climb-remake.png) no-repeat top center;
     background-size: contain;
     overflow: hidden;
@@ -364,7 +368,7 @@ input[name="btnradioprojects"]:checked+label {
 
 
 /* ---------- Smaller Cards ----------*/
-.projects-small-cards{
+.projects-small-cards {
     background-color: #efefef;
     align-items: center;
     border-radius: 10px;
@@ -391,9 +395,9 @@ input[name="btnradioprojects"]:checked+label {
 
 }
 
-.small-cards-img{
+.small-cards-img {
     width: 10rem;
-    padding: 1rem;  
+    padding: 1rem;
 }
 
 /* -- Badges --*/
@@ -402,7 +406,6 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .projects-badge {
-    width: 7rem;
     padding: 10px;
     background-image: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1)) !important;
     /*filter: drop-shadow(2px 2px 2px #000000);*/
@@ -410,64 +413,27 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 /* ========== Skills ========== */
-.skills-title{
+.skills-title {
     font-family: "Montserrat";
     color: #ffffff !important;
     font-size: 4rem;
-    padding-bottom: 1rem;    
+    padding-bottom: 1rem;
 }
 
-/* ----- Carousel ----- */
-#carouselTools {
-    border-radius: 10px;
-    border-style: outset;
-    border-color: rgb(118, 118, 118) !important;
-    border-width: 4px;
-}
-
-.card-carousel {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
-    padding: 2rem;
-    border-radius: 10px;
-}
-
-.tools-icon {
-    position: relative;
-    font-size: 10rem;
-    line-height: 75%;
-}
-
-
-.btn-carousel {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    border: none !important;
-    background-color: #efefef;
-    box-shadow: rgba(4, 14, 65, 0.4) -5px 5px, rgba(4, 14, 65, 0.3) -10px 10px, rgba(4, 14, 65, 0.2) -15px 15px, rgba(4, 14, 65, 0.1) -20px 20px, rgba(4, 14, 65, 0.05) -25px 25px;
-    margin: 2rem;
-}
-
-.card-tools-title {
-    font-family: "Montserrat";
-    color: #040e41 !important;
-    font-size: 3rem;
-}
-
-.carousel-fade .carousel-item {
-    opacity: 0;
-    transition-duration: 1s;
-    transition-property: opacity;
-}
 
 /* ----- Tools button ----- */
 .btn-tools {
-    border-radius: 10px;
-    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
+    /* Button Borders */
+    border-style: outset;
+    border-color: rgb(118, 118, 118) !important;
+    border-width: 4px;
+    border-radius: 50%;
     max-width: 200px;
     font-family: "Source Sans Pro";
     color: #efefef !important;
-    margin: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .btn-tools:hover {
@@ -475,6 +441,25 @@ input[name="btnradioprojects"]:checked+label {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     filter: drop-shadow(3px 3px 1px #000000);
+}
+
+.btn-tools-image {
+    width: 6rem;
+    filter: invert(100%);
+}
+
+.card-carousel {
+    background-color: transparent;
+    border: none;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.carousel-item {
+    height: 100%;
 }
 
 /* ----- Animate code buttons -----*/
@@ -500,16 +485,16 @@ input[name="btnradioprojects"]:checked+label {
     }
 }
 
-.btn-tools-image {
-    width: 3rem;
-}
 
-.carousel-control-next,
-.carousel-control-prev {
-    width: 5%
-}
 
 /* ========== Form ========== */
+.contact-title {
+    font-family: "Montserrat";
+    color: #ffffff !important;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
 .form-control {
     border-style: outset;
     border-color: rgb(118, 118, 118) !important;
@@ -552,7 +537,7 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .btn-footer:hover {
-    filter: invert(21%) sepia(24%) saturate(1621%) hue-rotate(191deg) brightness(95%) contrast(88%);
+    filter: invert(13%) sepia(14%) saturate(4220%) hue-rotate(200deg) brightness(93%) contrast(118%);
     animation-name: float;
     animation-duration: 2s;
     animation-iteration-count: infinite;
