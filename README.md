@@ -8,7 +8,7 @@ Personal Portfolio Website
 
 ## Version 2
 <p> 
-    <img align='Left' src="Website_preview.png? raw=true" >
+    <img align='Left' src="personal_website_v2.png? raw=true" >
 </p>
 
 
