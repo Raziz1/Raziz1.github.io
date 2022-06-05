@@ -13,7 +13,13 @@ Personal Portfolio Website
 </p>
 
 
-* Change Project section
+## 📃 Version 2 Changes
+* Remove Bitmoji
+* Change color scheme
+* Change font
+* Remove rounded corners
+* Remove outlines
+* Change project section
 
 ## 🛠️ Tools
 * HTML
