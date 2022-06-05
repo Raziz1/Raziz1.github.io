@@ -12,12 +12,14 @@ Personal Portfolio Website
 </p>
 
 
-## 📃 To-Do List
-* <s>Add contact me form 📧</s>
-* <s>Add social links at the top</s>
-* <s>Add footer</s>
-* Add tab logo
-* Add individual project pages (Future)
+## 📃 V2 Changes
+* Remove Bitmoji
+* Change color scheme
+* Change font
+* Remove rounded corners
+* Change outlined icons
+* Remove outlines
+* Change Project section
 
 ## 🛠️ Tools
 * HTML
