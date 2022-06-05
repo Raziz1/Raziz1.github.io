@@ -1,9 +1,16 @@
 # Raziz1.github.io
 Personal Portfolio Website
 
+## Version 1
 <p> 
     <img align='Left' src="Website_preview.png? raw=true" >
 </p>
+
+## Version 2
+<p> 
+    <img align='Left' src="Website_preview.png? raw=true" >
+</p>
+
 
 ## 📃 To-Do List
 * <s>Add contact me form 📧</s>
