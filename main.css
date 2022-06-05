@@ -239,7 +239,7 @@ body {
     padding: 1.5rem;
     width: 20%;
     margin: 0.5rem;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
+    background-color: #efefef !important;
 
     /* Button Borders */
     border-style: outset;
@@ -423,7 +423,7 @@ input[name="btnradioprojects"]:checked+label {
 
 /* ----- Tools button ----- */
 .btn-tools {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;
+    background-color: #efefef;
     /* Button Borders */
     border-style: outset;
     border-color: rgb(118, 118, 118) !important;
@@ -445,7 +445,6 @@ input[name="btnradioprojects"]:checked+label {
 
 .btn-tools-image {
     width: 6rem;
-    filter: invert(100%);
 }
 
 .card-carousel {
