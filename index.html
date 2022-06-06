@@ -506,12 +506,19 @@
     <section id="contact">
         <div class="container pt-5">
             <div class="row justify-content-center ">
-                <h1 class="contact-title">Contact</h1>
-                <div class="col-sm-6">
+                <div class="col-sm-5">
+                    <h1 class="contact-title">Contact</h1>
+                    <h3>Contact me here by sending me a message or find me on my social plaftforms below</h3>
+                    <!--
+                    <div class="card contact-icon-card">
+                        <img src="https://img.icons8.com/fluency/512/undefined/email-open.png" class="img-contact" />
+                    </div>-->
+                </div>
+                <div class="col-sm-7">
                     <form class="message" action="https://formspree.io/f/xwkyypnq" method="POST">
                         <div class="mb-3">
                             <input name="email" class="form-control" id="inputEmail" placeholder="Email"
-                                aria-describedby="emailHelp" style="max-width: 450px;">
+                                aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <input name="subject" class="form-control" placeholder="Subject" id="subjectMessage">
@@ -520,18 +527,13 @@
                             <textarea name="message" class="form-control" placeHolder="Message" rows="5"
                                 id="inputMessage"></textarea>
                         </div>
-                        <div class="text-end mb-5">
+                        <div class="text-start mb-5">
                             <button type="submit" class="btn btn-contact">Submit <span
                                     class="material-icons-outlined align-middle">
                                     send
                                 </span></button>
                         </div>
                     </form>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card contact-icon-card">
-                        <img src="https://img.icons8.com/fluency/512/undefined/email-open.png" class="img-contact" />
-                    </div>
                 </div>
             </div>
     </section>

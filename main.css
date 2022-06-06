@@ -8,6 +8,7 @@ html {
 
 body {
     margin: 0;
+
     /* Allows divs to extend full height of screen */
     background-repeat: no-repeat;
     /* Prevents background gradient from repeating due to extneded height */
@@ -266,7 +267,7 @@ body {
 .projects-title {
     font-family: "Montserrat";
     color: #383838 !important;
-    font-size: 4rem;
+    font-size: 3rem;
     padding-bottom: 1rem;
 }
 
@@ -421,7 +422,7 @@ input[name="btnradioprojects"]:checked+label {
 .skills-title {
     font-family: "Montserrat";
     color: #ffffff !important;
-    font-size: 4rem;
+    font-size: 3rem;
     padding-bottom: 1rem;
 }
 
@@ -495,7 +496,7 @@ input[name="btnradioprojects"]:checked+label {
 .contact-title {
     font-family: "Montserrat";
     color: #ffffff !important;
-    font-size: 4rem;
+    font-size: 3rem;
     padding-bottom: 1rem;
 }
 
@@ -517,7 +518,7 @@ input[name="btnradioprojects"]:checked+label {
     margin-right: auto;
     border-radius: 50%;
     width: fit-content;
-    padding: 2rem;
+    padding: 1rem;
     
 }
 
@@ -534,7 +535,7 @@ input[name="btnradioprojects"]:checked+label {
 
 .img-contact {
     filter: drop-shadow(5px 5px 3px #000000);
-    width: 15rem;
+    width: 5rem;
 }
 
 /* ========== Footer ========== */
