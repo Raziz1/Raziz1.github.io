@@ -473,7 +473,7 @@ input[name="btnradioprojects"]:checked+label {
     }
 
     25% {
-        transform: translate(0px, 2px)
+        transform: translate(0px, -2px)
     }
 
     50% {
@@ -481,7 +481,7 @@ input[name="btnradioprojects"]:checked+label {
     }
 
     75% {
-        transform: translate(0px, 2px)
+        transform: translate(0px, -2px)
     }
 
     100% {
