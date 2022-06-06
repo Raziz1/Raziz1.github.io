@@ -511,15 +511,19 @@ input[name="btnradioprojects"]:checked+label {
 
 .form-control {
     border-radius:10px;
-    border-style: outset;
-    border-color: rgb(118, 118, 118) !important;
-    border-width: 4px;
-
+    filter: drop-shadow(3px 3px 1px #000000);
     font-family: "Montserrat";
     font-size: 1rem;
 }
 
+.contact-icon-card{
+    border-radius: 50%;
+    width: fit-content;
+    padding: 2rem;
+}
+
 .btn-contact {
+    filter: drop-shadow(3px 3px 1px #000000);
     border-radius: 10px;
     font-family: "Montserrat";
     font-size: 1rem;
