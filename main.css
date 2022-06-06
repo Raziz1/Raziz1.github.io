@@ -120,7 +120,7 @@ body {
 @keyframes onLoad {
     from {
         opacity: 0;
-        transform: translate(-100px);
+        transform: translate(-200px);
 
     }
 
@@ -215,14 +215,10 @@ body {
     position: relative;
     width: 25vw;
     border-radius: 50%;
-
     /*Center the image*/
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-
-
     box-shadow: rgba(4, 14, 65, 0.4) 10px 5px, rgba(4, 14, 65, 0.3) 20px 10px, rgba(4, 14, 65, 0.2) 30px 15px, rgba(4, 14, 65, 0.1) 40px 20px, rgba(4, 14, 65, 0.05) 50px 25px;
 }
 
@@ -517,9 +513,12 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .contact-icon-card{
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 50%;
     width: fit-content;
     padding: 2rem;
+    
 }
 
 .btn-contact {
@@ -532,9 +531,10 @@ input[name="btnradioprojects"]:checked+label {
     color: #efefef;
 }
 
+
 .img-contact {
     filter: drop-shadow(5px 5px 3px #000000);
-    width: 20rem;
+    width: 15rem;
 }
 
 /* ========== Footer ========== */
