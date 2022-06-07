@@ -169,14 +169,17 @@
         </div>
     </section>
 
-    <!---------- projects section ---------->
-
-    <section id="projects">
+    <section class="divider" id="projects-divider">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#4961dc" fill-opacity="1"
                 d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,218.7C672,245,768,267,864,261.3C960,256,1056,224,1152,213.3C1248,203,1344,213,1392,218.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
             </path>
         </svg>
+    </section>
+
+    <!---------- projects section ---------->
+
+    <section id="projects">
         <div class="container pt-5">
             <!-- Project buttons -->
             <h1 class="projects-title">Projects</h1>
@@ -363,19 +366,20 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </section>
 
-    <!---------- Skills section ---------->
-    <section id="skills">
+    <div class="divider" id="skills-divider">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#ffffff" fill-opacity="1"
                 d="M0,224L48,202.7C96,181,192,139,288,144C384,149,480,203,576,208C672,213,768,171,864,176C960,181,1056,235,1152,245.3C1248,256,1344,224,1392,208L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
             </path>
         </svg>
-        <div class="container">
+    </div>
+
+    <!---------- Skills section ---------->
+    <section id="skills">
+        <div class="container pt-5">
             <h1 class="skills-title">Skills</h1>
 
 
@@ -500,14 +504,34 @@
 
     <!-- Forms -->
     <section id="contact">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-sm-6">
+        <div class="container pt-5">
+            <div class="row justify-content-center ">
+                <div class="col-lg-5">
                     <h1 class="contact-title">Contact</h1>
+                    <h3 class="contact-text">Contact me here by sending me a message directly or find me on my
+                        social plaftforms below!</h3>
+                    <div class="contact-button-wrapper text-center">
+                        <button type="button" class="btn-header"
+                            onclick="window.location.href='https://github.com/Raziz1'">
+                            <img src="/assets/github.svg" alt="Github Logo" class="contact-img">
+                        </button>
+
+                        <button type="button" class="btn-header"
+                            onclick="window.location.href='https://www.linkedin.com/in/rahim-aziz'">
+                            <img src="/assets/linkedin.svg" alt="Linkedin Logo" class="contact-img">
+                        </button>
+
+                        <a type="button" class="btn-header" href="mailto:rahimaziz31@gmail.com">
+                            <img src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/512/undefined/external-email-interface-kiranshastry-solid-kiranshastry.png"
+                                class="contact-img" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
                     <form class="message" action="https://formspree.io/f/xwkyypnq" method="POST">
                         <div class="mb-3">
                             <input name="email" class="form-control" id="inputEmail" placeholder="Email"
-                                aria-describedby="emailHelp" style="max-width: 450px;">
+                                aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <input name="subject" class="form-control" placeholder="Subject" id="subjectMessage">
@@ -516,7 +540,7 @@
                             <textarea name="message" class="form-control" placeHolder="Message" rows="5"
                                 id="inputMessage"></textarea>
                         </div>
-                        <div class="text-end mb-5">
+                        <div class="text-start mb-5">
                             <button type="submit" class="btn btn-contact">Submit <span
                                     class="material-icons-outlined align-middle">
                                     send
@@ -524,31 +548,15 @@
                         </div>
                     </form>
                 </div>
-
-                <div class="col-sm-6 text-center">
-                    <img src="assets/mail.png" alt="Bitmoji Email" class="img-contact">
-                </div>
-
             </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer my-5">
         <div class="container text-center">
-            <div class="footer-nav">
-                <a href="#about" class="footer-links">About | </a>
-                <a href="#projects" class="footer-links"">Projects | </a>
-                <a href=" #skills" class="footer-links">Skills | </a>
-                <a href="#contact" class="footer-links">Contact</a>
+            <div class="footer-text">
+                <h5>⚙️ Designed and Developped by Rahim Aziz ⚙️</h5>
             </div>
-            <button type="button" class="btn-footer" onclick="window.location.href='https://github.com/Raziz1'">
-                <img src="/assets/github.svg" alt="Github Logo" class="footer-img">
-            </button>
-            <button type="button" class="btn-footer"
-                onclick="window.location.href='https://www.linkedin.com/in/rahim-aziz'">
-                <img src="/assets/linkedin.svg" alt="Linkedin Logo" class="footer-img">
-            </button>
-        </div>
     </footer>
 
 
