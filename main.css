@@ -36,7 +36,7 @@ body {
     background-color: #ffffff;
 }
 
-#skills{
+#skills {
     padding: 60px 0;
 }
 
@@ -44,7 +44,7 @@ body {
     padding: 60px 0;
 }
 
-#projects-divider{
+#projects-divider {
     background-color: #ffffff;
 }
 
@@ -500,26 +500,27 @@ input[name="btnradioprojects"]:checked+label {
     padding-bottom: 1rem;
 }
 
-.contact-card{
-    border-radius: 10px;
-    padding: 1rem;
-    background-color: #efefef;
+.contact-text {
+    font-family: "Source Sans Pro";
+    font-size: 1.25rem;
+    color: #efefef !important;
+    padding-bottom: 1rem;
 }
 
 .form-control {
-    border-radius:10px;
+    border-radius: 10px;
     filter: drop-shadow(3px 3px 1px #000000);
     font-family: "Montserrat";
     font-size: 1rem;
 }
 
-.contact-icon-card{
+.contact-icon-card {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
     width: fit-content;
     padding: 1rem;
-    
+
 }
 
 .btn-contact {
@@ -532,48 +533,23 @@ input[name="btnradioprojects"]:checked+label {
     color: #efefef;
 }
 
-
-.img-contact {
-    filter: drop-shadow(5px 5px 3px #000000);
-    width: 5rem;
+.contact-img {
+    width: 4rem;
 }
 
 /* ========== Footer ========== */
 .footer {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #383838;
     outline: none !important;
     border: none !important
 }
 
-.footer-img {
-    width: 3rem;
-}
-
-.btn-footer {
-    padding: 1rem;
-    border: none !important;
-    background-color: transparent;
-    border: 0;
-}
-
-.btn-footer:hover {
-    filter: invert(13%) sepia(14%) saturate(4220%) hue-rotate(200deg) brightness(93%) contrast(118%);
-    animation-name: float;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-.footer-nav {
-    padding-top: 1rem;
-}
-
-.footer-links {
+.footer-text {
     font-family: "Source Sans Pro";
-    color: #000000 !important;
-    font-size: 150%;
-    text-decoration: none !important;
+    color: #efefef;
+    padding: 1rem;
 }
 
-.footer-links:hover {
-    color: #303b72 !important;
+h5 {
+    margin-bottom: 0;
 }
