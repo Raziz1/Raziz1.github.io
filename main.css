@@ -427,18 +427,6 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 
-.skills-card {
-    transform: skewX(-20deg);
-    background-color: #383838;
-    width: fit-content;
-}
-
-.skills-card>span{
-    transform: skewX(20deg);
-
-}
-
-
 /* ----- Tools button ----- */
 .btn-tools {
     background-color: #efefef;
@@ -462,7 +450,7 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .btn-tools-image {
-    width: 4vw;
+    width: 6vw;
 }
 
 
