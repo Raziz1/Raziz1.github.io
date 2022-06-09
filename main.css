@@ -428,8 +428,11 @@ input[name="btnradioprojects"]:checked+label {
 
 
 .skills-card {
-    display: block;
-    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    transform: skewX(-20deg);
+}
+
+.skills-card>span{
+    transform: skewX(20deg);
 
 }
 
