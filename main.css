@@ -112,7 +112,7 @@ body {
 }
 
 .intro-image {
-    width: 25vw;
+    width: 30vw;
     filter: drop-shadow(3px 3px 1px #000000);
     animation: onLoad 2s;
     /* Adds a sliding in animation for the intro image*/
