@@ -426,9 +426,10 @@ input[name="btnradioprojects"]:checked+label {
     padding-bottom: 1rem;
 }
 
-.skills-shelves{
-    z-index: -1;
-    position: absolute;
+
+.skills-card {
+    display: block;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
 
 }
 
@@ -444,8 +445,8 @@ input[name="btnradioprojects"]:checked+label {
     max-width: 200px;
     font-family: "Source Sans Pro";
     color: #efefef !important;
-    margin: 1vw;
-    padding: 1vw;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .btn-tools:hover {
@@ -456,22 +457,9 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .btn-tools-image {
-    width: 5vw;
+    width: 6rem;
 }
 
-.card-carousel {
-    background-color: transparent;
-    border: none;
-    padding: 2rem;
-    border-radius: 10px;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    margin-bottom: 5rem;
-}
-
-.carousel-item {
-    height: 100%;
-}
 
 /* ----- Animate code buttons -----*/
 @keyframes float {
