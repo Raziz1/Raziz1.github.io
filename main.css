@@ -426,6 +426,12 @@ input[name="btnradioprojects"]:checked+label {
     padding-bottom: 1rem;
 }
 
+.skills-shelves{
+    z-index: -1;
+    position: absolute;
+
+}
+
 
 /* ----- Tools button ----- */
 .btn-tools {
@@ -438,8 +444,8 @@ input[name="btnradioprojects"]:checked+label {
     max-width: 200px;
     font-family: "Source Sans Pro";
     color: #efefef !important;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1vw;
+    padding: 1vw;
 }
 
 .btn-tools:hover {
@@ -450,7 +456,7 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .btn-tools-image {
-    width: 6rem;
+    width: 5vw;
 }
 
 .card-carousel {
