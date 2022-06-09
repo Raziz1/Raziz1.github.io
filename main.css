@@ -429,6 +429,8 @@ input[name="btnradioprojects"]:checked+label {
 
 .skills-card {
     transform: skewX(-20deg);
+    background-color: #383838;
+    width: fit-content;
 }
 
 .skills-card>span{
@@ -448,8 +450,8 @@ input[name="btnradioprojects"]:checked+label {
     max-width: 200px;
     font-family: "Source Sans Pro";
     color: #efefef !important;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1vw;
+    padding: 1vw;
 }
 
 .btn-tools:hover {
@@ -460,7 +462,7 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .btn-tools-image {
-    width: 6rem;
+    width: 4vw;
 }
 
 
