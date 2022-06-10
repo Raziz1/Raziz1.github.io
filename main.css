@@ -428,17 +428,43 @@ input[name="btnradioprojects"]:checked+label {
 
 
 /* ----- Tools button ----- */
-.btn-tools {
+
+/*
+.skills-card{
     background-color: #efefef;
-    /* Button Borders */
-    border-style: outset;
-    border-color: rgb(118, 118, 118) !important;
-    border-width: 4px;
+    display:flex;
+    width: fit-content;
+    margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transform: skewX(-20deg);
+    
+}
+
+.skills-card-skew{
+    transform: skewX(20deg);
+}
+
+.skills-headers{
+    color: #efefef;
+    font-family: "Montserrat";
+    text-align: start;
+    font-size: 3vw;
+
+    
+}
+@media screen and (min-width: 1200px) {
+    .skills-headers {
+       font-size: 2rem;
+    }
+  }
+
+.btn-tools {
+    background-color: #ffffff;
     border-radius: 50%;
-    max-width: 200px;
     font-family: "Source Sans Pro";
     color: #efefef !important;
-    margin: 1vw;
+    margin: 0.5vw;
     padding: 1vw;
 }
 
@@ -451,6 +477,60 @@ input[name="btnradioprojects"]:checked+label {
 
 .btn-tools-image {
     width: 6vw;
+}
+*/
+
+.skills-card{
+    background-color: #efefef;
+    display:flex;
+    width: fit-content;
+    margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transform: skewX(-20deg);
+    
+}
+
+.skills-card-skew{
+    transform: skewX(20deg);
+}
+
+.btn-tools {
+    background-color: #efefef;
+    border-style: outset;
+    border-color: rgb(118, 118, 118) !important;
+    border-width: 4px;
+    border-radius: 50%;
+    max-width: 200px;
+    font-family: "Source Sans Pro";
+    color: #efefef !important;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.btn-tools:hover {
+    animation-name: float;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(3px 3px 1px #000000);
+}
+
+.btn-tools-image {
+    width: 6rem;
+}
+
+.card-carousel {
+    background-color: transparent;
+    border: none;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.carousel-item {
+    height: 100%;
 }
 
 
