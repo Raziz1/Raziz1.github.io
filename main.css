@@ -429,7 +429,7 @@ input[name="btnradioprojects"]:checked+label {
 
 /* ----- Tools button ----- */
 
-/*
+
 .skills-card{
     background-color: #efefef;
     display:flex;
@@ -478,8 +478,9 @@ input[name="btnradioprojects"]:checked+label {
 .btn-tools-image {
     width: 6vw;
 }
-*/
 
+
+/*
 .skills-card{
     background-color: #efefef;
     display:flex;
@@ -532,7 +533,7 @@ input[name="btnradioprojects"]:checked+label {
 .carousel-item {
     height: 100%;
 }
-
+*/
 
 /* ----- Animate code buttons -----*/
 @keyframes float {
