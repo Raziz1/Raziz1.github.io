@@ -242,7 +242,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    padding: 1.5rem;
+    padding: 2vw;
     width: 20%;
     margin: 0.5rem;
     background-color: #efefef !important;
@@ -428,74 +428,6 @@ input[name="btnradioprojects"]:checked+label {
 
 
 /* ----- Tools button ----- */
-
-
-.skills-card{
-    background-color: #efefef;
-    display:flex;
-    width: fit-content;
-    margin-left: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    transform: skewX(-20deg);
-    
-}
-
-.skills-card-skew{
-    transform: skewX(20deg);
-}
-
-.skills-headers{
-    color: #efefef;
-    font-family: "Montserrat";
-    text-align: start;
-    font-size: 3vw;
-
-    
-}
-@media screen and (min-width: 1200px) {
-    .skills-headers {
-       font-size: 2rem;
-    }
-  }
-
-.btn-tools {
-    background-color: #ffffff;
-    border-radius: 50%;
-    font-family: "Source Sans Pro";
-    color: #efefef !important;
-    margin: 0.5vw;
-    padding: 1vw;
-}
-
-.btn-tools:hover {
-    animation-name: float;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    filter: drop-shadow(3px 3px 1px #000000);
-}
-
-.btn-tools-image {
-    width: 6vw;
-}
-
-
-/*
-.skills-card{
-    background-color: #efefef;
-    display:flex;
-    width: fit-content;
-    margin-left: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    transform: skewX(-20deg);
-    
-}
-
-.skills-card-skew{
-    transform: skewX(20deg);
-}
-
 .btn-tools {
     background-color: #efefef;
     border-style: outset;
@@ -533,7 +465,7 @@ input[name="btnradioprojects"]:checked+label {
 .carousel-item {
     height: 100%;
 }
-*/
+
 
 /* ----- Animate code buttons -----*/
 @keyframes float {
@@ -612,12 +544,17 @@ input[name="btnradioprojects"]:checked+label {
     border: none !important
 }
 
-.footer-text {
+.footer-wrapper {
     font-family: "Source Sans Pro";
     color: #efefef;
     padding: 1rem;
 }
 
-h5 {
+.footer-text{
     margin-bottom: 0;
+    display: inline;
+}
+
+.footer-column{
+    padding: 0;
 }
