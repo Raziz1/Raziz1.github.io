@@ -294,7 +294,6 @@ input[name="btnradioprojects"]:checked+label {
     font-size: 3rem;
 }
 
-
 /* ---------- Large Cards ---------- */
 .projects-large-cards {
     align-items: center;
@@ -429,10 +428,12 @@ input[name="btnradioprojects"]:checked+label {
 
 /* ----- Tools button ----- */
 .btn-tools {
-    background-color: #efefef;
+    background-color: #ffffff;
+    /*
     border-style: outset;
     border-color: rgb(118, 118, 118) !important;
     border-width: 4px;
+    */
     border-radius: 50%;
     max-width: 200px;
     font-family: "Source Sans Pro";
@@ -449,7 +450,13 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .btn-tools-image {
-    width: 6rem;
+    width: 4rem;
+}
+
+
+.carousel {
+    background-color: #efefef;
+    border-radius: 10px;
 }
 
 .card-carousel {
@@ -550,11 +557,11 @@ input[name="btnradioprojects"]:checked+label {
     padding: 1rem;
 }
 
-.footer-text{
+.footer-text {
     margin-bottom: 0;
     display: inline;
 }
 
-.footer-column{
+.footer-column {
     padding: 0;
 }
