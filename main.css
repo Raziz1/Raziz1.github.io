@@ -8,7 +8,6 @@ html {
 
 body {
     margin: 0;
-
     /* Allows divs to extend full height of screen */
     background-repeat: no-repeat;
     /* Prevents background gradient from repeating due to extneded height */
@@ -19,11 +18,10 @@ body {
 }
 
 /* ========== Section Padding ========== */
+/* Padding allows you to directly focus on the section when you click on the navbar links*/
 #intro {
-    /*margin-bottom: 50%;*/
     padding: 60px 0;
     background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(73, 97, 220));
-
 }
 
 #about {
@@ -49,7 +47,6 @@ body {
 }
 
 /* ========== Nav bar ========== */
-
 .navbar {
     background: #383838
 }
@@ -65,7 +62,6 @@ body {
     color: #efefef !important;
     font-size: 150%;
     position: relative;
-
 }
 
 /* Animating Link Underlines */
@@ -87,7 +83,6 @@ body {
     color: #efefef !important;
     transform: scaleX(1);
     /*Transform the line so it becomes visible*/
-
 }
 
 .navbar-nav li {
@@ -100,9 +95,6 @@ body {
     color: #efefef !important;
     font-size: 4em;
     filter: drop-shadow(3px 3px 1px #000000);
-    /*text-shadow: -3px -3px 0 #040e41, 3px -3px 0 #040e41, -3px 3px 0 #040e41, 6px 6px 0 #040e41;*/
-    /*Add a text shadow in all directions to create a text outline stroke*/
-
 }
 
 .intro-descri {
@@ -118,6 +110,7 @@ body {
     /* Adds a sliding in animation for the intro image*/
 }
 
+/* Intro image animation that slides in on website loading*/
 @keyframes onLoad {
     from {
         opacity: 0;
@@ -132,6 +125,7 @@ body {
     }
 }
 
+/*===== Background design wires =====*/
 .wire-1 {
     position: absolute;
     width: 20vw;
@@ -156,7 +150,6 @@ body {
     animation-timing-function: ease-in-out;
 }
 
-
 /* Animate bouncing chevron */
 @keyframes floating {
     0% {
@@ -172,15 +165,17 @@ body {
     }
 }
 
+/*===== Linkedin & Github header buttons =====*/
 .btn-header {
     margin: 1rem;
     padding: 1rem;
     border: none !important;
-    background-color: transparent;
+    background-color: transparent!important;
     border: 0;
-    filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(59deg) brightness(106%) contrast(101%);
+    filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(59deg) brightness(106%) contrast(101%); /*Apply filter so that the icon appears white*/
 }
 
+/*Animate the buttons on hover*/
 .btn-header:hover {
     border-radius: 50%;
     background-color: rgba(199, 208, 255,0.2);
