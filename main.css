@@ -432,6 +432,11 @@ input[name="btnradioprojects"]:checked+label {
     background-image: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1)) !important;
 }
 
+.projects-link-badge:hover{
+    filter: drop-shadow(2px 2px 1px #000000);
+    transform: translateY(-5px);
+    transition: 0.2s ease-in-out;}
+
 .projects-badge-icons {
     width: 2rem;
 }
@@ -479,7 +484,6 @@ input[name="btnradioprojects"]:checked+label {
     width: 5rem;
 }
 
-
 .triggerAnimation {
     animation: slide-in 2s;
     animation-iteration-count: 1;
@@ -489,7 +493,7 @@ input[name="btnradioprojects"]:checked+label {
 @keyframes slide-in {
     0% {
         opacity: 0;
-        transform: translate(100px, 0px)
+        transform: translate(5%, 0px)
     }
 
     100% {
@@ -497,27 +501,6 @@ input[name="btnradioprojects"]:checked+label {
         transform: translate(0px, 0px)
     }
 }
-
-/*
-.carousel {
-    background-color: #efefef;
-    border-radius: 10px;
-}
-
-.card-carousel {
-    background-color: transparent;
-    border: none;
-    padding: 2rem;
-    border-radius: 10px;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    margin-bottom: 5rem;
-}
-
-.carousel-item {
-    height: 100%;
-}
-*/
 
 /* ----- Animate code buttons -----*/
 @keyframes float {
