@@ -24,6 +24,7 @@ Personal Portfolio Website
 ## To-do list
 * Remove color overlay effect in 'Projects' section
 * Add shine effect 
+* Website Logo
 
 ## 🛠️ Tools
 * HTML
