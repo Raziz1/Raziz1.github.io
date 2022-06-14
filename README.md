@@ -21,6 +21,10 @@ Personal Portfolio Website
 * Remove outlines
 * Change project section
 
+## To-do list
+* Remove color overlay effect in 'Projects' section
+* Add shine effect 
+
 ## 🛠️ Tools
 * HTML
 * CSS
@@ -31,11 +35,12 @@ Personal Portfolio Website
 | Color  | Hex |
 |  :---: |  :---: |
 | White  | #ffffff  |
-| Dark Purple  | #040e41  |
-| Light Gray  | #efefef  |
-| Dark Purple  | #303b72  |
+| Dark Purple  | #6D83F2  |
+| Light Blue  | #6A98F0  |
+| Dark Gray  | #383838  |
 | Dark Yellow  | #f5de34  |
-| Dark Blue  | #0152b1  |
+| Blue Gradient  | linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)  |
+| Light Blue  | #C7D0FF  |
 | Black  | #000000  |
 
 ## 🔠 Font
