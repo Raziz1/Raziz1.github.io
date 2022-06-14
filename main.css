@@ -104,7 +104,7 @@ body {
 }
 
 .intro-image {
-    width: 30vw;
+    width: 30vw; /* Scales with website width*/
     filter: drop-shadow(3px 3px 1px #000000);
     animation: onLoad 2s;
     /* Adds a sliding in animation for the intro image*/
@@ -130,14 +130,14 @@ body {
     position: absolute;
     width: 20vw;
     left: 0;
-    top: 20%;
+    top: 25%;
 }
 
 .wire-2 {
     position: absolute;
     width: 20vw;
     right: 0;
-    top: 20%
+    top: 25%
 }
 
 .chevron-down {
@@ -189,7 +189,6 @@ body {
     width: 3rem;
 }
 
-
 /* ========== About section ========== */
 .svg-background {
     /*z-index: -1;*/
@@ -222,24 +221,8 @@ body {
     box-shadow: rgba(4, 14, 65, 0.4) 10px 5px, rgba(4, 14, 65, 0.3) 20px 10px, rgba(4, 14, 65, 0.2) 30px 15px, rgba(4, 14, 65, 0.1) 40px 20px, rgba(4, 14, 65, 0.05) 50px 25px;
 }
 
-@keyframes floating_space {
-    0% {
-        transform: translate(0, 0px);
-    }
-
-    50% {
-        transform: translate(1vw, 1vw);
-    }
-
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
 /* ----- Buttons ----- */
 .btn-about {
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
     padding: 2vw;
     width: 20%;
@@ -259,9 +242,9 @@ body {
 }
 
 .intrest-image {
+    /*Ensure the button images span the entire width of the button*/
     width: 100%;
 }
-
 
 /* ========== Project section ========== */
 .projects-title {
@@ -283,7 +266,6 @@ input[name="btnradioprojects"]:checked+label {
     font-size: 1.5rem;
     box-shadow: none !important;
     outline: none !important;
-
     border-radius: 10px;
 }
 
@@ -323,7 +305,6 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .card-body {
-    /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 190, 190, 1)) !important;*/
     text-align: start;
     width: 100%;
     padding: 2rem;
@@ -459,11 +440,6 @@ input[name="btnradioprojects"]:checked+label {
 /* ----- Tools button ----- */
 .btn-tools {
     background-color: #ffffff;
-    /*
-    border-style: outset;
-    border-color: rgb(118, 118, 118) !important;
-    border-width: 4px;
-    */
     border-radius: 50%;
     max-width: 200px;
     font-family: "Source Sans Pro";
@@ -490,6 +466,7 @@ input[name="btnradioprojects"]:checked+label {
 
 }
 
+/* Animate tools buttons */
 @keyframes slide-in {
     0% {
         opacity: 0;
