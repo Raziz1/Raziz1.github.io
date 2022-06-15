@@ -104,7 +104,8 @@ body {
 }
 
 .intro-image {
-    width: 30vw; /* Scales with website width*/
+    width: 30vw;
+    /* Scales with website width*/
     filter: drop-shadow(3px 3px 1px #000000);
     animation: onLoad 2s;
     /* Adds a sliding in animation for the intro image*/
@@ -179,7 +180,7 @@ body {
 /*Animate the buttons on hover*/
 .btn-header:hover {
     border-radius: 50%;
-    background-color: rgba(199, 208, 255, 0.2)!important;
+    background-color: rgba(199, 208, 255, 0.2) !important;
     animation-name: float;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -308,6 +309,10 @@ input[name="btnradioprojects"]:checked+label {
     text-align: start;
     width: 100%;
     padding: 2rem;
+    /* Aligns footer text to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-title {
@@ -372,19 +377,9 @@ input[name="btnradioprojects"]:checked+label {
 
 }
 
-.card-body {
-    text-align: start;
-    width: 100%;
-    /* Aligns footer text to the bottom */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
 .small-cards-img {
-    width: 10rem;
-    padding: 1rem;
+    width: 8rem;
+    padding-top: 2rem;
 }
 
 /* -- Badges --*/
@@ -396,8 +391,8 @@ input[name="btnradioprojects"]:checked+label {
 
 .badges-group-small {
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .projects-badge {
@@ -422,7 +417,7 @@ input[name="btnradioprojects"]:checked+label {
     width: 2rem;
 }
 
-/* ========== Skills ========== */
+/* =============== Skills =============== */
 .skills-title {
     font-family: "Montserrat";
     color: #ffffff !important;
@@ -565,6 +560,7 @@ input[name="btnradioprojects"]:checked+label {
 .footer-text {
     margin-bottom: 0;
     display: inline;
+    white-space: nowrap
 }
 
 .footer-column {
