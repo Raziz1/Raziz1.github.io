@@ -329,11 +329,13 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .card-img-projects {
+    position:relative;
     width: 100%;
     opacity: 50%;
-    filter: grayscale(100%)
+
 }
 
+/*
 #speed-trap-img-body {
     background: linear-gradient(to bottom, rgba(106, 152, 240, 0.80), rgba(73, 97, 220, 0.80)), url(assets/speed-trap-poster.png) no-repeat top center;
     background-size: contain;
@@ -351,11 +353,11 @@ input[name="btnradioprojects"]:checked+label {
     background-size: contain;
     overflow: hidden;
 }
-
+*/
 .projects-large-cards:hover .card-img-projects {
     opacity: 100%;
-    filter: grayscale(0%);
     transition: 0.5s ease-in-out;
+
 }
 
 
