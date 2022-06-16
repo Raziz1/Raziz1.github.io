@@ -329,10 +329,10 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .card-img-projects {
-    position:relative;
+    position: relative;
     width: 100%;
-    opacity: 50%;
-
+    filter: brightness(75%);
+    transition: 0.5s ease-in-out;
 }
 
 /*
@@ -354,8 +354,9 @@ input[name="btnradioprojects"]:checked+label {
     overflow: hidden;
 }
 */
+
 .projects-large-cards:hover .card-img-projects {
-    opacity: 100%;
+    filter: brightness(100%);
     transition: 0.5s ease-in-out;
 
 }
