@@ -22,9 +22,7 @@ Personal Portfolio Website
 * Change project section
 
 ## To-do list
-* Remove color overlay effect in 'Projects' section
-* Add shine effect 
-* Website Logo
+* Work experience section
 
 ## 🛠️ Tools
 * HTML
