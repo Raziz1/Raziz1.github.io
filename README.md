@@ -23,6 +23,8 @@ Personal Portfolio Website
 
 ## To-do list
 * Work experience section
+* Shrink skills bubbles to screen size
+* Adjust intro section
 
 ## 🛠️ Tools
 * HTML
