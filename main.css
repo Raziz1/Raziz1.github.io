@@ -129,17 +129,28 @@ body {
 /*===== Background design wires =====*/
 .wire-1 {
     position: absolute;
-    width: 20vw;
+    width: 15vw;
     left: 0;
     top: 25%;
+    animation: loadIn 3s;
+
 }
 
 .wire-2 {
     position: absolute;
-    width: 20vw;
+    width: 15vw;
     right: 0;
-    top: 25%
+    top: 25%;
+    transform: scaleX(-1);
+    animation: loadIn 3s;
 }
+
+/* Animate the wires fading in */
+@keyframes loadIn {
+ 0%{opacity: 0%;}
+ 100%{opacity: 100%;}    
+}
+
 
 .chevron-down {
     color: #efefef;
