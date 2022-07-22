@@ -25,6 +25,7 @@ Personal Portfolio Website
 * Work experience section
 * Shrink skills bubbles to screen size
 * Adjust intro section
+* Add circles to the skills section
 
 ## 🛠️ Tools
 * HTML
