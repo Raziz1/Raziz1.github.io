@@ -23,9 +23,8 @@ Personal Portfolio Website
 
 ## To-do list
 * Work experience section
-* Shrink skills bubbles to screen size
-* Adjust intro section
 * Add circles to the skills section
+* Fix card alignment in the projects section
 
 ## 🛠️ Tools
 * HTML
