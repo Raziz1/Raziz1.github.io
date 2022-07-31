@@ -145,6 +145,42 @@ body {
     animation: loadIn 3s;
 }
 
+/*Media queries for different size screens*/
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) { 
+    .wire-1{top: 25%}
+    .wire-2{top: 25%;}
+ }
+ /* Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) { 
+    .wire-1{top: 30%}
+    .wire-2{top: 30%;}
+ }
+
+ /* Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) { 
+    .wire-1{top: 20%}
+    .wire-2{top: 20%;}
+ }
+
+ /* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) { 
+    .wire-1{top: 20%}
+    .wire-2{top: 20%;}
+ }
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1399.98px) { 
+    .wire-1{top: 15%}
+    .wire-2{top: 15%;}
+ }
+
+ /* XX-Large devices (larger desktops) */
+ @media (min-width: 2559.98px) { 
+    .wire-1{top: -5%}
+    .wire-2{top: -5%;}
+ }
+
 /* Animate the wires fading in */
 @keyframes loadIn {
  0%{opacity: 0%;}
