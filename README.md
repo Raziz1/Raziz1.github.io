@@ -23,8 +23,10 @@ Personal Portfolio Website
 
 ## To-do list
 * Work experience section
-* Add circles to the skills section
 * Fix card alignment in the projects section
+* Add scroll animation
+* Add Header underline
+* Add ENG1P13 Engineering Portfolio
 
 ## 🛠️ Tools
 * HTML
