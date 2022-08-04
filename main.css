@@ -256,6 +256,7 @@ body {
     color: #efefef !important;
     font-size: 1.25rem;
     line-height: normal;
+    margin-top: 1rem;
 }
 
 .about-image {
@@ -299,7 +300,12 @@ body {
     font-family: "Montserrat";
     color: #383838 !important;
     font-size: 3rem;
-    padding-bottom: 1rem;
+}
+
+.line-break{
+    width: 40px;
+    height: 5px;
+    margin: 0 0;
 }
 
 /* Radiobutton sections */
@@ -347,7 +353,8 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .projects-large-cards:hover {
-    filter: drop-shadow(5px 5px 3px #000000);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+    /*filter: drop-shadow(5px 5px 3px #000000);*/
     transform: translateY(-5px);
 
 }
@@ -422,7 +429,8 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .projects-small-cards:hover {
-    filter: drop-shadow(5px 5px 3px #000000);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+    /*filter: drop-shadow(5px 5px 3px #383838);*/
     transform: translateY(-5px);
 
 }
@@ -472,7 +480,6 @@ input[name="btnradioprojects"]:checked+label {
     font-family: "Montserrat";
     color: #ffffff !important;
     font-size: 3rem;
-    padding-bottom: 1rem;
 }
 
 .skills-header {

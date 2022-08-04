@@ -25,8 +25,7 @@ Personal Portfolio Website
 * Work experience section
 * Fix card alignment in the projects section
 * Add scroll animation
-* Add Header underline
-* Add ENG1P13 Engineering Portfolio
+* Add photo gallery section
 
 ## 🛠️ Tools
 * HTML
