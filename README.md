@@ -24,7 +24,7 @@ Personal Portfolio Website
 ## To-do list
 * Work experience section
 * Fix card alignment in the projects section
-* Add scroll animation
+* Add typewriter text animation
 * Add photo gallery section
 
 ## 🛠️ Tools
