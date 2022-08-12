@@ -24,6 +24,9 @@ Personal Portfolio Website
 ## To-do list
 * Work experience section
 * Fix card alignment in the projects section
+* Change Font
+* Add Clubs section
+* Change buttons style in about me section
 * Add typewriter text animation
 * Add photo gallery section
 
