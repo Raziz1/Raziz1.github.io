@@ -258,17 +258,22 @@ body {
     border: none !important;
     background-color: transparent !important;
     border: 0;
-    filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(59deg) brightness(106%) contrast(101%);
+    border-radius: 50%;
     /*Apply filter so that the icon appears white*/
+    filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(59deg) brightness(106%) contrast(101%);
+    transition: 0.2s ease-in-out
 }
 
 /*Animate the buttons on hover*/
 .btn-header:hover {
-    border-radius: 50%;
     background-color: rgba(199, 208, 255, 0.2) !important;
+
+    transform: scale(0.90);
+    /*
     animation-name: float;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    */
 }
 
 .header-img {
@@ -312,25 +317,34 @@ body {
 .btn-about {
     border-radius: 50%;
     padding: 2vw;
-    width: 20%;
     margin: 0.5rem;
     background-color: #efefef !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
 
     /* Button Borders */
+    /*
     border-style: outset;
     border-color: rgb(118, 118, 118) !important;
     border-width: 4px;
+    */
+    transition: 0.2s ease-in-out;
+
 }
 
 .btn-about:hover {
-    filter: drop-shadow(3px 3px 1px #000000);
-    transform: translateY(-5px);
-    transition: 0.2s ease-in-out;
+    filter: drop-shadow(3px 3px 1px #383838);
+    /*transform: translateY(-5px);*/
+    transform: scale(0.90);
 }
 
 .intrest-image {
     /*Ensure the button images span the entire width of the button*/
     width: 100%;
+
+    /* Center the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ========== Project section ========== */
@@ -358,7 +372,7 @@ input[name="btnradioprojects"]:checked+label {
     font-size: 1.5rem;
     box-shadow: none !important;
     outline: none !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .btn-projects:hover {
@@ -372,7 +386,7 @@ input[name="btnradioprojects"]:checked+label {
 /* ---------- Large Cards ---------- */
 .projects-large-cards {
     align-items: center;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: auto;
     background-color: #efefef;
     height: 100%;
@@ -458,7 +472,7 @@ input[name="btnradioprojects"]:checked+label {
 .projects-small-cards {
     background-color: #efefef;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: auto;
     height: 100%;
     transition: 0.2s ease-in-out;
@@ -493,6 +507,7 @@ input[name="btnradioprojects"]:checked+label {
 
 .projects-badge {
     padding: 10px;
+    border-radius: 5px;
     background-image: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1)) !important;
     /*filter: drop-shadow(2px 2px 2px #000000);*/
 }
@@ -501,12 +516,11 @@ input[name="btnradioprojects"]:checked+label {
     padding: 10px;
     border-radius: 50%;
     background-image: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1)) !important;
+    transition: 0.3s ease-in-out;
 }
 
 .projects-link-badge:hover {
-    filter: drop-shadow(2px 2px 1px #000000);
-    transform: translateY(-5px);
-    transition: 0.2s ease-in-out;
+    transform: scale(0.90);    
 }
 
 .projects-badge-icons {
@@ -543,7 +557,7 @@ input[name="btnradioprojects"]:checked+label {
     animation-name: float;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    filter: drop-shadow(3px 3px 1px #000000);
+    filter: drop-shadow(3px 3px 1px #383838);
 }
 
 .btn-skills-image {
@@ -610,8 +624,8 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .form-control {
-    border-radius: 10px;
-    filter: drop-shadow(3px 3px 1px #000000);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
     font-family: "Montserrat";
     font-size: 1rem;
 }
@@ -626,13 +640,19 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .btn-contact {
-    filter: drop-shadow(3px 3px 1px #000000);
-    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+    border-radius: 5px;
     font-family: "Montserrat";
     font-size: 1rem;
     background: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1));
     border: none;
     color: #efefef;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-contact:hover{
+    color: #efefef;
+    transform: scale(0.90);    
 }
 
 .contact-img {
