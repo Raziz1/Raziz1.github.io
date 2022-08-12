@@ -27,6 +27,7 @@ Personal Portfolio Website
 * Add Clubs section
 * Add typewriter text animation
 * Add photo gallery section
+* Add dark mode
 
 ## 🛠️ Tools
 * HTML
@@ -49,3 +50,4 @@ Personal Portfolio Website
 ## 🔠 Font
 * Montserrat
 * Source Sans Pro
+* Poppins
