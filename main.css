@@ -94,7 +94,7 @@ body {
     font-family: "Montserrat";
     color: #efefef !important;
     font-size: 4em;
-    filter: drop-shadow(3px 3px 1px #000000);
+    filter: drop-shadow(3px 3px 1px #383838);
 }
 
 /* This intro text has the typewriter animation*/
@@ -102,13 +102,12 @@ body {
     font-family: "Source Sans Pro";
     color: #efefef !important;
     font-size: 1.5em;
-    
 }
 
 .intro-image {
     width: 30vw;
     /* Scales with website width*/
-    filter: drop-shadow(3px 3px 1px #000000);
+    filter: drop-shadow(3px 3px 1px #383838);
     animation: onLoad 2s;
     /* Adds a sliding in animation for the intro image*/
 }
@@ -538,6 +537,8 @@ input[name="btnradioprojects"]:checked+label {
     font-family: "Source Sans Pro";
     color: #ffffff !important;
     font-size: 2rem;
+    /*filter: drop-shadow(3px 3px 1px #383838);*/
+
 }
 
 
