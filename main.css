@@ -3,7 +3,7 @@ html {
     padding: 0;
     height: 100%;
     /* Allows divs to extend full height of screen */
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -32,6 +32,10 @@ body {
 #projects {
     padding: 60px 0;
     background-color: #ffffff;
+}
+
+#experience {
+    padding: 60px 0;
 }
 
 #skills {
@@ -519,12 +523,120 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .projects-link-badge:hover {
-    transform: scale(0.90);    
+    transform: scale(0.90);
 }
 
 .projects-badge-icons {
     width: 2rem;
 }
+
+/* =============== Experience =============== */
+.experience-title {
+    font-family: "Montserrat";
+    color: #efefef !important;
+    font-size: 3rem;
+}
+
+.experience-header {
+    font-family: "Montserrat";
+    color: #efefef !important;
+    font-size: 2rem;
+    filter: drop-shadow(3px 3px 1px #383838);
+
+}
+
+.experience-subtitle {
+    font-family: "Montserrat";
+    color: #efefef !important;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-family: "Source Sans Pro";
+    color: #efefef !important;
+    font-size: 1rem;
+}
+
+.experience-date {
+    font-family: "Source Sans Pro";
+    color: #efefef !important;
+    font-size: 1rem;
+}
+
+.timeline-icon {
+    border-radius: 50%;
+    padding: 2vw;
+    margin: 0.5rem;
+    background-color: #efefef !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+
+    max-width: 10vw;
+    min-width: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+
+.timeline-icon:hover {
+    filter: drop-shadow(3px 3px 1px #383838);
+    /*transform: translateY(-5px);*/
+    transform: scale(0.90);
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    margin: 0 0;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    margin-left: -3px;
+}
+
+/* Timeline circle */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -13px;
+    background-color: #4961DC;
+    border: 4px solid white;
+    top: 45%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-button {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    background: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1));
+    border: none;
+    color: #efefef;
+    transition: 0.3s ease-in-out;
+    text-decoration: none !important;
+    padding: 0.5rem;
+}
+
+.timeline-button:hover {
+    color: #efefef;
+    transform: scale(0.90);
+}
+
+.timeline-button-text {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
 
 /* =============== Skills =============== */
 .skills-title {
@@ -540,6 +652,7 @@ input[name="btnradioprojects"]:checked+label {
     /*filter: drop-shadow(3px 3px 1px #383838);*/
 
 }
+
 
 
 /* ----- Tools button ----- */
@@ -651,9 +764,9 @@ input[name="btnradioprojects"]:checked+label {
     transition: 0.3s ease-in-out;
 }
 
-.btn-contact:hover{
+.btn-contact:hover {
     color: #efefef;
-    transform: scale(0.90);    
+    transform: scale(0.90);
 }
 
 .contact-img {
