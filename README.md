@@ -23,8 +23,8 @@ Personal Portfolio Website
 
 ## To-do list
 * Work experience section
+* Try different fonts
 * Fix card alignment in the projects section
-* Add Clubs section
 * Add typewriter text animation
 * Add photo gallery section
 * Add dark mode
