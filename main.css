@@ -22,6 +22,8 @@ body {
 #intro {
     padding: 60px 0;
     background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(73, 97, 220));
+    /* Ensure that the intro section fills up the entire viewport so other sections do not leak into the viewport */
+    min-height: 100vh;
 }
 
 #about {
