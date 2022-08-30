@@ -1,13 +1,3 @@
-//========== Smooth Scroll ==========//
-const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
-if (!!isReduced) {
-  // DON'T use an amination here!
-} else {
-  // DO use an animation here!
-  var menu = document.querySelector('.navbar');
-  scrollSpy(menu);
-}
-
 //========== Changing between project sections ==========//
 let button = document.querySelectorAll('.btn-check') //Get the object containing the button class '.btn-check'
 let card = document.querySelectorAll('.card-container') //Get the object containing the project cards
