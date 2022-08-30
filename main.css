@@ -272,7 +272,6 @@ body {
 /*Animate the buttons on hover*/
 .btn-header:hover {
     background-color: rgba(199, 208, 255, 0.2) !important;
-
     transform: scale(0.90);
     /*
     animation-name: float;
@@ -320,10 +319,11 @@ body {
 
 /* ----- Buttons ----- */
 .btn-about {
-    -moz-border-radius: 50%; /*works on Firefox */
-    -webkit-border-radius:50%; 
+    -moz-border-radius: 50%;
+    /*works on Firefox */
+    -webkit-border-radius: 50%;
     border-radius: 50%;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #efefef !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
 
@@ -563,20 +563,25 @@ input[name="btnradioprojects"]:checked+label {
     font-size: 1rem;
 }
 
-.timeline-icon {
+.timeline-btn {
     border-radius: 50%;
-    padding: 2vw;
+    padding: 1rem;
     margin: 0.5rem;
     background-color: #efefef !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
-
     max-width: 10vw;
     min-width: 50px;
     transition: 0.2s ease-in-out;
 }
 
+.timeline-icon {
+    /*Ensure the button images span the entire width of the button*/
+    width: 100%;
+    /* Center the image */
+    display: inline-block
+}
 
-.timeline-icon:hover {
+.timeline-btn:hover {
     filter: drop-shadow(3px 3px 1px #383838);
     /*transform: translateY(-5px);*/
     transform: scale(0.90);
@@ -614,6 +619,7 @@ input[name="btnradioprojects"]:checked+label {
     z-index: 1;
 }
 
+/* More details button */
 .timeline-button {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
     border-radius: 5px;
@@ -769,7 +775,7 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .contact-img {
-    width: 4rem;
+    width: 3rem;
 }
 
 /* ========== Footer ========== */
