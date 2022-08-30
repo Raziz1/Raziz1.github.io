@@ -321,8 +321,7 @@ body {
 /* ----- Buttons ----- */
 .btn-about {
     border-radius: 50%;
-    padding: 2vw;
-    margin: 0.5rem;
+    padding: 2rem;
     background-color: #efefef !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
 
@@ -345,7 +344,6 @@ body {
 .intrest-image {
     /*Ensure the button images span the entire width of the button*/
     width: 100%;
-
     /* Center the image */
     display: block;
     margin-left: auto;
