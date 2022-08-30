@@ -320,7 +320,7 @@ body {
 
 /* ----- Buttons ----- */
 .btn-about {
-    -webkit-border-radius:0; 
+    -webkit-border-radius:50%; 
     border-radius: 50%;
     padding: 2rem;
     background-color: #efefef !important;
