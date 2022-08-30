@@ -347,7 +347,7 @@ body {
     /*Ensure the button images span the entire width of the button*/
     width: 100%;
     /* Center the image */
-    display: inline block;
+    display: inline-block
 }
 
 /* ========== Project section ========== */
@@ -619,7 +619,7 @@ input[name="btnradioprojects"]:checked+label {
     border-radius: 5px;
     font-family: "Montserrat";
     font-size: 1rem;
-    background: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1));
+    background-color: #383838;
     border: none;
     color: #efefef;
     transition: 0.3s ease-in-out;
@@ -633,6 +633,7 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .timeline-button-text {
+    display: inline-block;
     margin-top: auto !important;
     margin-bottom: auto !important;
 }
