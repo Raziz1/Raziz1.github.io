@@ -322,6 +322,7 @@ body {
 .btn-about {
     -moz-border-radius: 50%; /*works on Firefox */
     -webkit-border-radius:50%; 
+    -webkit-appearance: none;
     border-radius: 50%;
     padding: 2rem;
     background-color: #efefef !important;
@@ -344,7 +345,6 @@ body {
 }
 
 .intrest-image {
-    padding:0;
     /*Ensure the button images span the entire width of the button*/
     width: 100%;
     /* Center the image */
