@@ -558,6 +558,7 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .experience-date {
+    font-style: italic;
     font-family: "Source Sans Pro";
     color: #efefef !important;
     font-size: 1rem;
