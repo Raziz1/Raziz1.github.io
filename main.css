@@ -122,7 +122,7 @@ body {
 @keyframes onLoad {
     from {
         opacity: 0;
-        transform: translate(-200px);
+        transform: translate(-10%);
 
     }
 
@@ -443,26 +443,6 @@ input[name="btnradioprojects"]:checked+label {
     filter: brightness(75%);
     transition: 0.5s ease-in-out;
 }
-
-/*
-#speed-trap-img-body {
-    background: linear-gradient(to bottom, rgba(106, 152, 240, 0.80), rgba(73, 97, 220, 0.80)), url(assets/speed-trap-poster.png) no-repeat top center;
-    background-size: contain;
-    overflow: hidden;
-}
-
-#evoborne-img-body {
-    background: linear-gradient(to bottom, rgba(106, 152, 240, 0.80), rgba(73, 97, 220, 0.80)), url(assets/evoborne-poster.jpg) no-repeat top center;
-    background-size: contain;
-    overflow: hidden;
-}
-
-#hill-climb-img-body {
-    background: linear-gradient(to bottom, rgba(106, 152, 240, 0.80), rgba(73, 97, 220, 0.80)), url(assets/hill-climb-remake.png) no-repeat top center;
-    background-size: contain;
-    overflow: hidden;
-}
-*/
 
 .projects-large-cards:hover .card-img-projects {
     filter: brightness(100%);
