@@ -111,7 +111,6 @@ body {
 }
 
 .intro-image {
-    overflow-x:hidden;
     width: 30vw;
     /* Scales with website width*/
     animation: onLoad 2s;
@@ -319,11 +318,12 @@ body {
   
 /* ----- Buttons ----- */
 .btn-about {
-    -moz-border-radius: 50%;
+    -moz-border-radius: 15%;
     /*works on Firefox */
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    padding: 1.5rem;
+    -webkit-border-radius: 15%;
+    /*border-radius: 50%;*/
+    border-radius: 15%;
+    padding: 20%;
     background-color: #efefef !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
 
@@ -545,7 +545,7 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .timeline-btn {
-    border-radius: 50%;
+    border-radius: 15%;
     padding: 1rem;
     margin: 0.5rem;
     background-color: #efefef !important;
@@ -644,7 +644,7 @@ input[name="btnradioprojects"]:checked+label {
 /* ----- Tools button ----- */
 .btn-skills {
     background-color: #ffffff;
-    border-radius: 50%;
+    border-radius: 15%;
     max-width: 200px;
     font-family: "Source Sans Pro";
     color: #efefef !important;
