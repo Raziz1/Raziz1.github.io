@@ -12,21 +12,12 @@ Personal Portfolio Website
     <img align='Left' src="personal_website_v2.png? raw=true" >
 </p>
 
-
-## 📃 Version 2 Changes
-* Remove Bitmoji
-* Change color scheme
-* Change font
-* Remove rounded corners
-* Remove outlines
-* Change project section
-
 ## To-do list
-* Update experience section
-* Fix tools buttons on project cards 
-* Try different fonts
-* Fix card alignment in the projects section
-* Add photo gallery section
+* Potential for complete overhaul of the desgin (Try something sleeker with new fonts)
+* Pop out projects section cards
+* Try sleeker project cards
+* Add animations
+* Change experience section (Accordian style css)
 * Add dark mode
 
 ## 🛠️ Tools
