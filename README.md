@@ -16,8 +16,8 @@ Personal Portfolio Website
 * Potential for complete overhaul of the desgin (Try something sleeker with new fonts)
 * Pop out projects section cards
 * Try sleeker project cards
-* Add animations
 * Change experience section (Accordian style css)
+* Clean up code
 * Add dark mode
 
 ## 🛠️ Tools
