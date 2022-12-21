@@ -13,7 +13,9 @@ Personal Portfolio Website
 </p>
 
 ## To-do list
-* Potential for complete overhaul of the desgin (Try something sleeker with new fonts)
+* Fix intro page hover opacity transition for side wires
+* Add circuit animation for about page
+* New font
 * Pop out projects section cards
 * Try sleeker project cards
 * Change experience section (Accordian style css)

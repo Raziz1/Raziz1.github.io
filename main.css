@@ -14,21 +14,20 @@ body {
     background-attachment: fixed;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /*background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(73, 97, 220));*/
-    background-color: rgb(73, 97, 220) !important;
+    background-color: #383838 !important;
 }
 
 /* ========== Section Padding ========== */
 /* Padding allows you to directly focus on the section when you click on the navbar links*/
 #intro {
     padding: 60px 0;
-    background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(73, 97, 220));
+    /*background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(73, 97, 220));*/
     /* Ensure that the intro section fills up the entire viewport so other sections do not leak into the viewport */
     min-height: 100vh;
 }
 
 #about {
     padding: 60px 0;
-    background-color: rgb(73, 97, 220) !important;
 }
 
 #projects {
@@ -54,7 +53,7 @@ body {
 
 /* ========== Nav bar ========== */
 .navbar {
-    background: #383838
+    background: #212122
 }
 
 .navbar-brand {
@@ -98,7 +97,7 @@ body {
 /* ========== Intro Section ========== */
 .name {
     font-family: "Montserrat";
-    color: #efefef !important;
+    color: #d9c084 !important;
     font-size: 4em;
     filter: drop-shadow(3px 3px 1px #383838);
 }
@@ -111,45 +110,37 @@ body {
 }
 
 .intro-image {
-    width: 30vw;
+    
+    width:20vw;
+    border-radius: 50%;
     /* Scales with website width*/
-    animation: onLoad 2s;
     /* Adds a sliding in animation for the intro image*/
 }
 
-/* Intro image animation that slides in on website loading*/
-@keyframes onLoad {
-    from {
-        opacity: 0;
-        transform: translate(-10%);
-
-    }
-
-    /* Slide in the image and fade it in */
-    to {
-        opacity: 1;
-        transform: translate(0%);
-    }
+/*===== Background design wires =====*/
+.wire-1:hover,.wire-2:hover{
+ opacity:100%;   
 }
 
-/*===== Background design wires =====*/
 .wire-1 {
+    opacity:50%;
     position: absolute;
     width: 15vw;
     left: 0;
     top: 25%;
-    animation: loadIn 3s;
-
+    transition: ease-in-out 0.5s;
 }
 
 .wire-2 {
+    opacity:50%;
     position: absolute;
     width: 15vw;
     right: 0;
     top: 25%;
-    transform: scaleX(-1);
-    animation: loadIn 3s;
+    transform: scaleX(-1);    
+    transition: ease-in-out 0.5s;
 }
+
 
 /*Media queries for different size screens*/
 /* X-Small devices (portrait phones, less than 576px) */
@@ -218,17 +209,6 @@ body {
     }
 }
 
-/* Animate the wires fading in */
-@keyframes loadIn {
-    0% {
-        opacity: 0%;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
-
 
 .chevron-down {
     color: #efefef;
@@ -270,13 +250,8 @@ body {
 
 /*Animate the buttons on hover*/
 .btn-header:hover {
-    background-color: rgba(199, 208, 255, 0.2) !important;
+    background-color: rgba(199, 208, 255, 1) !important;
     transform: scale(0.90);
-    /*
-    animation-name: float;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    */
 }
 
 .header-img {
@@ -365,12 +340,12 @@ body {
 
 /* Radiobutton sections */
 input[name="btnradioprojects"]:checked+label {
-    background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(106, 152, 240)) !important;
+    background-color: #a5915f;
 }
 
 .btn-projects {
     font-family: "Montserrat";
-    background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(73, 97, 220));
+    background-color: #978249;
     color: #efefef !important;
     font-size: 1.5rem;
     box-shadow: none !important;
@@ -379,7 +354,7 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .btn-projects:hover {
-    background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(106, 152, 240));
+    background-color: #a5915f;
 }
 
 .btn-icon {
@@ -491,14 +466,13 @@ input[name="btnradioprojects"]:checked+label {
 .projects-badge {
     padding: 10px;
     border-radius: 5px;
-    background-image: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1)) !important;
-    /*filter: drop-shadow(2px 2px 2px #000000);*/
+    background-color: #978249;
 }
 
 .projects-link-badge {
     padding: 10px;
     border-radius: 50%;
-    background-image: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1)) !important;
+    background-color: #978249;
     transition: 0.3s ease-in-out;
 }
 
@@ -593,7 +567,7 @@ input[name="btnradioprojects"]:checked+label {
     width: 25px;
     height: 25px;
     left: -13px;
-    background-color: #4961DC;
+    background-color: #978249;
     border: 4px solid white;
     top: 45%;
     border-radius: 50%;
@@ -719,7 +693,7 @@ input[name="btnradioprojects"]:checked+label {
     border-radius: 5px;
     font-family: "Montserrat";
     font-size: 1rem;
-    background: linear-gradient(to bottom, rgba(106, 152, 240, 1), rgba(73, 97, 220, 1));
+    background-color: #978249;
     border: none;
     color: #efefef;
     transition: 0.3s ease-in-out;
@@ -736,7 +710,7 @@ input[name="btnradioprojects"]:checked+label {
 
 /* ========== Footer ========== */
 .footer {
-    background-color: #383838;
+    background-color: #212122;
     outline: none !important;
     border: none !important
 }
