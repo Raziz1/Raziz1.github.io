@@ -60,12 +60,13 @@ body {
     font-family: "Montserrat";
     color: #efefef !important;
     font-size: 200%;
+    font-weight: bold;
 }
 
 .nav-link {
-    font-family: "Source Sans Pro";
+    font-family: "Montserrat";
     color: #efefef !important;
-    font-size: 150%;
+    font-size: 125%;
     position: relative;
 }
 
@@ -100,6 +101,7 @@ body {
     color: #d9c084 !important;
     font-size: 4em;
     filter: drop-shadow(3px 3px 1px #383838);
+    font-weight: bold;
 }
 
 /* This intro text has the typewriter animation*/
@@ -269,7 +271,8 @@ body {
 .about-title {
     font-family: "Montserrat";
     color: #efefef !important;
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .about-text {
@@ -330,6 +333,7 @@ body {
     font-family: "Montserrat";
     color: #383838 !important;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 .line-break {
@@ -401,13 +405,14 @@ input[name="btnradioprojects"]:checked+label {
 
 .card-title {
     font-family: "Montserrat";
+    font-weight: bold;
     /*color:#000000 !important;*/
     color: #383838 !important;
     font-size: 2em;
 }
 
 .card-text {
-    font-family: "Source Sans Pro";
+    font-family: "Montserrat";
     color: #383838 !important;
     /*color: #000000!important;*/
 }
@@ -487,8 +492,9 @@ input[name="btnradioprojects"]:checked+label {
 /* =============== Experience =============== */
 .experience-title {
     font-family: "Montserrat";
-    color: #efefef !important;
     font-size: 3rem;
+    font-weight: bold;
+    color: #efefef !important;
 }
 
 .experience-header {
@@ -583,7 +589,7 @@ input[name="btnradioprojects"]:checked+label {
     background-color: #383838;
     border: none;
     color: #efefef;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     text-decoration: none !important;
     padding: 0.5rem;
 }
@@ -603,14 +609,15 @@ input[name="btnradioprojects"]:checked+label {
 /* =============== Skills =============== */
 .skills-title {
     font-family: "Montserrat";
-    color: #ffffff !important;
     font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff !important;
 }
 
 .skills-header {
-    font-family: "Source Sans Pro";
+    font-family: "Montserrat";
     color: #ffffff !important;
-    font-size: 2rem;
+    font-size: 1rem;
     /*filter: drop-shadow(3px 3px 1px #383838);*/
 
 }
@@ -620,8 +627,6 @@ input[name="btnradioprojects"]:checked+label {
     background-color: #ffffff;
     border-radius: 15%;
     max-width: 200px;
-    font-family: "Source Sans Pro";
-    color: #efefef !important;
     margin: 1rem;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
@@ -696,7 +701,7 @@ input[name="btnradioprojects"]:checked+label {
     background-color: #978249;
     border: none;
     color: #efefef;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .btn-contact:hover {
