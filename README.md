@@ -43,4 +43,4 @@ Personal Portfolio Website
 ## 🔠 Font
 * Montserrat
 * Source Sans Pro
-* Poppins
+* HELVETICA NEUE 97 BLACK CONDENSED OBLIQUE FONT
