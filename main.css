@@ -291,7 +291,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: rgba(4, 14, 65, 0.4) 10px 5px, rgba(4, 14, 65, 0.3) 20px 10px, rgba(4, 14, 65, 0.2) 30px 15px, rgba(4, 14, 65, 0.1) 40px 20px, rgba(4, 14, 65, 0.05) 50px 25px;
+    box-shadow: rgba(151, 130, 73, 0.4) 10px 5px, rgba(151, 130, 73, 0.3) 20px 10px, rgba(151, 130, 73, 0.2) 30px 15px, rgba(151, 130, 73, 0.1) 40px 20px, rgba(151, 130, 73, 0.05) 50px 25px;
 }
   
 /* ----- Buttons ----- */
