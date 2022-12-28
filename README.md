@@ -32,15 +32,14 @@ Personal Portfolio Website
 | Color  | Hex |
 |  :---: |  :---: |
 | White  | #ffffff  |
-| Dark Purple  | #6D83F2  |
-| Light Blue  | #6A98F0  |
+| Light Black  | #171719  |
+| Light Gold  | #d9c084  |
 | Dark Gray  | #383838  |
-| Dark Yellow  | #f5de34  |
-| Blue Gradient  | linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)  |
-| Light Blue  | #C7D0FF  |
+| Dark Gold  | #978249  |
+| Dark Green  | #046307  |
 | Black  | #000000  |
 
 ## 🔠 Font
 * Montserrat
 * Source Sans Pro
-* HELVETICA NEUE 97 BLACK CONDENSED OBLIQUE FONT
+* Helvetica Neue 97 black condensed oblique font 
