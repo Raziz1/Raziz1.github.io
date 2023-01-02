@@ -440,7 +440,6 @@ input[name="btnradioprojects"]:checked+label {
     height: 100%;
     transition: 0.2s ease-in-out;
     border: none;
-    margin-right: 1rem;
 }
 
 .projects-small-cards:hover {
