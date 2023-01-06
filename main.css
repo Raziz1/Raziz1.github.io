@@ -13,7 +13,6 @@ body {
     /* Prevents background gradient from repeating due to extneded height */
     background-attachment: fixed;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /*background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(73, 97, 220));*/
     background-color: #383838 !important;
 }
 
@@ -21,7 +20,6 @@ body {
 /* Padding allows you to directly focus on the section when you click on the navbar links*/
 #intro {
     padding: 60px 0;
-    /*background-image: linear-gradient(to bottom, rgb(106, 152, 240), rgb(73, 97, 220));*/
     /* Ensure that the intro section fills up the entire viewport so other sections do not leak into the viewport */
     min-height: 100vh;
 }
