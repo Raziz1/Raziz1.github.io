@@ -452,6 +452,10 @@ input[name="btnradioprojects"]:checked+label {
     padding-top: 2rem;
 }
 
+#deltahacks9{
+    width: 20rem!important;
+}
+
 /* -- Badges --*/
 .badges-group-large {
     text-align: start;
