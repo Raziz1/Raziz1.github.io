@@ -1,6 +1,13 @@
 # Raziz1.github.io
 Personal Portfolio Website
 
+## To-do list
+* Fix intro page hover opacity transition for side wires
+* Add circuit animation for about page
+* Fix Title Font
+* Pop out projects section cards
+* Add typescript animation 
+
 ## Version 1
 <p> 
     <img align='Left' src="Website_preview.png? raw=true" >
@@ -11,16 +18,6 @@ Personal Portfolio Website
 <p> 
     <img align='Left' src="personal_website_v2.png? raw=true" >
 </p>
-
-## To-do list
-* Fix intro page hover opacity transition for side wires
-* Add circuit animation for about page
-* New font
-* Pop out projects section cards
-* Try sleeker project cards
-* Change experience section (Accordian style css)
-* Clean up code
-* Add dark mode
 
 ## 🛠️ Tools
 * HTML
