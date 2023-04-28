@@ -259,13 +259,6 @@ body {
 }
 
 /* ========== About section ========== */
-.svg-background {
-    /*z-index: -1;*/
-    position: absolute;
-    width: 40% !important;
-    height: auto !important;
-}
-
 .about-title {
     font-family: "Montserrat";
     color: #efefef !important;
@@ -281,15 +274,33 @@ body {
     margin-top: 1rem;
 }
 
-.about-image {
+.parent-about-image{
     position: relative;
-    width: 25vw;
+}
+
+.svg-background {
+    position: relative;
+    height: auto !important;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    margin-top: auto;
+    filter: invert(47%) sepia(0%) saturate(1%) hue-rotate(79deg) brightness(91%) contrast(96%);
+}
+
+.svg-background:hover{
+    filter: invert(56%) sepia(9%) saturate(1845%) hue-rotate(6deg) brightness(89%) contrast(88%)
+}
+
+.about-image {
+    top : 19%;
+    left: 24%;
+    position: absolute;
+    width: 54%;
     border-radius: 50%;
     /*Center the image*/
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: rgba(151, 130, 73, 0.4) 10px 5px, rgba(151, 130, 73, 0.3) 20px 10px, rgba(151, 130, 73, 0.2) 30px 15px, rgba(151, 130, 73, 0.1) 40px 20px, rgba(151, 130, 73, 0.05) 50px 25px;
 }
   
 /* ----- Buttons ----- */
