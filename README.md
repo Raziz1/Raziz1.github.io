@@ -7,6 +7,8 @@ Personal Portfolio Website
 * Fix Title Font
 * Pop out projects section cards
 * Add typescript animation 
+* Optimize for mobile devices 
+* Reduce Font size 
 
 ## Version 1
 <p> 
