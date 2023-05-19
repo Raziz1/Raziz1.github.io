@@ -94,12 +94,16 @@ body {
 }
 
 /* ========== Intro Section ========== */
+.name:hover{
+    filter: drop-shadow(2px 2px 2px #000000);
+}
+
 .name {
     font-family: "Helvetica-Neue";
     color: #d9c084 !important;
     font-size: 4em;
-    filter: drop-shadow(3px 3px 1px #383838);
     font-weight: bold;
+    transition: ease-in-out 0.2s;
 }
 
 /* This intro text has the typewriter animation*/
@@ -120,6 +124,7 @@ body {
 /*===== Background design wires =====*/
 .wire-1:hover,.wire-2:hover{
  opacity:100%;   
+ filter: drop-shadow(3px 3px);
 }
 
 .wire-1 {
@@ -284,11 +289,11 @@ body {
     transition: ease-in-out;
     transition-duration: 0.5s;
     margin-top: auto;
-    filter: invert(47%) sepia(0%) saturate(1%) hue-rotate(79deg) brightness(91%) contrast(96%);
+    filter: invert(47%) sepia(0%) saturate(1%) hue-rotate(79deg) brightness(91%) contrast(96%) drop-shadow(3px 3px);
 }
 
 .svg-background:hover{
-    filter: invert(56%) sepia(9%) saturate(1845%) hue-rotate(6deg) brightness(89%) contrast(88%)
+    filter: invert(56%) sepia(9%) saturate(1845%) hue-rotate(6deg) brightness(89%) contrast(88%) drop-shadow(3px 3px);
 }
 
 .about-image {
