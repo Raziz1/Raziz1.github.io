@@ -124,7 +124,6 @@ body {
 /*===== Background design wires =====*/
 .wire-1:hover,.wire-2:hover{
  opacity:100%;   
- filter: drop-shadow(3px 3px);
 }
 
 .wire-1 {
@@ -133,6 +132,7 @@ body {
     width: 15vw;
     left: 0;
     top: 25%;
+    filter: drop-shadow(3px 3px);
     transition: ease-in-out 0.5s;
 }
 
@@ -143,6 +143,7 @@ body {
     right: 0;
     top: 25%;
     transform: scaleX(-1);    
+    filter: drop-shadow(3px 3px);
     transition: ease-in-out 0.5s;
 }
 
