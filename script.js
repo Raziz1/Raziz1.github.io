@@ -38,3 +38,9 @@ if (/Mobi/.test(navigator.userAgent)) {
   });
 }
 
+var typed = new Typed('.intro-descri', {
+  strings: ['Electrical Engineering @ <b>McMaster University</b>', 'Firmware Designer @ <b>Ciena</b>'],
+  typeSpeed: 35,
+  loop: true,
+  backDelay: 3000,
+});

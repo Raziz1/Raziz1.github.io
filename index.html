@@ -43,7 +43,7 @@
 <body>
     <!---------- Navbar ---------->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container-xxl">
+        <div class="container-fluid">
             <a href="#" class="navbar-brand">
                 <span>Rahim Aziz</span>
             </a>
@@ -79,7 +79,6 @@
     <!---------- Main images & Intro text ---------->
     <section id="intro">
         <div class="container">
-
             <div class="row justify-content-center align-items-center py-5">
 
                 <!-- Wire background design -->
@@ -95,17 +94,19 @@
                 <!-- Titles -->
                 <div class="col-sm-5 text-center">
                     <h1 class="name">RAHIM AZIZ</h1>
-                    <p class="intro-descri">Electrical Engineering @ McMaster University</p>
+                    <p class="intro-descri"><!--Electrical Engineering @ McMaster University--></p>
 
-                    <!-- Linkedin & Github button links -->
-                    <button type="button" class="btn-header" onclick="window.location.href='https://github.com/Raziz1'">
-                        <img src="/assets/github.svg" alt="Github Logo" class="header-img">
-                    </button>
+                    <div class="social-buttons">
+                        <!-- Linkedin & Github button links -->
+                        <button type="button" class="btn-header" onclick="window.location.href='https://github.com/Raziz1'">
+                            <img src="/assets/github.svg" alt="Github Logo" class="header-img">
+                        </button>
 
-                    <button type="button" class="btn-header"
-                        onclick="window.location.href='https://www.linkedin.com/in/rahim-aziz'">
-                        <img src="/assets/linkedin.svg" alt="Linkedin Logo" class="header-img">
-                    </button>
+                        <button type="button" class="btn-header"
+                            onclick="window.location.href='https://www.linkedin.com/in/rahim-aziz'">
+                            <img src="/assets/linkedin.svg" alt="Linkedin Logo" class="header-img">
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Wire background desing -->
@@ -1109,6 +1110,8 @@
         </script>
     <!-- Smooth Scroll -->
     <script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.x/dist/scrollspy.min.js"></script>
+    <!--Typing Animation-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Main local javascript file -->
     <script src="script.js"></script>
 </body>
