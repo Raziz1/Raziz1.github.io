@@ -166,6 +166,21 @@ body {
     .wire-2 {
         top: 25%;
     }
+    
+    .btn-projects {
+        font-family: "Montserrat";
+        background-color: #978249;
+        color: #efefef !important;
+        font-size: 1.5rem !important;
+        box-shadow: none !important;
+        outline: none !important;
+        border-radius: 5px;
+    }
+
+
+    .btn-icon {
+        font-size: 3rem !important;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -374,18 +389,17 @@ input[name="btnradioprojects"]:checked+label {
     font-family: "Montserrat";
     background-color: #978249;
     color: #efefef !important;
-    font-size: 1.5rem;
+    font-size: 4vw;
     box-shadow: none !important;
     outline: none !important;
     border-radius: 5px;
+}    
+.btn-icon {
+    font-size: 2rem;
 }
 
 .btn-projects:hover {
     background-color: #a5915f;
-}
-
-.btn-icon {
-    font-size: 3rem;
 }
 
 /* ---------- Large Cards ---------- */
