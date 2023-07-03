@@ -538,10 +538,10 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .experience-header {
+    padding-top: 2%;
     font-family: "Montserrat";
     color: #efefef !important;
     font-size: 2rem;
-    filter: drop-shadow(3px 3px 1px #383838);
 
 }
 
@@ -645,6 +645,59 @@ input[name="btnradioprojects"]:checked+label {
     margin-bottom: auto !important;
 }
 
+/* =========== Flip Cards ========== */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 85%;
+    height: auto;
+    border: none;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 30vw;
+    text-align: left;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: inset 200px 0 100em 3em #212122;
+    filter: drop-shadow(5px 5px 3px #212122);
+    padding: 1% 5% 0;
+
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #212121;
+    color: white;
+    transform: rotateY(180deg);
+  }
 
 /* =============== Skills =============== */
 .skills-title {
