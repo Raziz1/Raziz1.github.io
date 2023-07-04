@@ -156,7 +156,7 @@ body {
 }
 
 
-/*Media queries for different size screens*/
+/* ======================================== Media queries for different size screens ========================================*/
 /* X-Small devices (portrait phones, less than 576px) */
 @media (min-width: 575.98px) {
     .wire-1 {
@@ -567,10 +567,10 @@ input[name="btnradioprojects"]:checked+label {
 .timeline-btn {
     border-radius: 15%;
     padding: 1rem;
-    margin: 0.5rem;
+    margin-top: 0.5rem;
     background-color: #efefef !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
-    max-width: 10vw;
+    max-width: 8vw;
     min-width: 50px;
     transition: 0.2s ease-in-out;
 }
@@ -649,7 +649,7 @@ input[name="btnradioprojects"]:checked+label {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 85%;
+    width: 80%;
     height: auto;
     border: none;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
