@@ -2,11 +2,9 @@
 Personal Portfolio Website
 
 ## To-do list
-* Fix intro page hover opacity transition for side wires
-* Add circuit animation for about page
+* Fix intro page (Fix wires or add new background floating animation)
 * Fix Title Font
 * Pop out projects section cards
-* Add typescript animation 
 * Optimize for mobile devices 
 * Reduce Font size 
 
