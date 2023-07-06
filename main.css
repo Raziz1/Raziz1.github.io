@@ -469,8 +469,10 @@ input[name="btnradioprojects"]:checked+label {
 .card-img-projects {
     position: relative;
     width: 100%;
+    height: 100%;
     filter: brightness(75%);
     transition: 0.5s ease-in-out;
+    object-fit: cover;
 }
 
 .projects-large-cards:hover .card-img-projects {
