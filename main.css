@@ -184,6 +184,11 @@ body {
     .flip-card:hover .flip-card-inner {
         transform: rotateY(0deg)!important;
     }
+
+      /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+        box-shadow: inset 200px 0 20em 3em #212122!important;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -688,7 +693,7 @@ input[name="btnradioprojects"]:checked+label {
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
     border-radius: 10px;
-    box-shadow: inset 200px 0 100em 3em #212122;
+    box-shadow: inset 100px 0 10em 2em #212122;
     filter: drop-shadow(5px 5px 3px #212122);
     padding: 1% 5% 0;
 
