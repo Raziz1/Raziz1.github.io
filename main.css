@@ -256,6 +256,11 @@ body {
     /* Adds a sliding in animation for the intro image*/
 }
 
+.social-buttons
+{
+    margin-left: -1rem;
+}
+
 /*===== Background design wires =====*/
 /* ======================================== Media queries for different size screens ========================================*/
 /* X-Small devices (portrait phones, less than 576px) */
