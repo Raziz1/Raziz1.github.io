@@ -284,9 +284,14 @@ body {
         transform: rotateY(0deg)!important;
     }
 
-      /* Position the front and back side */
     .flip-card-front, .flip-card-back {
+        grid-area: 1/1!important;
+        min-height: 22rem;
         box-shadow: inset 200px 0 20em 3em #212122!important;
+    }
+
+    .flip-card-back{
+        display: initial!important;
     }
 }
 
@@ -652,6 +657,7 @@ input[name="btnradioprojects"]:checked+label {
     max-width: 8rem;
     min-width: 50px;
     transition: 0.2s ease-in-out;
+    margin-bottom: 2rem;
 }
 
 .timeline-icon {
@@ -711,6 +717,7 @@ input[name="btnradioprojects"]:checked+label {
     transition: 0.2s ease-in-out;
     text-decoration: none !important;
     padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .timeline-button:hover {
@@ -738,9 +745,9 @@ input[name="btnradioprojects"]:checked+label {
   
   /* This container is needed to position the front and back side */
   .flip-card-inner {
-    position: relative;
+    display: grid; /* here */
     width: 100%;
-    height: 50vw;
+    height: fit-content;
     max-height: 25rem!important;
     text-align: left;
     transition: transform 1s;
@@ -754,16 +761,15 @@ input[name="btnradioprojects"]:checked+label {
   
   /* Position the front and back side */
   .flip-card-front, .flip-card-back {
-    position: absolute;
+    grid-area: revert;
+    min-height: none;
     width: 100%;
-    height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
     border-radius: 10px;
-    box-shadow: inset 100px 0 10em 2em #212122;
+    box-shadow: inset 100px 0 4em 2em #212122;
     filter: drop-shadow(5px 5px 3px #212122);
     padding: 1% 5% 0;
-
   }
   
   /* Style the front side (fallback if image is missing) */
@@ -774,6 +780,7 @@ input[name="btnradioprojects"]:checked+label {
   
   /* Style the back side */
   .flip-card-back {
+    display: none;
     background-color: #212121;
     color: white;
     transform: rotateY(180deg);
