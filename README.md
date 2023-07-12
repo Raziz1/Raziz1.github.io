@@ -2,10 +2,10 @@
 Personal Portfolio Website
 
 ## To-do list
-* Fix intro page (Fix wires or add new background floating animation)
+* Optimize loading speeds (HTML Performance measurement)
+* Fix 'Best Practices Warnings'
 * Fix Title Font
 * Pop out projects section cards
-* Optimize for mobile devices 
 * Reduce Font size 
 
 ## Version 1
