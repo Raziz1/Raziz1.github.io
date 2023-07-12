@@ -748,7 +748,6 @@ input[name="btnradioprojects"]:checked+label {
     display: grid; /* here */
     width: 100%;
     height: fit-content;
-    max-height: 25rem!important;
     text-align: left;
     transition: transform 1s;
     transform-style: preserve-3d;
