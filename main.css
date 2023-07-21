@@ -908,7 +908,8 @@ input[name="btnradioprojects"]:checked+label {
 .footer-text {
     margin-bottom: 0;
     display: inline;
-    white-space: nowrap
+    white-space: nowrap;
+    font-size: 1rem;
 }
 
 .footer-column {
