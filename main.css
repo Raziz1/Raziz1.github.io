@@ -519,7 +519,7 @@ input[name="btnradioprojects"]:checked+label {
     /* Aligns footer text to the bottom */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .card-title {
@@ -528,6 +528,7 @@ input[name="btnradioprojects"]:checked+label {
     /*color:#000000 !important;*/
     color: #383838 !important;
     font-size: 2em;
+    margin-bottom: 1rem;
 }
 
 .card-text {
@@ -588,8 +589,7 @@ input[name="btnradioprojects"]:checked+label {
 
 .badges-group-small {
     text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-bottom: 2rem;
 }
 
 .projects-badge {
