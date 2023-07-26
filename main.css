@@ -354,14 +354,12 @@ body {
     background-color: transparent !important;
     border: 0;
     border-radius: 10%;
-    /*Apply filter so that the icon appears white*/
-    filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(59deg) brightness(106%) contrast(101%);
     transition: 0.2s ease-in-out
 }
 
 /*Animate the buttons on hover*/
 .btn-header:hover {
-    background-color: rgba(199, 208, 255, 1) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
     transform: scale(0.90);
 }
 
