@@ -2,11 +2,12 @@
 Personal Portfolio Website
 
 ## To-do list
-* Optimize loading speeds (HTML Performance measurement)
-* Fix 'Best Practices Warnings'
+* Change CSS class names
+* Optimize loading speed (Lighthouse)
+* Optimize network loading
+* Improve SEO
 * Fix Title Font
 * Pop out projects section cards
-* Reduce Font size 
 
 ## Version 1
 <p> 
