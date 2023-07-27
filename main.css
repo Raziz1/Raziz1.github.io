@@ -3,7 +3,6 @@ html {
     padding: 0;
     height: 100%;
     /* Allows divs to extend full height of screen */
-    scroll-behavior: smooth;
 }
 
 body {
@@ -422,13 +421,6 @@ body {
     padding: 20%;
     background-color: #efefef !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
-
-    /* Button Borders */
-    /*
-    border-style: outset;
-    border-color: rgb(118, 118, 118) !important;
-    border-width: 4px;
-    */
     transition: 0.2s ease-in-out;
 
 }
@@ -800,10 +792,78 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 /* ----- Tools button ----- */
+
+/* Skills Sprite */
+#android-studio, #visual-studio, #visual-studio-code, #eclipse, #pycharm, #unity,
+#cpp, #csharp, #python, #java, #js, #matlab,
+#git, #arduino, #rbpi, #inventor, #altium, #ableton
+{
+    display: inline-block;
+    background-image: url('/assets/skills-icons.webp');
+    background-repeat: no-repeat;
+    zoom: 30%;
+    width: 256px; height: 256px;
+}
+
+#python{
+    background-position: -562px -838px;
+}
+#csharp{
+    background-position: -10px -562px;
+}
+#cpp{
+    background-position: -562px -286px;
+}
+#java{
+    background-position: -838px -286px;
+}
+#js{
+    background-position: -838px -562px;
+}
+#matlab{
+    background-position: -10px -838px;
+}
+#android-studio{
+    background-position: -10px -286px;
+}
+#visual-studio{
+    background-position: -1114px -562px;
+}
+#visual-studio-code{
+    background-position: -1114px -286px;
+}
+#eclipse{
+    background-position: -286px -562px;
+}
+#pycharm{
+    background-position: -286px -838px;
+}
+#unity{
+    background-position: -838px -838px;
+}
+#git{
+    background-position: -562px -562px;
+}
+#arduino{
+    background-position: -286px -286px;
+}
+#rbpi{
+    background-position: -1114px -10px;
+}
+#inventor{
+    background-position: -838px -10px;
+}
+#altium{
+    background-position: -286px -10px;
+}
+#ableton{
+    background-position: -10px -10px;
+}
+
 .btn-skills {
     background-color: #ffffff;
     border-radius: 15%;
-    max-width: 200px;
+    width: fit-content;
     margin: 1rem;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
@@ -814,10 +874,6 @@ input[name="btnradioprojects"]:checked+label {
     filter: drop-shadow(3px 3px 1px #383838);
     /*transform: translateY(-5px);*/
     transform: scale(0.90);
-}
-
-.btn-skills-image {
-    width: 5rem;
 }
 
 .triggerAnimation {

@@ -39,7 +39,10 @@ if (/Mobi/.test(navigator.userAgent)) {
 }
 
 var typed = new Typed('.intro-descri', {
-  strings: ['⚡Electrical Engineering @ <b>McMaster University</b>', '💻Firmware Designer @ <b>Ciena</b>'],
+  strings: ['⚡Electrical Engineering @ <b>McMaster University</b>',
+   '💻Firmware Designer @ <b>Ciena</b>',
+   '🔋Embedded Software @ <b>MAC Formula Electric</b>',
+  ],
   typeSpeed: 35,
   loop: true,
   backDelay: 3000,
