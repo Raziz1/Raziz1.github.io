@@ -220,16 +220,13 @@ body {
 }
 
 /* ========== Intro Section ========== */
-.name:hover{
-    filter: drop-shadow(2px 2px 2px #000000);
-}
-
 .name {
-    font-family: "Helvetica-Neue";
+    font-family: "Montserrat";
     color: #d9c084 !important;
     font-size: 4em;
-    font-weight: bold;
+    font-weight: 800;
     transition: ease-in-out 0.2s;
+    filter: drop-shadow(2px 2px 1px #978249);
 }
 
 /* This intro text has the typewriter animation*/
