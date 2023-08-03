@@ -362,10 +362,6 @@ body {
     transform: scale(0.90);
 }
 
-.header-img {
-    width: 3rem;
-}
-
 /* ========== About section ========== */
 .about-title {
     font-family: "Montserrat";
@@ -799,7 +795,7 @@ input[name="btnradioprojects"]:checked+label {
 #git, #arduino, #rbpi, #inventor, #altium, #ableton
 {
     display: inline-block;
-    background-image: url('/assets/skills-icons.webp');
+    background-image: url('/assets//skills-icons.webp');
     background-repeat: no-repeat;
     zoom: 30%;
     width: 256px; height: 256px;
@@ -940,10 +936,6 @@ input[name="btnradioprojects"]:checked+label {
 .btn-contact:hover {
     color: #efefef;
     transform: scale(0.90);
-}
-
-.contact-img {
-    width: 3rem;
 }
 
 /* ========== Footer ========== */
