@@ -38,7 +38,7 @@ if (/Mobi/.test(navigator.userAgent)) {
   });
 }
 
-var typed = new Typed('.intro-descri', {
+var typed = new Typed('.typewriter-title', {
   strings: ['⚡Electrical Engineering @ <b>McMaster University</b>',
    '💻Firmware Designer @ <b>Ciena</b>',
    '🔋Embedded Software @ <b>MAC Formula Electric</b>',

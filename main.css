@@ -1,8 +1,5 @@
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    /* Allows divs to extend full height of screen */
+    margin: 0; padding: 0; height: 100%;
 }
 
 body {
@@ -176,26 +173,16 @@ body {
 }
 
 /* ========== Nav bar ========== */
-.navbar {
-    background: #212122
-}
-
-.navbar-brand {
-    font-family: "Montserrat";
-    color: #efefef !important;
-    font-size: 200%;
-    font-weight: bold;
-}
-
 .nav-link {
     font-family: "Montserrat";
-    color: #efefef !important;
+    color: #efefef!important;
     font-size: 125%;
     position: relative;
 }
 
 /* Animating Link Underlines */
 .nav-link::before {
+    /* Create a line underneath with a transformation of zero so no line is visible */
     content: "";
     position: absolute;
     display: block;
@@ -205,18 +192,17 @@ body {
     left: 0;
     background-color: #efefef;
     transform: scaleX(0);
-    /* Create a line underneath with a transformation of zero so no line is visible */
     transition: transform 0.3s ease;
 }
 
 .nav-link:hover::before {
+    /*Transform the line so it becomes visible*/
     color: #efefef !important;
     transform: scaleX(1);
-    /*Transform the line so it becomes visible*/
 }
 
 .navbar-nav li {
-    padding: 0px 15px;
+    padding: 0rem 1rem;
 }
 
 /* ========== Intro Section ========== */
@@ -230,7 +216,7 @@ body {
 }
 
 /* This intro text has the typewriter animation*/
-.intro-descri {
+.typewriter-title {
     font-family: "Source Sans Pro";
     color: #efefef !important;
     font-size: 1.5em;
@@ -239,22 +225,11 @@ body {
 
 /* Cursor */
 .typed-cursor {
-    height:100%;
-    color: #d9c084 !important;
-    font-size: 150%;
+    height:100%; color: #d9c084 !important; font-size: 150%;
 }
 
-.intro-image {
-    
-    width: 25vw;
-    border-radius: 50%;
-    /* Scales with website width*/
-    /* Adds a sliding in animation for the intro image*/
-}
-
-.social-buttons
-{
-    margin-left: -1rem;
+.intro-image {   
+    width: 25vw; border-radius: 50%;
 }
 
 /*===== Background design wires =====*/
@@ -318,8 +293,6 @@ body {
 
 
 .chevron-down {
-    color: #efefef;
-    font-size: 2rem;
     /*-- name animation --*/
     animation-name: floating;
     animation-duration: 1s;
@@ -343,28 +316,28 @@ body {
 }
 
 /*===== Linkedin & Github header buttons =====*/
-.btn-header {
+.social-buttons {
     margin-top: 1rem;
     padding: 1rem;
     border: none !important;
     background-color: transparent !important;
-    border: 0;
     border-radius: 10%;
     transition: 0.2s ease-in-out
 }
 
 /*Animate the buttons on hover*/
-.btn-header:hover {
+.social-buttons:hover {
     background-color: rgba(0, 0, 0, 0.2) !important;
     transform: scale(0.90);
 }
 
+
 /* ========== About section ========== */
-.about-title {
+.section-title {
     font-family: "Montserrat";
-    color: #efefef !important;
+    color: #efefef;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: bold;   
 }
 
 .about-text {
@@ -405,40 +378,12 @@ body {
 }
   
 /* ----- Buttons ----- */
-.btn-about {
-    -moz-border-radius: 15%;
-    /*works on Firefox */
-    -webkit-border-radius: 15%;
-    /*border-radius: 50%;*/
-    border-radius: 15%;
-    padding: 20%;
-    background-color: #efefef !important;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
-    transition: 0.2s ease-in-out;
-
-}
-
-.btn-about:hover {
-    filter: drop-shadow(3px 3px 1px #383838);
-    /*transform: translateY(-5px);*/
-    transform: scale(0.90);
-}
-
 .intrest-image {
     /*Ensure the button images span the entire width of the button*/
     width: 100%;
-    /* Center the image */
-    display: inline-block
 }
 
 /* ========== Project section ========== */
-.projects-title {
-    font-family: "Montserrat";
-    color: #383838 !important;
-    font-size: 3rem;
-    font-weight: bold;
-}
-
 .line-break {
     width: 40px;
     height: 5px;
@@ -459,9 +404,6 @@ input[name="btnradioprojects"]:checked+label {
     outline: none !important;
     border-radius: 5px;
 }    
-.btn-icon {
-    font-size: 2rem;
-}
 
 .btn-projects:hover {
     background-color: #a5915f;
@@ -597,13 +539,6 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 /* =============== Experience =============== */
-.experience-title {
-    font-family: "Montserrat";
-    font-size: 3rem;
-    font-weight: bold;
-    color: #efefef !important;
-}
-
 .experience-header {
     padding-top: 2%;
     font-family: "Montserrat";
@@ -631,29 +566,11 @@ input[name="btnradioprojects"]:checked+label {
     font-size: 1rem;
 }
 
-.timeline-btn {
-    border-radius: 15%;
-    padding: 1rem;
-    margin-top: 0.5rem;
-    background-color: #efefef !important;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
-    max-width: 8rem;
-    min-width: 50px;
-    transition: 0.2s ease-in-out;
-    margin-bottom: 2rem;
-}
-
 .timeline-icon {
     /*Ensure the button images span the entire width of the button*/
     width: 100%;
     /* Center the image */
     display: inline-block
-}
-
-.timeline-btn:hover {
-    filter: drop-shadow(3px 3px 1px #383838);
-    /*transform: translateY(-5px);*/
-    transform: scale(0.90);
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -686,32 +603,6 @@ input[name="btnradioprojects"]:checked+label {
     top: 45%;
     border-radius: 50%;
     z-index: 1;
-}
-
-/* More details button */
-.timeline-button {
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
-    border-radius: 5px;
-    font-family: "Montserrat";
-    font-size: 1rem;
-    background-color: #978249;
-    border: none;
-    color: #efefef;
-    transition: 0.2s ease-in-out;
-    text-decoration: none !important;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.timeline-button:hover {
-    color: #efefef;
-    transform: scale(0.90);
-}
-
-.timeline-button-text {
-    display: inline-block;
-    margin-top: auto !important;
-    margin-bottom: auto !important;
 }
 
 /* =========== Flip Cards ========== */
@@ -769,22 +660,11 @@ input[name="btnradioprojects"]:checked+label {
   }
 
 /* =============== Skills =============== */
-.skills-title {
-    font-family: "Montserrat";
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ffffff !important;
-}
-
 .skills-header {
     font-family: "Montserrat";
-    color: #ffffff !important;
+    color: #efefef !important;
     font-size: 1rem;
-    /*filter: drop-shadow(3px 3px 1px #383838);*/
-
 }
-
-/* ----- Tools button ----- */
 
 /* Skills Sprite */
 #android-studio, #visual-studio, #visual-studio-code, #eclipse, #pycharm, #unity,
@@ -854,9 +734,8 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 .btn-skills {
-    background-color: #ffffff;
+    background-color: #efefef;
     border-radius: 15%;
-    width: fit-content;
     margin: 1rem;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
@@ -865,14 +744,12 @@ input[name="btnradioprojects"]:checked+label {
 
 .btn-skills:hover {
     filter: drop-shadow(3px 3px 1px #383838);
-    /*transform: translateY(-5px);*/
     transform: scale(0.90);
 }
 
 .triggerAnimation {
     animation: slide-in 2s;
     animation-iteration-count: 1;
-
 }
 
 /* Animate tools buttons */
@@ -889,13 +766,6 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 /* ========== Form ========== */
-.contact-title {
-    font-family: "Montserrat";
-    color: #ffffff !important;
-    font-size: 3rem;
-    padding-bottom: 1rem;
-}
-
 .contact-text {
     font-family: "Source Sans Pro";
     font-size: 1.25rem;
@@ -910,51 +780,17 @@ input[name="btnradioprojects"]:checked+label {
     font-size: 1rem;
 }
 
-.contact-icon-card {
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    width: fit-content;
-    padding: 1rem;
-
-}
-
 .btn-contact {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
     border-radius: 5px;
-    font-family: "Montserrat";
-    font-size: 1rem;
-    background-color: #978249;
-    border: none;
     color: #efefef;
+    font-family: 'Montserrat'; 
+    font-size: 1rem; 
+    background-color: #978249;
     transition: 0.2s ease-in-out;
 }
 
 .btn-contact:hover {
     color: #efefef;
     transform: scale(0.90);
-}
-
-/* ========== Footer ========== */
-.footer {
-    background-color: #212122;
-    outline: none !important;
-    border: none !important
-}
-
-.footer-wrapper {
-    font-family: "Source Sans Pro";
-    color: #efefef;
-    padding: 1rem;
-}
-
-.footer-text {
-    margin-bottom: 0;
-    display: inline;
-    white-space: nowrap;
-    font-size: 1rem;
-}
-
-.footer-column {
-    padding: 0;
 }

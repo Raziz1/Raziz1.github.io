@@ -45,17 +45,18 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" rel="preload" as="style">
 
     <!-- Custom CSS File -->
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" rel="preload" as="style" type="text/css">
 
 </head>
 
 <body>
     <!---------- Navbar ---------->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #212122;">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">
+            <a href="#" class="navbar-brand" style="color: #efefef; font-family:'Montserrat'; font-weight: bold; font-size: 2rem;">
                 <span>Rahim Aziz</span>
             </a>
+
             <!-- Toggle button for mobile nav -->
             <button class="navbar-toggler" aria-label="website navigation menu" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
                 aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +64,7 @@
             </button>
 
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <div  id="main-nav" class="collapse navbar-collapse justify-content-end align-center">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About</a>
@@ -125,15 +126,14 @@
                 <!-- Titles -->
                 <div class="col-sm-6 text-left">
                     <h1 class="name">RAHIM AZIZ</h1>
-                    <p class="intro-descri"><!--Electrical Engineering @ McMaster University--></p>
-
-                    <div class="social-buttons">
+                    <p class="typewriter-title"><!--Electrical Engineering @ McMaster University--></p>
+                    <div style="margin-left: -1rem;">
                         <!-- Linkedin & Github button links -->
-                        <button type="button" class="btn-header"
+                        <button type="button" class="social-buttons"
                             onclick="window.location.href='https://www.linkedin.com/in/rahim-aziz'">
                             <img src="/assets/linkedin.svg" alt="Linkedin Logo" class="header-img" width="50rem" height="auto">
                         </button>
-                        <button type="button" class="btn-header"
+                        <button type="button" class="social-buttons"
                             onclick="window.location.href='https://github.com/Raziz1'">
                             <img src="/assets/github.svg" alt="Github Logo" class="header-img" width="50rem" height="auto">
                         </button>
@@ -142,20 +142,18 @@
 
                 <!-- Personal intro image -->
                 <div class="col-sm-4 text-center d-none d-sm-block">
-                    <img class="intro-image img-fluid" src="/assets/intro-pic.webp" alt="Reading Bitmoji" loading="eager">
+                    <img class="intro-image img-fluid" src="/assets/intro-pic.webp" alt="Graduation Picture" loading="eager">
                 </div>
-
             </div>
 
             <!-- Downward indicating chevron -->
             <div class="row justify-content-center align-items-center">
                 <div class="col-12 text-center">
-                    <span class="material-icons-outlined chevron-down">
+                    <span class="material-icons-outlined chevron-down" style="font-size: 2rem; color: #efefef;">
                         expand_more
                     </span>
                 </div>
             </div>
-            
         </div>
     </section>
 
@@ -164,9 +162,8 @@
         <div class="container pt-5">
             <div class="row justify-content-start align-items-center">
                 <div class="col-sm-7">
-
                     <!-- About paragraph -->
-                    <h1 class="about-title">Hello!</h1>
+                    <h1 class="section-title" style="color: #efefef;">Hello!</h1>
                     <div class="line-break" style="background-color: #ffffff;"></div>
                     <p class="about-text">My name is <b style="color:#d9c084">Rahim Aziz</b>, and I am a
                         <b>third-year Electrical Engineering</b> student
@@ -184,11 +181,9 @@
 
                         <!-- About buttons -->
                     <div class="row justify-content-start align-items-center">
-
-
                         <!-- Mac Eng -->
                         <div class="col-3">
-                            <a class="btn btn-about" href='https://www.eng.mcmaster.ca/' role="button">
+                            <a class="btn btn-skills m-0 p-4" href='https://www.eng.mcmaster.ca/' role="button">
                                 <!-- Clicking on the button takes you to the link -->
                                 <img src="/assets/mac-crest-normal.webp" alt="McMaster Crest" class="intrest-image" loading="lazy">
                             </a>
@@ -196,21 +191,21 @@
 
                         <!-- Mac Formula One -->
                         <div class="col-3">
-                            <a class="btn btn-about" href='https://macformularacing.com/' role="button">
+                            <a class="btn btn-skills m-0 p-4" href='https://macformularacing.com/' role="button">
                                 <img src="/assets/mac-normal.webp" alt="Formula Logo" class="intrest-image" loading="lazy">
                             </a>
                         </div>
 
                         <!-- Spotify -->
                         <div class="col-3">
-                            <a class="btn btn-about" href='https://open.spotify.com/user/raherm%3F' role="button">
+                            <a class="btn btn-skills m-0 p-4" href='https://open.spotify.com/user/raherm%3F' role="button">
                                 <img src="/assets/midi.webp" alt="Midi Keyboard" class="intrest-image" loading="lazy">
                             </a>
                         </div>
 
                         <!-- Github -->
                         <div class="col-3">
-                            <a class="btn btn-about" href='https://github.com/Raziz1' role="button">
+                            <a class="btn btn-skills m-0 p-4" href='https://github.com/Raziz1' role="button">
                                 <img src="/assets/programming.webp" alt="Programming Icon" class="intrest-image" loading="lazy">
                             </a>
                         </div>
@@ -240,39 +235,37 @@
     <!---------- Projects section ---------->
     <section id="projects">
         <div class="container pt-5">
-            <h1 class="projects-title">Projects</h1>
+            <h1 class="section-title" style="color: #383838;">Projects</h1>
             <div class="line-break" style="background-color: #978249;"></div>
             <!-- Radio button section-->
-            <div class="btn-group mb-3 mt-3" role="group">
-
+            <div class="btn-group my-3" role="group">
                 <!-- Games -->
                 <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiogames" autocomplete="off"
                     button-target="games" checked>
                 <label for="btnradiogames" class="btn btn-projects"><span
-                        class="align-middle material-icons-outlined btn-icon">sports_esports</span> Games</label>
+                        class="align-middle material-icons-outlined" style="font-size: 3rem;">sports_esports</span> Games</label>
 
                 <!-- Hardware -->
                 <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiohardware" autocomplete="off"
                     button-target="hardware">
                 <label for="btnradiohardware" class="btn btn-projects"><span
-                        class="align-middle material-icons-outlined btn-icon">memory</span> Hardware</label>
+                        class="align-middle material-icons-outlined" style="font-size: 3rem;">memory</span> Hardware</label>
 
                 <!-- Other -->
                 <input type="radio" class="btn-check" name="btnradioprojects" id="btnradioother" autocomplete="off"
                     button-target="other">
                 <label for="btnradioother" class="btn btn-projects"><span
-                        class="align-middle material-icons-outlined btn-icon">terminal</span> Other</label>
+                        class="align-middle material-icons-outlined" style="font-size: 3rem;">terminal</span> Other</label>
 
                 <!-- Music -->
                 <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiomusic" autocomplete="off"
                     button-target="music">
                 <label for="btnradiomusic" class="btn btn-projects"><span
-                        class="align-middle material-icons-outlined btn-icon">piano</span> Music</label>
+                        class="align-middle material-icons-outlined" style="font-size: 3rem;">piano</span> Music</label>
             </div>
 
             <!---------- Cards ---------->
             <div class="row g-0 justify-content-start">
-
                 <!-- Large cards -->
                 <!-- Games -->
                 <!-- Speed Trap -->
@@ -792,7 +785,7 @@
     <!---------- Experience section ---------->
     <section id="experience">
         <div class="container pt-5">
-            <h1 class="experience-title">Experience</h1>
+            <h1 class="section-title">Experience</h1>
             <div class="line-break" style="background-color: #ffffff;"></div>
 
             <!-- Experience TIMELINE -->
@@ -808,7 +801,7 @@
                                     <h2 class="experience-subtitle">Electro-optics Firmware Intern</h2>
                                     <h3 class="experience-date">May 2023 - Sept 2023</h3>
                                     <div class="d-none d-sm-block mt-auto mb-auto">
-                                        <a class="btn timeline-btn" href='https://www.ciena.ca/' role="button">
+                                        <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://www.ciena.ca/' role="button">
                                             <img src="/assets/Ciena_logo.webp" alt="Formula Logo" class="timeline-icon" loading="lazy">
                                         </a>
                                     </div>
@@ -827,8 +820,8 @@
                                         <li class="experience-description">Designing modular web interface tools to interact and configure the real-time software onboard the Wavelogic 6</li>
                                     </ul>
                                     <div class="col-12 text-end text-sm-start">
-                                        <a class="btn timeline-button" href='https://www.ciena.ca/' role="button">
-                                            <p class="timeline-button-text">View More</p>
+                                        <a class="btn btn-contact" href='https://www.ciena.ca/' role="button">
+                                            View More
                                         </a>
                                     </div>
                                 </div>
@@ -869,8 +862,8 @@
                                             sub-project developing testing modules</li>
                                     </ul>
                                     <div class="col-12 text-end text-sm-start">
-                                        <a class="btn timeline-button" href='https://macformularacing.com/' role="button">
-                                            <p class="timeline-button-text">View More</p>
+                                        <a class="btn btn-contact" href='https://macformularacing.com/' role="button">
+                                            View More
                                         </a>
                                     </div>
                                 </div>
@@ -891,7 +884,7 @@
                                     <h2 class="experience-subtitle">Embedded Software</h2>
                                     <h3 class="experience-date">Sept 2021 - Present</h3>
                                     <div class="d-none d-sm-block mt-auto mb-auto">
-                                        <a class="btn timeline-btn" href='https://macformularacing.com/' role="button">
+                                        <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://macformularacing.com/' role="button">
                                             <img src="/assets/mac-normal.webp" alt="Formula Logo" class="timeline-icon" loading="lazy">
                                         </a>
                                     </div>
@@ -911,8 +904,8 @@
                                             sub-project developing testing modules</li>
                                     </ul>
                                     <div class="col-12 text-end text-sm-start">
-                                        <a class="btn timeline-button" href='https://macformularacing.com/' role="button">
-                                            <p class="timeline-button-text">View More</p>
+                                        <a class="btn btn-contact" href='https://macformularacing.com/' role="button">
+                                            View More
                                         </a>
                                     </div>
                                 </div>
@@ -932,7 +925,7 @@
                                     <h2 class="experience-subtitle">Participant</h2>
                                     <h3 class="experience-date">Sept 2023</h3>
                                     <div class="d-none d-sm-block mt-auto mb-auto">
-                                        <a class="btn timeline-btn" href='https://hackthenorth.com/' role="button">
+                                        <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://hackthenorth.com/' role="button">
                                             <img src="/assets/hack-the-north-logo.webp" alt="Formula Logo" class="timeline-icon">
                                         </a>
                                     </div>
@@ -944,8 +937,8 @@
                                         <li class="experience-description">... Coming Soon ...</li>
                                     </ul>
                                     <div class="col-12 text-end text-sm-start">
-                                        <a class="btn timeline-button" href='https://hackthenorth.com/' role="button">
-                                            <p class="timeline-button-text">View More</p>
+                                        <a class="btn btn-contact" href='https://hackthenorth.com/' role="button">
+                                            View More
                                         </a>
                                     </div>
                                 </div>
@@ -966,7 +959,7 @@
                                     <h2 class="experience-subtitle">Participant</h2>
                                     <h3 class="experience-date">Jan 2023</h3>
                                     <div class="d-none d-sm-block mt-auto mb-auto">
-                                        <a class="btn timeline-btn" href='https://deltahacks.com/' role="button">
+                                        <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://deltahacks.com/' role="button">
                                             <img src="assets/DH9_UP.webp" alt="Deltahacks 9 Logo" class="timeline-icon p-2" loading="lazy">
                                         </a>
                                     </div>
@@ -980,9 +973,9 @@
                                             Challenge' utilizing Google's Firebase technology as well as ReactJS</li>
                                     </ul>
                                     <div class="col-12 text-end text-sm-start">
-                                        <a class="btn timeline-button" href='https://github.com/Micnasr/Alcohol-Monitor'
+                                        <a class="btn btn-contact" href='https://github.com/Micnasr/Alcohol-Monitor'
                                             role="button">
-                                            <p class="timeline-button-text">View More</p>
+                                            View More
                                         </a>
                                     </div>
                                 </div>
@@ -1002,7 +995,7 @@
                                     <h2 class="experience-subtitle">B. Eng Electrical Engineering</h2>
                                     <h3 class="experience-date">Sept 2021 - Present</h3>
                                     <div class="d-none d-sm-block mt-auto mb-auto">
-                                        <a class="btn timeline-btn" href='https://www.macengsociety.ca/' role="button">
+                                        <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://www.macengsociety.ca/' role="button">
                                             <img src="assets/mac-crest-normal.webp" alt="McMaster Engineering Society Logo"
                                                 class="timeline-icon" loading="lazy">
                                         </a>
@@ -1019,8 +1012,8 @@
                                         </li>
                                     </ul>
                                     <div class="col-12 text-end text-sm-start">
-                                        <a class="btn timeline-button" href='https://www.macengsociety.ca/' role="button">
-                                            <p class="timeline-button-text">View More</p>
+                                        <a class="btn btn-contact" href='https://www.macengsociety.ca/' role="button">
+                                            View More
                                         </a>
                                     </div>
                                 </div>
@@ -1034,16 +1027,15 @@
 
     <!---------- Skills section ---------->
     <section id="skills">
-
         <div class="container pt-5">
-            <h1 class="skills-title">Skills</h1>
+            <h1 class="section-title">Skills</h1>
             <div class="line-break" style="background-color: #ffffff;"></div>
             <!-- Coding languages -->
             <div class="row mb-3">
                 <div class="col-lg-2 text-center text-lg-end mt-auto mb-auto">
                     <h1 class="skills-header">Languages</h1>
                 </div>
-                <div class="col-lg-10 skills-columns text-center text-lg-start">
+                <div class="col-lg-10 text-center text-lg-start">
                     <a class="btn btn-skills text-center" role="button">
                         <span id="cpp" alt="C++ Logo" loading="lazy">
                     </a>
@@ -1070,7 +1062,7 @@
                 <div class="col-lg-2 text-center text-lg-end mt-auto mb-auto">
                     <h1 class="skills-header">IDE</h1>
                 </div>
-                <div class="col-lg-10 skills-columns text-center text-lg-start">
+                <div class="col-lg-10 text-center text-lg-start">
                     <a class="btn btn-skills text-center" role="button">
                         <span id="android-studio" alt="Android Studio Logo" loading="lazy">
                     </a>
@@ -1097,7 +1089,7 @@
                 <div class="col-lg-2 text-center text-lg-end mt-auto mb-auto">
                     <h1 class="skills-header">Other</h1>
                 </div>
-                <div class="col-lg-10 skills-columns text-center text-lg-start">
+                <div class="col-lg-10 text-center text-lg-start">
                     <a class="btn btn-skills text-center" role="button">
                         <span id="git" alt="Git Logo" loading="lazy">
                     </a>
@@ -1125,23 +1117,21 @@
     <section id="contact">
         <div class="container pt-5">
             <div class="row justify-content-center ">
-
                 <!-- Contact title -->
                 <div class="col-lg-5">
-                    <h1 class="contact-title">Contact</h1>
+                    <h1 class="section-title">Contact</h1>
                     <h2 class="contact-text">Contact me here by sending me a message directly or find me on my
                         social platforms below!</h2>
-
                     <!-- Social buttons -->
-                    <div class="contact-button-wrapper text-center">
+                    <div class="text-center">
                         <!-- Github -->
-                        <button class="btn btn-header" onclick="window.location.href='https://github.com/Raziz1'">
-                            <img src="/assets/github.svg" alt="Github Logo" class="contact-img" width="50rem" height="auto">
+                        <button class="social-buttons" onclick="window.location.href='https://github.com/Raziz1'">
+                            <img src="/assets/github.svg" alt="Github Logo" width="50rem" height="auto">
                         </button>
                         <!-- LinkedIN-->
-                        <button class="btn btn-header"
+                        <button class="social-buttons"
                             onclick="window.location.href='https://www.linkedin.com/in/rahim-aziz'">
-                            <img src="/assets/linkedin.svg" alt="Linkedin Logo" class="contact-img" width="50rem" height="auto">
+                            <img src="/assets/linkedin.svg" alt="Linkedin Logo" width="50rem" height="auto">
                         </button>
                     </div>
                 </div>
@@ -1168,19 +1158,14 @@
                         </div>
                     </form>
                 </div>
-
             </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer mt-5">
+    <footer class="footer mt-5" style="background-color: #212122;">
         <div class="container text-center">
-            <div class="footer-wrapper">
-                <div class="row">
-                    <div class="col-12 footer-column">
-                        <h1 class="footer-text">⚙️ Designed by Rahim Aziz ⚙️</h1>
-                    </div>
-                </div>
+            <div class="col-12 p-2">
+                <h3 style="color: #efefef; font-family: 'Source Sans Pro'; font-size: 1rem;">⚙️ Designed by Rahim Aziz ⚙️</h3>
             </div>
     </footer>
 
