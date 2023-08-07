@@ -12,6 +12,29 @@ body {
     background-color: #383838 !important;
 }
 
+h2{
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 2em;
+}
+
+h3{
+    font-family: "Montserrat";
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.sourcesanspro-text{
+    font-family: "Source Sans Pro";
+    color: #efefef !important;
+    font-size: 1rem; 
+}
+
+.montserrat-text{
+    font-family: "Montserrat";
+    color: #efefef !important;
+    font-size: 1rem; 
+}
 
 /* Animated circuit icons CSS */
 .symbols {
@@ -447,15 +470,6 @@ input[name="btnradioprojects"]:checked+label {
     justify-content: flex-start;
 }
 
-.card-title {
-    font-family: "Montserrat";
-    font-weight: bold;
-    /*color:#000000 !important;*/
-    color: #383838 !important;
-    font-size: 2em;
-    margin-bottom: 1rem;
-}
-
 .card-text {
     font-family: "Montserrat";
     color: #383838 !important;
@@ -477,7 +491,6 @@ input[name="btnradioprojects"]:checked+label {
 
 }
 
-
 /* ---------- Smaller Cards ----------*/
 .projects-small-cards {
     background-color: #efefef;
@@ -493,14 +506,11 @@ input[name="btnradioprojects"]:checked+label {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
     /*filter: drop-shadow(5px 5px 3px #383838);*/
     transform: translateY(-5px);
-
 }
-
 .small-cards-img {
     width: 8rem;
     padding-top: 2rem;
 }
-
 #landscape-img{
     width: 20rem!important;
 }
@@ -539,33 +549,6 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 /* =============== Experience =============== */
-.experience-header {
-    padding-top: 2%;
-    font-family: "Montserrat";
-    color: #efefef !important;
-    font-size: 2rem;
-
-}
-
-.experience-subtitle {
-    font-family: "Montserrat";
-    color: #efefef !important;
-    font-size: 1rem;
-}
-
-.experience-description {
-    font-family: "Source Sans Pro";
-    color: #efefef !important;
-    font-size: 1rem;
-}
-
-.experience-date {
-    font-style: italic;
-    font-family: "Source Sans Pro";
-    color: #efefef !important;
-    font-size: 1rem;
-}
-
 .timeline-icon {
     /*Ensure the button images span the entire width of the button*/
     width: 100%;
@@ -660,12 +643,6 @@ input[name="btnradioprojects"]:checked+label {
   }
 
 /* =============== Skills =============== */
-.skills-header {
-    font-family: "Montserrat";
-    color: #efefef !important;
-    font-size: 1rem;
-}
-
 .btn-skills {
     background-color: #efefef;
     border-radius: 15%;
@@ -699,13 +676,6 @@ input[name="btnradioprojects"]:checked+label {
 }
 
 /* ========== Form ========== */
-.contact-text {
-    font-family: "Source Sans Pro";
-    font-size: 1.25rem;
-    color: #efefef !important;
-    padding-bottom: 1rem;
-}
-
 .form-control {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
