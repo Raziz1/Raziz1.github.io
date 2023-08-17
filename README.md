@@ -2,12 +2,11 @@
 Personal Portfolio Website
 
 ## To-do list
+* Add gallery section
 * Reduce CSS class names by sharing types
-* Optimize loading speed (Lighthouse)
 * Optimize network loading
     * Image optimization (CSS Sprites, Image preloading)
 * Improve SEO
-* Fix Title Font
 * Pop out projects section cards
 
 ## Version 1
