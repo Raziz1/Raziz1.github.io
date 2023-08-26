@@ -40,7 +40,7 @@ if (/Mobi/.test(navigator.userAgent)) {
 
 var typed = new Typed('.typewriter-title', {
   strings: ['⚡Electrical Engineering @ <b>McMaster University</b>',
-   '💻Firmware Designer @ <b>Ciena</b>',
+   '💻NPI Hardware Intern @ <b>Ciena</b>',
    '🔋Embedded Software @ <b>MAC Formula Electric</b>',
   ],
   typeSpeed: 35,
