@@ -455,9 +455,13 @@ input[name="btnradioprojects"]:checked+label {
 
 .projects-large-cards:hover {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
-    /*filter: drop-shadow(5px 5px 3px #000000);*/
     transform: translateY(-5px);
+}
 
+/* Brighten the card images on hover */
+.projects-large-cards:hover .card-img-projects {
+    filter: brightness(100%);
+    transition: 0.5s ease-in-out;
 }
 
 .card-body-large-cards {
@@ -497,11 +501,6 @@ input[name="btnradioprojects"]:checked+label {
     object-fit: cover;
 }
 
-.projects-large-cards:hover .card-img-projects {
-    filter: brightness(100%);
-    transition: 0.5s ease-in-out;
-}
-
 /* ---------- Smaller Cards ----------*/
 .projects-small-cards {
     background-color: #efefef;
@@ -522,6 +521,8 @@ input[name="btnradioprojects"]:checked+label {
     width: 8rem;
     padding-top: 1rem;
 }
+
+/* Default image should be square however for small cards with landscape images */
 #landscape-img{
     width: 20rem!important;
 }
