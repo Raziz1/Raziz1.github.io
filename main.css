@@ -460,10 +460,21 @@ input[name="btnradioprojects"]:checked+label {
 
 }
 
-.card-body {
+.card-body-large-cards {
     text-align: start;
     width: 100%;
     padding: 2rem;
+    /* Aligns footer text to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-body {
+    text-align: start;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
     /* Aligns footer text to the bottom */
     display: flex;
     flex-direction: column;
@@ -509,7 +520,7 @@ input[name="btnradioprojects"]:checked+label {
 }
 .small-cards-img {
     width: 8rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 #landscape-img{
     width: 20rem!important;
