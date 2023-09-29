@@ -463,6 +463,7 @@ input[name="btnradioprojects"]:checked+label {
 .card-body-large-cards {
     text-align: start;
     width: 100%;
+    height: 100%;
     padding: 2rem;
     /* Aligns footer text to the bottom */
     display: flex;
@@ -499,7 +500,6 @@ input[name="btnradioprojects"]:checked+label {
 .projects-large-cards:hover .card-img-projects {
     filter: brightness(100%);
     transition: 0.5s ease-in-out;
-
 }
 
 /* ---------- Smaller Cards ----------*/
