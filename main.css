@@ -168,6 +168,8 @@ h3{
     padding: 60px 0;
     /* Ensure that the intro section fills up the entire viewport so other sections do not leak into the viewport */
     min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 #about {
@@ -252,7 +254,7 @@ h3{
 }
 
 .intro-image {   
-    width: 25vw; border-radius: 50%;
+    width: 30vw; border-radius: 50%;
 }
 
 /*===== Background design wires =====*/
