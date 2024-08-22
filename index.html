@@ -228,17 +228,18 @@
             <div class="line-break" style="background-color: #978249;"></div>
             <!-- Radio button section-->
             <div class="btn-group my-3" role="group">
-                <!-- Games -->
-                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiogames" autocomplete="off"
-                    button-target="games" checked>
-                <label for="btnradiogames" class="btn btn-projects"><span
-                        class="align-middle material-icons-outlined" style="font-size: 3rem;">sports_esports</span> Games</label>
 
                 <!-- Hardware -->
                 <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiohardware" autocomplete="off"
-                    button-target="hardware">
+                    button-target="hardware" checked>
                 <label for="btnradiohardware" class="btn btn-projects"><span
                         class="align-middle material-icons-outlined" style="font-size: 3rem;">memory</span> Hardware</label>
+                        
+                <!-- Games -->
+                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiogames" autocomplete="off"
+                    button-target="games">
+                <label for="btnradiogames" class="btn btn-projects"><span
+                        class="align-middle material-icons-outlined" style="font-size: 3rem;">sports_esports</span> Games</label>
 
                 <!-- Other -->
                 <input type="radio" class="btn-check" name="btnradioprojects" id="btnradioother" autocomplete="off"
@@ -254,11 +255,234 @@
             </div>
 
             <!---------- Cards ---------->
+
+            <!-- Hardware projects -->
+            <div class="row justify-content-start">
+                <div class="col-lg-4 mb-5 card-container" card-group="hardware">
+                  <div class="card projects-small-cards">
+                     <img src="./assets/hv_controller.webp"
+                         alt="MAC FE Icon" id="landscape-img" class="small-cards-img" loading="lazy">
+                     <div class="card-body">
+                         <h2 style="color: #383838;">HV Controller</h2>
+                         <p class="card-text">The PCB design for the high voltage controller of the MAC EV V
+                         </p>
+                     </div>
+                     <div class="badges-group-small">
+                         <a href="https://macformularacing.com/"><span
+                                 class="badge projects-link-badge"><img
+                                     src="https://img.icons8.com/ios-glyphs/512/ffffff/external-link.png"
+                                     class="projects-badge-icons" /></span></a>
+                         <span class="badge projects-badge">Altium</span>
+                         <span class="badge projects-badge">PCB</span>
+                     </div>
+                  </div>
+                 </div>
+ 
+                 <!--MACFE Front Controller-->
+                 <div class="col-lg-4 mb-5 card-container" card-group="hardware">
+                     <div class="card projects-small-cards">
+                         <img src="./assets/front_controller.webp"
+                             alt="MAC FE Icon" id="landscape-img" class="small-cards-img" loading="lazy">
+                         <div class="card-body">
+                             <h2 style="color: #383838;">Front Controller</h2>
+                             <p class="card-text">The PCB design for the front controller of the MAC EV V
+                                 <!--
+                                     The front controller handles vehicle startup, 
+                                     safety circuitry, GPS data, pedal positions, steering, torque control, 
+                                     CAN communication, and safety shutdown circuits.
+                                 -->
+                             </p>
+                         </div>
+                         <!-- Tools used badges -->
+                         <div class="badges-group-small">
+                             <a href="https://macformularacing.com/"><span
+                                     class="badge projects-link-badge"><img
+                                         src="https://img.icons8.com/ios-glyphs/512/ffffff/external-link.png"
+                                         class="projects-badge-icons" /></span></a>
+                             <span class="badge projects-badge">Altium</span>
+                             <span class="badge projects-badge">PCB</span>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <!-- PCB Business Card Project -->
+                 <div class="col-lg-4 mb-5 card-container" card-group="hardware">
+                     <div class="card projects-small-cards">
+                         <img src="./assets/PCB_Business_Card_Blender.webp" alt="Blender PCB 3D Picture" id="landscape-img"
+                             class="small-cards-img" loading="lazy">
+                         <div class="card-body">
+                             <h2 style="color: #383838;">PCB Business Card</h2>
+                             <p class="card-text">A PCB Business Card designed in KiCad. Features NFC capabilities</p>
+                         </div>
+                         <!-- Tools used badges -->
+                         <div class="badges-group-small">
+                             <a href="https://github.com/Raziz1/PCB_Business_Card"><span
+                                     class="badge projects-link-badge"><img
+                                         src="./assets/github.svg"
+                                         class="projects-badge-icons" /></span></a>
+                             <span class="badge projects-badge">KiCad</span>
+                             <span class="badge projects-badge">NFC</span>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <!-- Solar PCB Project -->
+                 <div class="col-lg-4 mb-5 card-container" card-group="hardware">
+                     <div class="card projects-small-cards">
+                         <img src="./assets/Solar_PCB_Render.webp" alt="Blender PCB 3D Picture" id="landscape-img"
+                             class="small-cards-img" loading="lazy">
+                         <div class="card-body">
+                             <h2 style="color: #383838;">Solar PCB</h2>
+                             <p class="card-text">Solar-powered PCB for charging dual 18650 lithium-ion batteries and running a low-power Arduino application</p>
+                         </div>
+                         <!-- Tools used badges -->
+                         <div class="badges-group-small">
+                             <a href="https://github.com/Raziz1/Solar_PCB"><span
+                                     class="badge projects-link-badge"><img
+                                         src="./assets/github.svg"
+                                         class="projects-badge-icons" /></span></a>
+                             <span class="badge projects-badge">KiCad</span>
+                             <span class="badge projects-badge">Arduino</span>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <!-- Audio Amplifier Project -->
+                 <div class="col-lg-4 mb-5 card-container" card-group="hardware">
+                     <div class="card projects-small-cards">
+                         <img src="./assets/audio_amplifier.webp" alt="Altium PCB 3D Picture" id="landscape-img"
+                             class="small-cards-img" loading="lazy">
+                         <div class="card-body">
+                             <h2 style="color: #383838;">Audio Amplifier</h2>
+                             <p class="card-text">An audio amplifier designed in Altium Designer for a 30 watt car speaker. Characterized and simulated in LTspice</p>
+                         </div>
+                         <!-- Tools used badges -->
+                         <div class="badges-group-small">
+                             <a href="https://github.com/Raziz1/Audio_Amplifier"><span
+                                     class="badge projects-link-badge"><img
+                                         src="./assets/github.svg"
+                                         class="projects-badge-icons" /></span></a>
+                             <span class="badge projects-badge">Altium</span>
+                             <span class="badge projects-badge">LTspice</span>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <!-- Spatial Mapping LIDAR System -->
+                 <div class="col-lg-4 mb-5 card-container" card-group="hardware">
+                     <div class="card projects-small-cards">
+                         <img src="./assets/LIDAR_scan.webp" id='landscape-img' alt="Spatial Mapping LIDAR system"
+                             class="small-cards-img" loading="lazy">
+                         <div class="card-body">
+                             <h2 style="color: #383838;">LIDAR Mapping</h2>
+                             <p class="card-text">A 3D spatial mapping LIDAR system built around the TI MSP432E401Y
+                                 micrcontroller in conjunction with MATLAB to visualize the data</p>
+                         </div>
+                         <!-- Tools used badges -->
+                         <div class="badges-group-small">
+                             <a href="https://github.com/Raziz1/Spatial_Mapping_LIDAR"><span
+                                     class="badge projects-link-badge"><img
+                                         src="./assets/github.svg"
+                                         class="projects-badge-icons" /></span></a>
+                             <span class="badge projects-badge">MATLAB</span>
+                             <span class="badge projects-badge">C</span>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <!--2EI4 Projects-->
+                 <div class="col-lg-4 mb-5 card-container" card-group="hardware">
+                     <div class="card projects-small-cards">
+                         <img src="https://img.icons8.com/fluency/512/null/transistor.png" alt="Led Icon"
+                             class="small-cards-img" loading="lazy">
+                         <div class="card-body">
+                             <h2 style="color: #383838;">2EI4 Projects</h2>
+                             <p class="card-text">McMaster University Electronic Devices and Circuits I course projects.
+                                 DC power supply, voltage controlled switch, amplifier, & CMOS logic gate.
+                             </p>
+                         </div>
+                         <!-- Tools used badges -->
+                         <div class="badges-group-small">
+                             <a href="https://github.com/Raziz1/ELECENG_2EI4"><span
+                                     class="badge projects-link-badge"><img
+                                         src="./assets/github.svg"
+                                         class="projects-badge-icons" /></span></a>
+                             <span class="badge projects-badge">Oscilloscope</span>
+                             <span class="badge projects-badge">PSpice</span>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <!-- Bluetooth RGB Strip-->
+                 <div class="col-lg-4 mb-5 card-container" card-group="hardware">
+                     <div class="card projects-small-cards">
+                         <img src="./assets/led.webp" alt="Led Icon" class="small-cards-img" loading="lazy">
+                         <div class="card-body">
+                             <h2 style="color: #383838;">Bluetooth RGB Strip</h2>
+                             <p class="card-text">Adding bluetooth functionality to a RGB strip using an Arduino Uno and HC-08 module.
+                             </p>
+                         </div>
+                         <!-- Tools used badges -->
+                         <div class="badges-group-small">
+                             <a href="https://github.com/Raziz1/Bluetooth_RGB_Strip"><span
+                                     class="badge projects-link-badge"><img
+                                         src="./assets/github.svg"
+                                         class="projects-badge-icons" /></span></a>
+                             <span class="badge projects-badge">Arduino</span>
+                             <span class="badge projects-badge">C++</span>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <!-- Arduino Weather Station -->
+                 <div class="col-lg-4 mb-5 card-container" card-group="hardware">
+                     <div class="card projects-small-cards">
+                         <img src="./assets/weather-news.webp" alt="Weather Station Icon" class="small-cards-img" loading="lazy">
+                         <div class="card-body">
+                             <h2 style="color: #383838;">Arduino Weather Station</h2>
+                             <p class="card-text">A TFT display that shows the current weather using an API & a Wifi
+                                 module for the Arduino board
+                             </p>
+                         </div>
+                         <!-- Tools used badges -->
+                         <div class="badges-group-small">
+                             <a href="https://github.com/Raziz1/Arduino_Weatherstation"><span
+                                     class="badge projects-link-badge"><img
+                                         src="./assets/github.svg"
+                                         class="projects-badge-icons" /></span></a>
+                             <span class="badge projects-badge">Arduino</span>
+                             <span class="badge projects-badge">C++</span>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <!-- Google Home Arduino -->
+                 <div class="col-lg-4 mb-5 card-container" card-group="hardware">
+                     <div class="card projects-small-cards">
+                         <img src="./assets/voice-assistant.webp" alt="Ultrasonic Sonar Icon" class="small-cards-img" loading="lazy">
+                         <div class="card-body">
+                             <h2 style="color: #383838;">Google Home Arduino</h2>
+                             <p class="card-text">Triggering Google Home functions using the Google Home API, ESP8266
+                                 WiFi module, and Arduino IR remote</p>
+                         </div>
+                         <!-- Tools used badges -->
+                         <div class="badges-group-small">
+                             <a href="https://github.com/Raziz1/Googlemini_Arduino"><span
+                                     class="badge projects-link-badge"><img
+                                         src="./assets/github.svg"
+                                         class="projects-badge-icons" /></span></a>
+                             <span class="badge projects-badge ">Arduino</span>
+                             <span class="badge projects-badge">C++</span>
+                         </div>
+                     </div>
+                 </div>
+             </div> 
+
+            <!-- Large cards -->
+            <!-- Games -->
+            <!-- Speed Trap -->
             <div class="row g-0 justify-content-start">
-                <!-- Large cards -->
-                <!-- Games -->
-                <!-- Speed Trap -->
-                <div class="card projects-large-cards mb-5 card-container" card-group="games">
+                <div class="card projects-large-cards mb-5 card-container hide" card-group="games">
                     <div class="row g-0">
                         <div class="col-lg-5 d-flex flex-column justify-content-start mb-3">
                             <div class="card-body-large-cards">
@@ -294,7 +518,7 @@
                 </div>
 
                 <!-- Evoborne -->
-                <div class="card projects-large-cards mb-5 card-container" card-group="games">
+                <div class="card projects-large-cards mb-5 card-container hide" card-group="games">
                     <div class="row g-0">
                         <div class="col-lg-5 d-flex flex-column justify-content-start mb-3">
                             <div class="card-body-large-cards">
@@ -326,7 +550,7 @@
                 </div>
 
                 <!-- Hill Climbing Race -->
-                <div class="card projects-large-cards mb-5 card-container" card-group="games">
+                <div class="card projects-large-cards mb-5 card-container hide" card-group="games">
                     <div class="row g-0">
                         <div class="col-lg-5 d-flex flex-column justify-content-start mb-3">
                             <div class="card-body-large-cards">
@@ -359,7 +583,7 @@
                 </div>
 
                 <!-- Stealth Game -->
-                <div class="card projects-large-cards mb-5 card-container" card-group="games">
+                <div class="card projects-large-cards mb-5 card-container hide" card-group="games">
                     <div class="row g-0">
                         <div class="col-lg-5 d-flex flex-column justify-content-start mb-3">
                             <div class="card-body-large-cards">
@@ -385,230 +609,6 @@
                         <div class="col-lg-7">
                             <div class="card-img-body" id="stealth-game-img-body"><img class="card-img-projects"
                                     src="./assets/stealth_game.webp" alt="stealth-game-poster" loading="lazy"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hardware projects -->
-            <div class="row justify-content-start">
-
-
-               <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                 <div class="card projects-small-cards">
-                    <img src="./assets/hv_controller.webp"
-                        alt="MAC FE Icon" id="landscape-img" class="small-cards-img" loading="lazy">
-                    <div class="card-body">
-                        <h2 style="color: #383838;">HV Controller</h2>
-                        <p class="card-text">The PCB design for the high voltage controller of the MAC EV V
-                        </p>
-                    </div>
-                    <div class="badges-group-small">
-                        <a href="https://macformularacing.com/"><span
-                                class="badge projects-link-badge"><img
-                                    src="https://img.icons8.com/ios-glyphs/512/ffffff/external-link.png"
-                                    class="projects-badge-icons" /></span></a>
-                        <span class="badge projects-badge">Altium</span>
-                        <span class="badge projects-badge">PCB</span>
-                    </div>
-                 </div>
-                </div>
-
-                <!--MACFE Front Controller-->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/front_controller.webp"
-                            alt="MAC FE Icon" id="landscape-img" class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Front Controller</h2>
-                            <p class="card-text">The PCB design for the front controller of the MAC EV V
-                                <!--
-                                    The front controller handles vehicle startup, 
-                                    safety circuitry, GPS data, pedal positions, steering, torque control, 
-                                    CAN communication, and safety shutdown circuits.
-                                -->
-                            </p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://macformularacing.com/"><span
-                                    class="badge projects-link-badge"><img
-                                        src="https://img.icons8.com/ios-glyphs/512/ffffff/external-link.png"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">Altium</span>
-                            <span class="badge projects-badge">PCB</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PCB Business Card Project -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/PCB_Business_Card_Blender.webp" alt="Blender PCB 3D Picture" id="landscape-img"
-                            class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">PCB Business Card</h2>
-                            <p class="card-text">A PCB Business Card designed in KiCad. Features NFC capabilities</p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/PCB_Business_Card"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">KiCad</span>
-                            <span class="badge projects-badge">NFC</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Solar PCB Project -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/Solar_PCB_Render.webp" alt="Blender PCB 3D Picture" id="landscape-img"
-                            class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Solar PCB</h2>
-                            <p class="card-text">Solar-powered PCB for charging dual 18650 lithium-ion batteries and running a low-power Arduino application</p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Solar_PCB"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">KiCad</span>
-                            <span class="badge projects-badge">Arduino</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Audio Amplifier Project -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/audio_amplifier.webp" alt="Altium PCB 3D Picture" id="landscape-img"
-                            class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Audio Amplifier</h2>
-                            <p class="card-text">An audio amplifier designed in Altium Designer for a 30 watt car speaker. Characterized and simulated in LTspice</p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Audio_Amplifier"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">Altium</span>
-                            <span class="badge projects-badge">LTspice</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Spatial Mapping LIDAR System -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/LIDAR_scan.webp" id='landscape-img' alt="Spatial Mapping LIDAR system"
-                            class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">LIDAR Mapping</h2>
-                            <p class="card-text">A 3D spatial mapping LIDAR system built around the TI MSP432E401Y
-                                micrcontroller in conjunction with MATLAB to visualize the data</p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Spatial_Mapping_LIDAR"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">MATLAB</span>
-                            <span class="badge projects-badge">C</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!--2EI4 Projects-->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="https://img.icons8.com/fluency/512/null/transistor.png" alt="Led Icon"
-                            class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">2EI4 Projects</h2>
-                            <p class="card-text">McMaster University Electronic Devices and Circuits I course projects.
-                                DC power supply, voltage controlled switch, amplifier, & CMOS logic gate.
-                            </p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/ELECENG_2EI4"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">Oscilloscope</span>
-                            <span class="badge projects-badge">PSpice</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bluetooth RGB Strip-->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/led.webp" alt="Led Icon" class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Bluetooth RGB Strip</h2>
-                            <p class="card-text">Adding bluetooth functionality to a RGB strip using an Arduino Uno and HC-08 module.
-                            </p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Bluetooth_RGB_Strip"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">Arduino</span>
-                            <span class="badge projects-badge">C++</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Arduino Weather Station -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/weather-news.webp" alt="Weather Station Icon" class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Arduino Weather Station</h2>
-                            <p class="card-text">A TFT display that shows the current weather using an API & a Wifi
-                                module for the Arduino board
-                            </p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Arduino_Weatherstation"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">Arduino</span>
-                            <span class="badge projects-badge">C++</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Google Home Arduino -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/voice-assistant.webp" alt="Ultrasonic Sonar Icon" class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Google Home Arduino</h2>
-                            <p class="card-text">Triggering Google Home functions using the Google Home API, ESP8266
-                                WiFi module, and Arduino IR remote</p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Googlemini_Arduino"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge ">Arduino</span>
-                            <span class="badge projects-badge">C++</span>
                         </div>
                     </div>
                 </div>
@@ -843,7 +843,7 @@
                                     style="background-image: url(./assets/Ford_EV.webp); background-size: cover; background-repeat: no-repeat;" loading="lazy">
                                     <h2 style="color: #efefef; padding-top: 2%;">Ford</h2>
                                     <h3 style="color: #efefef; font-size: 1rem;">Hardware Development Intern</h3>
-                                    <h3 class="sourcesanspro-text" style="font-style: italic;">May 2024 - Sept 2024</h3>
+                                    <h3 class="sourcesanspro-text" style="font-style: italic;">May 2024 - Aug 2024</h3>
                                     <div class="d-none d-sm-block mt-auto mb-auto">
                                         <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://www.ford.ca/' role="button">
                                             <img src="./assets/Ford_logo.webp" alt="Ford Logo" class="timeline-icon" loading="lazy">
@@ -914,7 +914,7 @@
                                     style="background-image: url(https://images.mktw.net/im-758893?width=1280&size=1.97); background-size: cover; background-repeat: no-repeat;" loading="lazy">
                                     <h2 style="color: #efefef; padding-top: 2%;">Ciena</h2>
                                     <h3 style="color: #efefef; font-size: 1rem;">Electro-optics Firmware Intern</h3>
-                                    <h3 class="sourcesanspro-text" style="font-style: italic;">May 2023 - Sept 2023</h3>
+                                    <h3 class="sourcesanspro-text" style="font-style: italic;">May 2023 - Aug 2023</h3>
                                     <div class="d-none d-sm-block mt-auto mb-auto">
                                         <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://www.ciena.ca/' role="button">
                                             <img src="./assets/Ciena_logo.webp" alt="Ciena Logo" class="timeline-icon" loading="lazy">
@@ -986,7 +986,7 @@
                                     style="background-image: url(./assets//mac_ev.webp); background-size: cover; background-repeat: no-repeat;">
                                     <h2 style="color: #efefef; padding-top: 2%;">Mac Formula Electric</h2>
                                     <h3 style="color: #efefef; font-size: 1rem;">Electrical Engineer</h3>
-                                    <h3 class="sourcesanspro-text" style="font-style: italic;">May 2023 - May 2024</h3>
+                                    <h3 class="sourcesanspro-text" style="font-style: italic;">May 2023 - Apr 2024</h3>
                                     <div class="d-none d-sm-block mt-auto mb-auto">
                                         <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://macformularacing.com/' role="button">
                                             <img src="./assets/mac_formula.webp" alt="Formula Logo" class="timeline-icon" loading="lazy">
@@ -1022,7 +1022,7 @@
                                     style="background-image: url(./assets//mac_formula_car.webp); background-size: cover; background-repeat: no-repeat;" loading="lazy">
                                     <h2 style="color: #efefef; padding-top: 2%;">Mac Formula Electric</h2>
                                     <h3 style="color: #efefef; font-size: 1rem;">Embedded Software Engineer</h3>
-                                    <h3 class="sourcesanspro-text" style="font-style: italic;">Sept 2021 - Sept 2023</h3>
+                                    <h3 class="sourcesanspro-text" style="font-style: italic;">Sept 2021 - Aug 2023</h3>
                                     <div class="d-none d-sm-block mt-auto mb-auto">
                                         <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://macformularacing.com/' role="button">
                                             <img src="./assets/mac_formula.webp" alt="Formula Logo" class="timeline-icon" loading="lazy">
@@ -1072,8 +1072,8 @@
                                         <li class="sourcesanspro-text">MAC Formula Electric (2021 - Present)</li>
                                             <ul>
                                                 <li class="sourcesanspro-text">High Voltage Team Lead (May 2024 - Present)</li>
-                                                <li class="sourcesanspro-text">Electrical Subteam Member (May 2023 - May 2024)</li>
-                                                <li class="sourcesanspro-text">Software Subteam Member (Sept 2021 - Sept 2023)</li>
+                                                <li class="sourcesanspro-text">Electrical Subteam Member (May 2023 - Apr 2024)</li>
+                                                <li class="sourcesanspro-text">Software Subteam Member (Sept 2021 - Aug 2023)</li>
                                             </ul>
                                         <li class="sourcesanspro-text">Residence Orientation Representative (2023 - Present)</li>
                                         <li class="sourcesanspro-text">Engineering Student Mentor (2022 - 2023)</li>
