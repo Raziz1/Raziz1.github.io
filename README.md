@@ -52,3 +52,8 @@ Personal Portfolio Website
 * Montserrat
 * Source Sans Pro
 * Helvetica Neue 97 black condensed oblique font 
+
+## Deployment Resources
+* https://vite.dev/guide/static-deploy.html#github-pages
+* https://github.com/ErickKS/vite-deploy
+* https://github.com/sitek94/vite-deploy-demo

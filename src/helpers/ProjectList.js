@@ -1,5 +1,6 @@
 import HVController from "../assets/hv_controller.webp";
 import HVDCDC from "../assets/hvdcdc.webp";
+import HVCharger from "../assets/HV_Charger.webp";
 import frontController from "../assets/front_controller.webp";
 import bluetoothSpeaker from "../assets/Bluetooth_Speaker_Render.webp";
 import PCBBusinessCard from "../assets/PCB_Business_Card_Blender.webp";
@@ -20,11 +21,22 @@ import SpeedTrapOST from "../assets/SpeedTrap_OST.webp";
 import ItalianWedge from "../assets/Italian_Wedge.mp3";
 
 const projects = [
-    {
-      id: 1,
+  {
+    id: 1,
+    title: 'HV Charger',
+    group: 'hardware',
+    description: "The PCB design for the HV charger for MAC EV 6",
+    image: HVCharger,
+    imageType: 'landscape-img',
+    link: 'https://macformularacing.com/',
+    badge_1: 'Altium',
+    badge_2: 'PCB',
+  },
+  {
+      id: 2,
       title: 'HV DCDC',
       group: 'hardware',
-      description: "The PCB design for the HV DCDC converter for MAC EV V",
+      description: "The PCB design for the HV DCDC converter for MAC EV 6",
       image: HVDCDC,
       imageType: 'landscape-img',
       link: 'https://macformularacing.com/',
@@ -32,7 +44,7 @@ const projects = [
       badge_2: 'PCB',
     },
     {
-      id: 2,
+      id: 3,
       title: 'HV Controller',
       group: 'hardware',
       description: 'The PCB design for the high voltage controller for MAC EV V',
@@ -43,7 +55,7 @@ const projects = [
       badge_2: 'PCB',
     },
     {
-      id: 3,
+      id: 4,
       title: 'Front Controller',
       group: 'hardware',
       description: 'The PCB design for the front controller for MAC EV V',
@@ -54,7 +66,7 @@ const projects = [
       badge_2: 'PCB',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Bluetooth Speaker',
       group: 'hardware',
       description: 'A bluetooth speaker (5 watt) PCB built around an ESP32 C3',
@@ -65,7 +77,7 @@ const projects = [
       badge_2: 'ESP32',
     },
     {
-      id: 5,
+      id: 6,
       title: 'PCB Business Card',
       group: 'hardware',
       description: 'A PCB Business Card designed in KiCad. Features NFC capabilities',
@@ -76,7 +88,7 @@ const projects = [
       badge_2: 'NFC',
     },
     {
-        id: 6,
+        id: 7,
         title: "Solar PCB",
         group: "hardware",
         description: "Solar-powered PCB for charging dual 18650 lithium-ion batteries and running a low-power Arduino application",
@@ -87,7 +99,7 @@ const projects = [
         badge_2: "Arduino",
       },
       {
-        id: 7,
+        id: 8,
         title: "Audio Amplifier",
         group: "hardware",
         description: "An audio amplifier designed in Altium Designer for a 30 watt car speaker. Characterized and simulated in LTspice",
@@ -98,7 +110,7 @@ const projects = [
         badge_2: "LTspice",
       },
       {
-        id: 8,
+        id: 9,
         title: "LIDAR Mapping",
         group: "hardware",
         description: "A 3D spatial mapping LIDAR system built around the TI MSP432E401Y micrcontroller in conjunction with MATLAB to visualize the data",
@@ -109,7 +121,7 @@ const projects = [
         badge_2: "C",
       },
       {
-        id: 9,
+        id: 10,
         title: "Arduino Weather Station",
         group: "hardware",
         description: "A TFT display that shows the current weather using an API & a Wifi module for the Arduino board",
@@ -120,7 +132,7 @@ const projects = [
         badge_2: "C++",
       },
       {
-        id: 10,
+        id: 11,
         title: "Speed Trap",
         group: "games",
         description: "A high speed racing game where swarms of cops chase your vehicle. Featuring a variety of customizable vehicles, day and night cycles, and a live leaderboard. This project was developed in the Unity Game engine using the C# scripting language. This game currently has 250+ downloads on the Google Play Store.",
@@ -131,7 +143,7 @@ const projects = [
         badge_2: "C#"
       },
       {
-        id: 11,
+        id: 12,
         title: "EvoBorne",
         group: "games",
         description: "An arcade missile dodging game featuring a variety of vehicles. This was all developed in Android Studio while utilizing Java and the Processing graphics library. This game was my first game launched all the way back in 2020 on the Google Play Store.",
@@ -142,7 +154,7 @@ const projects = [
         badge_2: "Box2D"
       },
       {
-        id: 12,
+        id: 13,
         title: "Hill Climbing Remake",
         group: "games",
         description: "A remake of the Hill Climb Racing mobile game using the Box2D physics engine. This game utilizes perlin noise to dynamically generate terrain. This game also features various maps, vehicles, upgrades, and background music.",
@@ -153,7 +165,7 @@ const projects = [
         badge_2: "Box2D"
       },
       {
-        id: 13,
+        id: 14,
         title: "Stealth Game",
         group: "games",
         description: "A quick stealth game with the A* pathfinding algorithm implemented. It was designed using C++ and the SFML graphics library.",
@@ -164,7 +176,7 @@ const projects = [
         badge_2: "SFML"
       },
       {
-        id: 14,
+        id: 15,
         title: "Hands-on FreeRTOS",
         group: "other",
         description: "Exploration of FreeRTOS (Real-time operating system) on a NUCLEO-F767ZI micrcontroller.",
@@ -175,7 +187,7 @@ const projects = [
         badge_2: "C",
       },
       {
-        id: 15,
+        id: 16,
         title: "STM32F767ZI Driver",
         group: "other",
         description: "NUCLEO-F767ZI embedded driver development based on a Udemy course. The driver functionality includes GPIO, SPI, I2C, and UART.",
@@ -186,7 +198,7 @@ const projects = [
         badge_2: "C",
       },
       {
-        id: 16,
+        id: 17,
         title: "DeltaHacks 9",
         group: "other",
         description: "A blood alcohol concentration calculator that keeps track of drinks throughougt the night and actively updates your BAC based on time",
@@ -197,7 +209,7 @@ const projects = [
         badge_2: "Firebase",
       },
       {
-        id: 17,
+        id: 18,
         title: "2SI3 Projects",
         group: "other",
         description: "McMaster University's 'Data Structures & Algorithms' (2SI3) course. Linked lists, binary search trees, and hash tables.",
@@ -208,7 +220,7 @@ const projects = [
         badge_2: "VS Studio",
       },
       {
-        id: 18,
+        id: 19,
         title: "School Display",
         group: "other",
         description: "Created a informative school display that webscrapes using Java and the Twitter API. The display retrieves news, weather, bus schedules, snow day predictor, and tweets.",
@@ -219,7 +231,7 @@ const projects = [
         badge_2: "Processing",
       },
       {
-        id: 19,
+        id: 20,
         title: "Audio Visualizer",
         group: "other",
         description: "A simple audio visualizer that uses Fast Fourier Transform to visualize audio input from your microphone",
@@ -230,7 +242,7 @@ const projects = [
         badge_2: "Processing",
       },
       {
-        id: 20,
+        id: 21,
         title: "Sorting Algorithms",
         group: "other",
         description: "Visualizing basic sorting algorithms using C++ & the SFML graphics library",
@@ -241,7 +253,7 @@ const projects = [
         badge_2: "SFML",
       },
       {
-        id: 21,
+        id: 22,
         title: "The Italian Wedge",
         group: "music",
         description: "My first ever piece produced for my game 'Speed Trap'. You have to start somewhere!",
