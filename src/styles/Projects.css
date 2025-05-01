@@ -19,6 +19,14 @@
     background-color: #a5915f;
 }
 
+.btn-projects.active,
+.btn-projects:focus,
+.btn-projects:active {
+  background-color: #a5915f !important;
+  color: white;
+  border-color: #a5915f;
+}
+
 /* ---------- Large Cards ---------- */
 .projects-large-cards {
     align-items: center;

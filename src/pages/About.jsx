@@ -55,7 +55,7 @@ function About() {
               </p>
             </div>
 
-            <div className="col-sm-5 col-lg-3">
+            <div className="col-8 col-md-3">
               <div className="row justify-content-around align-items-center">
                 <div id="carouselExampleIndicators" className="carousel slide " data-bs-ride="carousel" data-bs-interval="5000">
                   <div className="carousel-indicators">

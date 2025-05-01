@@ -9,6 +9,13 @@ function Projects() {
     ? projects 
     : projects.filter(p => p.group === filter);
 
+    const filters = [
+      { key: 'hardware', label: 'Hardware', icon: 'memory' },
+      { key: 'games', label: 'Games', icon: 'sports_esports' },
+      { key: 'other', label: 'Other', icon: 'terminal' },
+      { key: 'music', label: 'Music', icon: 'piano' },
+    ];
+    
   return (
     <>
       <section id="projects">
@@ -18,29 +25,17 @@ function Projects() {
           
           {/* Filter Buttons */}
           <div className="btn-group my-3" role="group">
-              <button className="btn btn-projects" onClick={() => setFilter('hardware')}>
-                <span className="align-middle material-icons-outlined" style={{fontSize: '3rem'}}>
-                  memory
-                </span> Hardware
-            </button>
-            
-            <button className="btn btn-projects" onClick={() => setFilter('games')}>
-              <span className="align-middle material-icons-outlined" style={{fontSize: '3rem'}}>
-                sports_esports
-              </span> Games
-            </button>
-
-            <button className="btn btn-projects" onClick={() => setFilter('other')}>
-              <span className="align-middle material-icons-outlined" style={{fontSize: '3rem'}}>
-                terminal
-              </span> Other
-            </button>
-
-            <button className="btn btn-projects" onClick={() => setFilter('music')}>
-              <span className="align-middle material-icons-outlined" style={{fontSize: '3rem'}}>
-                piano
-              </span> Music
-            </button>
+            {filters.map(({ key, label, icon }) => (
+              <button
+                key={key}
+                className={`btn btn-projects ${filter === key ? 'active' : ''}`}
+                onClick={() => setFilter(key)}
+              >
+                <span className="align-middle material-icons-outlined" style={{ fontSize: '3rem' }}>
+                  {icon}
+                </span> {label}
+              </button>
+            ))}
           </div>
 
           {/* Project Cards */}
