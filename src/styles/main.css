@@ -1,0 +1,127 @@
+:root {
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: block;
+  margin: 0;
+  /* Allows divs to extend full height of screen */
+  background-repeat: no-repeat;
+  /* Prevents background gradient from repeating due to extneded height */
+  background-attachment: fixed;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #383838 !important;
+}
+
+h2{
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h3{
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.sourcesanspro-text{
+  font-family: "Source Sans Pro";
+  color: #efefef !important;
+  font-size: 1rem; 
+}
+
+.montserrat-text{
+  font-family: "Montserrat";
+  color: #efefef !important;
+  font-size: 1rem; 
+}
+
+/* ========== Section Padding ========== */
+/* Padding allows you to directly focus on the section when you click on the navbar links*/
+#intro {
+  padding: 60px 0;
+  /* Ensure that the intro section fills up the entire viewport so other sections do not leak into the viewport */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#about,
+#projects,
+#experience,
+#skills,
+#contact {
+  padding: 60px 0;
+}
+
+#projects {
+  background-color: #ffffff;
+}
+
+#projects-divider {
+  background-color: #ffffff;
+}
+
+/*===== Background design wires =====*/
+/* ======================================== Media queries for different size screens ========================================*/
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) {
+ 
+  .btn-projects {
+      font-family: "Montserrat";
+      background-color: #978249;
+      color: #efefef !important;
+      font-size: 1.5rem !important;
+      box-shadow: none !important;
+      outline: none !important;
+      border-radius: 5px;
+  }
+
+  .btn-icon {
+      font-size: 3rem !important;
+  }
+
+  .flip-card:hover .flip-card-inner {
+      transform: rotateY(0deg)!important;
+  }
+
+  .flip-card-front, .flip-card-back {
+      grid-area: 1/1!important;
+      min-height: 22rem;
+      box-shadow: inset 200px 0 20em 3em #212122!important;
+  }
+
+  .flip-card-back{
+      display: initial!important;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) {
+  .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg)!important;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) {
+
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1399.98px) {
+
+}
+
+/* XX-Large devices (larger desktops) */
+@media (min-width: 2559.98px) {
+}

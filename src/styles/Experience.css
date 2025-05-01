@@ -1,0 +1,109 @@
+/* =============== Experience =============== */
+.timeline-icon {
+    /*Ensure the button images span the entire width of the button*/
+    width: 100%;
+    /* Center the image */
+    display: inline-block
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    margin: 0 0;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #978249;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    margin-left: -3px;
+}
+
+/* Timeline circle */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -13px;
+    background-color: #383838;
+    border: 4px solid white;
+    top: 45%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* =========== Flip Cards ========== */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 80%;
+    height: auto;
+    border: none;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    display: grid; /* here */
+    width: 100%;
+    height: fit-content;
+    text-align: left;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(0deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    grid-area: revert;
+    min-height: none;
+    width: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: inset 100px 0 4em 2em #212122;
+    filter: drop-shadow(5px 5px 3px #212122);
+    padding: 1% 5% 0;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    display: none;
+    background-color: #212121;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .btn-contact {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+    border-radius: 5px;
+    color: #efefef;
+    font-family: 'Montserrat'; 
+    font-size: 1rem; 
+    background-color: #978249;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.btn-contact:hover {
+    color: #efefef;
+    transform: scale(0.90);
+}

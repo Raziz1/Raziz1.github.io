@@ -1,0 +1,32 @@
+/* =============== Skills =============== */
+.btn-skills {
+    background-color: #efefef;
+    border-radius: 15%;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-skills:hover {
+    filter: drop-shadow(3px 3px 1px #383838);
+    transform: scale(0.90);
+}
+
+.triggerAnimation {
+    animation: slide-in 2s;
+    animation-iteration-count: 1;
+}
+
+/* Animate tools buttons */
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translate(5%, 0px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px)
+    }
+}

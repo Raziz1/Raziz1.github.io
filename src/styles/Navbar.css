@@ -1,0 +1,33 @@
+  
+  /* ========== Nav bar ========== */
+  .nav-link {
+    font-family: "Montserrat";
+    color: #efefef!important;
+    font-size: 125%;
+    position: relative;
+  }
+  
+  /* Animating Link Underlines */
+  .nav-link::before {
+    /* Create a line underneath with a transformation of zero so no line is visible */
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #efefef;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-link:hover::before {
+    /*Transform the line so it becomes visible*/
+    color: #efefef !important;
+    transform: scaleX(1);
+  }
+  
+  .navbar-nav li {
+    padding: 0rem 1rem;
+  }

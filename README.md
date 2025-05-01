@@ -26,6 +26,17 @@ Personal Portfolio Website
 * JS
 * Boostrap 5
 
+## Version 3
+* Transitioned to React
+
+## 🛠️ Tools
+* React
+* Vite
+* HTML
+* CSS
+* JS
+* Boostrap 5
+
 ## 🎨 Color Palette
 | Color  | Hex |
 |  :---: |  :---: |

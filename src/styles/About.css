@@ -1,0 +1,57 @@
+/* ========== About section ========== */
+.section-title {
+    font-family: "Montserrat";
+    color: #efefef;
+    font-size: 3rem;
+    font-weight: bold;   
+}
+
+.about-text {
+    font-family: "Source Sans Pro";
+    color: #efefef !important;
+    font-size: 1.25rem;
+    line-height: normal;
+    margin-top: 1rem;
+}
+
+.line-break {
+    width: 40px;
+    height: 5px;
+    margin: 0 0;
+}
+  
+/* ----- Buttons ----- */
+.intrest-image {
+    /*Ensure the button images span the entire width of the button*/
+    width: 100%;
+}
+
+/* =============== Skills =============== */
+.btn-skills {
+    background-color: #efefef;
+    border-radius: 15%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+    transition: 0.2s ease-in-out;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.btn-skills:hover {
+    filter: drop-shadow(3px 3px 1px #383838);
+    transform: scale(0.90);
+}
+
+.triggerAnimation {
+    animation: slide-in 2s;
+    animation-iteration-count: 1;
+}
+
+.highlight {
+    color: #d9c084;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.carousel-item {
+    transition: transform .6s ease-in-out;
+}

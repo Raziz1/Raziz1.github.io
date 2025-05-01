@@ -1,0 +1,173 @@
+  /* Animated circuit icons CSS */
+  .symbols {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+  }
+  
+  .symbols li {
+      position: absolute;
+      display: block;
+      list-style: none;
+      width: 20px;
+      height: 20px;
+      animation: floatUpRotate 25s linear infinite;
+      bottom: calc(-40px - 1vh);
+      border-radius: 50%;
+      animation-delay: 0s;
+  }
+  
+  .symbols li:nth-child(1) {
+      left: 25%;
+      width: 30px;
+      height: 30px;
+      animation-duration: 20s;
+  }
+  
+  .symbols li:nth-child(2) {
+      left: 10%;
+      width: 20px;
+      height: 20px;
+      animation-duration: 25s;
+  }
+  
+  .symbols li:nth-child(3) {
+      left: 70%;
+      width: 20px;
+      height: 20px;
+      animation-duration: 20s;
+  }
+  
+  .symbols li:nth-child(4) {
+      left: 40%;
+      width: 35px;
+      height: 35px;
+      animation-duration: 15s;
+  }
+  
+  .symbols li:nth-child(5) {
+      left: 65%;
+      width: 20px;
+      height: 20px;
+      animation-duration: 20s;
+  }
+  
+  .symbols li:nth-child(6) {
+      left: 75%;
+      width: 40px;
+      height: 40px;
+      animation-duration: 25s;
+  }
+  
+  .symbols li:nth-child(7) {
+      left: 35%;
+      width: 30px;
+      height: 30px;
+      animation-duration: 30s;
+  }
+  
+  .symbols li:nth-child(8) {
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      animation-duration: 35s;
+  }
+  
+  .symbols li:nth-child(9) {
+      left: 20%;
+      width: 25px;
+      height: 25px;
+      animation-duration: 40s;
+  }
+  
+  .symbols li:nth-child(10) {
+      left: 85%;
+      width: 50px;
+      height: 50px;
+      animation-duration: 45s;
+  }
+  
+  @keyframes floatUpRotate {
+      0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 0;
+      }
+      50% {
+          transform: translateY(-50vh) rotate(360deg);
+          opacity: 0.5;
+      }
+      100% {
+          transform: translateY(-100vh) rotate(720deg);
+          opacity: 0;
+      }
+  }
+  
+  /* ========== Intro Section ========== */
+  .name {
+    font-family: "Montserrat";
+    color: #d9c084 !important;
+    font-size: 4em;
+    font-weight: 800;
+    transition: ease-in-out 0.2s;
+    filter: drop-shadow(2px 2px 1px #978249);
+  }
+  
+  /* This intro text has the typewriter animation*/
+  .typewriter-title {
+    font-family: "Source Sans Pro";
+    color: #efefef !important;
+    font-size: 1.5em;
+    display: inline;
+  }
+  
+  /* Cursor */
+  .typed-cursor {
+    height:100%; color: #d9c084 !important; font-size: 150%;
+  }
+  
+  .intro-image {   
+    width: 30vw; border-radius: 50%;
+  }
+  
+  /*===== Linkedin & Github header buttons =====*/
+  .social-buttons {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none !important;
+    background-color: transparent !important;
+    border-radius: 10%;
+    transition: 0.2s ease-in-out
+  }
+  
+  /*Animate the buttons on hover*/
+  .social-buttons:hover {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    transform: scale(0.90);
+  }
+  
+  .chevron-down {
+    /*-- name animation --*/
+    animation-name: floating;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  /* Animate bouncing chevron */
+  @keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+  
+    50% {
+        transform: translate(0, 1vw);
+    }
+  
+    100% {
+        transform: translate(0, 0);
+    }
+  }
+  
