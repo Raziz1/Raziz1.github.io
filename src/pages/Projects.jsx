@@ -65,7 +65,7 @@ function Projects() {
                         </div>
                       </div>
                       <div className="col-lg-7">
-                        <img className={project.imageType} src={project.image} alt={project.title} />
+                        <img className={project.imageType} src={project.image} alt={project.title} loading="lazy"/>
                       </div>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ function Projects() {
                 return (
                   <div key={project.id} className="col-lg-4 mb-2 card-container">
                     <div className="card projects-small-cards">
-                      <img src={project.image} alt={project.title} id={project.imageType} className="small-cards-img" />
+                      <img src={project.image} alt={project.title} id={project.imageType} className="small-cards-img" loading="lazy"/>
                       <div className="card-body">
                         <h2>{project.title}</h2>
                         <p className="card-text">{project.description}</p>

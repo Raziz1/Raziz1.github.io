@@ -243,17 +243,6 @@ const projects = [
       },
       {
         id: 21,
-        title: "Sorting Algorithms",
-        group: "other",
-        description: "Visualizing basic sorting algorithms using C++ & the SFML graphics library",
-        image: "https://img.icons8.com/fluency/512/null/sort-by.png",
-        imageType: "small-cards-img",
-        link: "https://github.com/Raziz1/Basic_Sorting_Algorithms",
-        badge_1: "C++",
-        badge_2: "SFML",
-      },
-      {
-        id: 22,
         title: "The Italian Wedge",
         group: "music",
         description: "My first ever piece produced for my game 'Speed Trap'. You have to start somewhere!",
