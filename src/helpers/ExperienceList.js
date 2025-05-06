@@ -13,7 +13,6 @@ import NordSpaceBackground from "../assets/NordSpace_Background.webp";
 
 
 const experiences = [
-  /*
     {
       id: 1,
       org: 'NordSpace',
@@ -27,9 +26,8 @@ const experiences = [
         'Coming Soon...',
       ]
     },
-    */
     {
-      id: 1,
+      id: 2,
       org: 'Ford',
       role: 'Hardware Development Intern',
       duration: 'May 2024 - Aug 2024',
@@ -45,7 +43,7 @@ const experiences = [
       ]
     },
     {
-      id: 2,
+      id: 3,
       org: 'Ciena',
       role: 'NPI Hardware Intern',
       duration: 'Sept 2023 - Apr 2024',
@@ -61,7 +59,7 @@ const experiences = [
       ]
     },
     {
-      id: 3,
+      id: 4,
       org: 'Ciena',
       role: 'Electro-optics Firmware Intern',
       duration: 'May 2023 - Aug 2023',
@@ -77,7 +75,7 @@ const experiences = [
       ]
     },
     {
-      id: 4,
+      id: 5,
       org: 'Mac Formula Electric',
       role: 'High Voltage Electronics Lead',
       duration: 'May 2024 - Present',
@@ -86,11 +84,13 @@ const experiences = [
       link: 'https://macformularacing.com/',
       skills: 'Altium Designer • LTSpice • PCB Design • Schematic Layout',
       bullets: [
-        '... Under Construction ...'
+        'Led design and implementation of high voltage PCB’s for an electric Formula One vehicle, managing a team of 10 students.',
+        'Designed key automotive power systems, including a HV DC-DC converter, EV charger, and an HV battery controller.',
+        'Conducted thermal and electrical stress testing on the DC-DC converter using a programmable load to evaluate sustained performance under load.'
       ]
     },
     {
-      id: 5,
+      id: 6,
       org: 'Mac Formula Electric',
       role: 'Electrical Engineer',
       duration: 'May 2023 - Apr 2024',
@@ -106,7 +106,7 @@ const experiences = [
       ]
     },
     {
-      id: 6,
+      id: 7,
       org: 'Mac Formula Electric',
       role: 'Embedded Software Engineer',
       duration: 'Sept 2021 - Aug 2023',
@@ -122,7 +122,7 @@ const experiences = [
       ]
     },
     {
-      id: 7,
+      id: 8,
       org: 'McMaster University',
       role: 'B. Eng Electrical Engineering',
       duration: 'Sept 2021 - Present',
