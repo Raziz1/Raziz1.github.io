@@ -56,8 +56,9 @@ function Intro() {
               <ReactTyped
                 strings={[
                   '⚡Electrical Engineering @ McMaster University',
-                  '🚀Incoming Electrical Intern @ NordSpace',
+                  '🚚Incoming Power Electronics Intern @ Harbinger',
                   '🔋High Voltage Electronics Lead @ MAC Formula Electric',
+                  '🚀Prev Electrical Intern @ NordSpace',
                   '🛻Prev Hardware Development Intern @ Ford',
                   '💡Prev Hardware Design Intern @ Ciena',
                 ]}

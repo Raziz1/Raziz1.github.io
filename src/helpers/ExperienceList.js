@@ -10,24 +10,41 @@ import JHEBuilding from "../assets/jhe_building.webp";
 import MacCrest from "../assets/mac_crest.webp";
 import NordSpaceLogo from "../assets/NordSpace_Logo.webp";
 import NordSpaceBackground from "../assets/NordSpace_Background.webp";
-
+import HarbingerLogo from "../assets/Harbinger_Logo.webp";
+import HarbingerBackground from "../assets/Harbinger_Background.webp";
 
 const experiences = [
-    {
+      {
       id: 1,
+      org: 'Harbinger Motors',
+      role: 'Power Electronics Intern',
+      duration: 'Sept 2025 - Present',
+      image: HarbingerBackground,
+      logo: HarbingerLogo,
+      link: 'https://harbingermotors.com/',
+      skills: 'Power Electronics',
+      bullets: [
+        '.. Coming Soon ..'
+      ]
+    },
+    {
+      id: 2,
       org: 'NordSpace',
       role: 'Avionics & Electrical Engineer Intern',
       duration: 'May 2025 - Aug 2025',
       image: NordSpaceBackground,
       logo: NordSpaceLogo,
       link: 'https://www.nordspace.com/',
-      skills: 'Altium • KiCad • Hardware Design • Hardware Validation',
+      skills: 'KiCad • Hardware Design • Hardware Validation',
       bullets: [
-        'Coming Soon...',
+        'Supported avionics and electrical systems for Canada’s first commercial liquid suborbital rocket, from ground testing to launch.',
+        'Tested and validated the telemetry system, ensuring reliable real-time data collection during flight and ground operations.',
+        'Developed wireless GSE systems with redundant fiber-optic communication and ruggedized enclosures for field reliability.',
+        'Designed, manufactured, and validated rocket wiring and umbilical harnesses, creating cost-effective, reliable solutions and producing detailed KiCad diagrams for integration.'
       ]
     },
     {
-      id: 2,
+      id: 3,
       org: 'Ford',
       role: 'Hardware Development Intern',
       duration: 'May 2024 - Aug 2024',
@@ -43,7 +60,7 @@ const experiences = [
       ]
     },
     {
-      id: 3,
+      id: 4,
       org: 'Ciena',
       role: 'NPI Hardware Intern',
       duration: 'Sept 2023 - Apr 2024',
@@ -59,7 +76,7 @@ const experiences = [
       ]
     },
     {
-      id: 4,
+      id: 5,
       org: 'Ciena',
       role: 'Electro-optics Firmware Intern',
       duration: 'May 2023 - Aug 2023',
@@ -75,7 +92,7 @@ const experiences = [
       ]
     },
     {
-      id: 5,
+      id: 6,
       org: 'Mac Formula Electric',
       role: 'High Voltage Electronics Lead',
       duration: 'May 2024 - Present',
@@ -90,7 +107,7 @@ const experiences = [
       ]
     },
     {
-      id: 6,
+      id: 7,
       org: 'Mac Formula Electric',
       role: 'Electrical Engineer',
       duration: 'May 2023 - Apr 2024',
@@ -106,7 +123,7 @@ const experiences = [
       ]
     },
     {
-      id: 7,
+      id: 8,
       org: 'Mac Formula Electric',
       role: 'Embedded Software Engineer',
       duration: 'Sept 2021 - Aug 2023',
@@ -122,7 +139,7 @@ const experiences = [
       ]
     },
     {
-      id: 8,
+      id: 9,
       org: 'McMaster University',
       role: 'B. Eng Electrical Engineering',
       duration: 'Sept 2021 - Present',

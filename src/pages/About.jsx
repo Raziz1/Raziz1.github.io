@@ -5,6 +5,7 @@ import McMasterIcon from "../assets/mac_crest.webp";
 import MACFEIcon from "../assets/mac_formula.webp";
 import NordSpaceIcon from "../assets/NordSpace_Logo.webp";
 import ProgrammingIcon from "../assets/github.svg";
+import HarbingerIcon from "../assets/Harbinger_Logo.webp";
 
 function About() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -46,8 +47,8 @@ function About() {
                 I’m passionate about designing and building systems that bridge the gap between hardware and software.
               </p>
               <p className="about-text">
-                This summer, I’ll be joining {highlightText("NordSpace", 1)} as an Electrical Intern.
-                Previously, I worked as a Hardware Development Intern at Ford and Ciena, where I gained experience in PCB design, hardware validation, and embedded systems development.
+                This fall, I’ll be joining {highlightText("Harbinger", 1)} as a Power Electronics Intern.
+                Previously, I worked as a Hardware Development Intern at NordSpace, Ford and Ciena, where I gained experience in PCB design, hardware validation, and embedded systems development.
                 Outside of work, I’m the High Voltage Subteam Lead for McMaster’s {highlightText("Formula Electric", 2)} racing team, where I help design and implement vehicle safety and power systems.
               </p>
               <p className="about-text">
@@ -71,8 +72,8 @@ function About() {
                       </a>
                     </div>
                     <div className="carousel-item">
-                      <a className="btn btn-skills m-5" href='https://www.nordspace.com/' role="button">
-                        <img src={NordSpaceIcon} alt="NordSpace Logo" className="intrest-image" loading="lazy" />
+                      <a className="btn btn-skills m-5" href='https://harbingermotors.com/' role="button">
+                        <img src={HarbingerIcon} alt="Harbinger Logo" className="intrest-image" loading="lazy" />
                       </a>
                     </div>
                     <div className="carousel-item">
