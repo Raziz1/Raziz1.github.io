@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../styles/Projects.css";
 import projects from "../helpers/ProjectList.js";
+import ExternalLinkImage from "../assets/external-link.png"
 
 function Projects() {
   const [filter, setFilter] = useState('hardware');
@@ -55,7 +56,7 @@ function Projects() {
                           <a href={project.link}>
                             <span className="badge projects-link-badge">
                               <img
-                                src="https://img.icons8.com/ios-glyphs/512/ffffff/external-link.png"
+                                src={ExternalLinkImage}
                                 className="projects-badge-icons"
                               />
                             </span>
@@ -90,7 +91,7 @@ function Projects() {
                           <>
                             <a href={project.link}>
                               <span className="badge projects-link-badge">
-                                <img src="https://img.icons8.com/ios-glyphs/512/ffffff/external-link.png" className="projects-badge-icons" />
+                                <img src={ExternalLinkImage} className="projects-badge-icons" />
                               </span>
                             </a>
                             <span className="badge skill-badge">{project.badge_1}</span>

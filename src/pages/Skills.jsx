@@ -17,7 +17,7 @@ export default function SkillsSection() {
             <div className="col-lg-10 text-center text-lg-start">
               {icons.map((icon, i) => (
                 <a key={i} className="btn btn-skills text-center" role="button">
-                  <img src={icon.src} width="64px" height="64px" title={icon.alt} />
+                  <img src={icon.src} width="64px" height="64px" title={icon.alt} loading="lazy"/>
                 </a>
               ))}
             </div>
