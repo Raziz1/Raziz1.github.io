@@ -60,8 +60,8 @@ function Projects() {
                               />
                             </span>
                           </a>
-                          <span className="badge projects-badge">{project.badge_1}</span>
-                          <span className="badge projects-badge">{project.badge_2}</span>
+                          <span className="badge skill-badge">{project.badge_1}</span>
+                          <span className="badge skill-badge">{project.badge_2}</span>
                         </div>
                       </div>
                       <div className="col-lg-7">
@@ -93,8 +93,8 @@ function Projects() {
                                 <img src="https://img.icons8.com/ios-glyphs/512/ffffff/external-link.png" className="projects-badge-icons" />
                               </span>
                             </a>
-                            <span className="badge projects-badge">{project.badge_1}</span>
-                            <span className="badge projects-badge">{project.badge_2}</span>
+                            <span className="badge skill-badge">{project.badge_1}</span>
+                            <span className="badge skill-badge">{project.badge_2}</span>
                           </>
                         )}
                       </div>

@@ -1,3 +1,96 @@
+/* Add this new rule near the top of the file */
+.experience-mobile-view {
+    display: none; /* Hide the mobile view by default (desktop view) */
+}
+
+/* ================================================= */
+/* === MOBILE RESPONSIVENESS FIX FOR EXPERIENCE CARDS === */
+/* ================================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. Hide the Desktop Timeline View and its elements */
+    .timeline::after, /* Hide the vertical ruler */
+    .timeline-container::after { /* Hide the circle/dot */
+        content: none;
+        display: none;
+    }
+    
+    .experience-desktop-view {
+        display: none; /* Hide the entire desktop card structure */
+    }
+
+    /* Ensure the mobile card takes up the full width of its row/container on mobile */
+    .row.timeline-container {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-inline: 20%;
+    }
+
+    /* Remove margin on the main timeline container to make it a list of blocks */
+    .timeline {
+        margin: 0;
+    }
+
+    /* 2. Show and style the Mobile Block View */
+    .experience-mobile-view {
+        display: block; /* Show the mobile card structure */
+        background-color: #212122; /* Dark background from the cards */
+        width: 100%;
+        margin: 10px 0; 
+        padding: 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .experience-mobile-view:hover {
+        transform: translateY(-5px);
+    }
+
+    .mobile-logo-wrapper {
+        background-color: #efefef; /* White background for the logo block */
+        padding: 15px;
+        border-radius: 6px;
+        margin: 0 auto 15px auto; /* Center and add space below */
+        width: 80%; /* Limit width of the logo block */
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-logo-wrapper img {
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .mobile-text-content {
+        text-align: center;
+    }
+    
+    .mobile-text-content h2 {
+        color: #efefef; /* Organization name */
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .mobile-text-content h3 {
+        color: #978249; /* Role color (using accent) */
+        font-style: normal;
+        font-size: 1.1rem;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    
+    .mobile-text-content .duration-text {
+        color: #ccc; /* Duration color */
+        font-size: 0.9rem;
+    }
+}
+
 /* =============== Experience =============== */
 .timeline-icon {
     /*Ensure the button images span the entire width of the button*/
@@ -38,72 +131,315 @@
     z-index: 1;
 }
 
-/* =========== Flip Cards ========== */
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
+/* =========== Experience Cards ========== */
+
+.experience-large-card {
     background-color: transparent;
     width: 80%;
     height: auto;
     border: none;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
     margin-left: auto;
     margin-right: auto;
+    transition: 0.2s ease-in-out;
+    cursor: pointer; /* Add pointer cursor to indicate clickability */
   }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    display: grid; /* here */
-    width: 100%;
-    height: fit-content;
-    text-align: left;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(0deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+
+.experience-large-card:hover{
+    transform: translateY(-5px);
+}
+
+  .experience-large-card-preview {
     grid-area: revert;
-    min-height: none;
     width: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: inset 100px 0 4em 2em #212122;
     filter: drop-shadow(5px 5px 3px #212122);
     padding: 1% 5% 0;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
     background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    display: none;
-    background-color: #212121;
-    color: white;
-    transform: rotateY(180deg);
-  }
+    grid-area: 1/1!important;
+    min-height: 22rem;
+    box-shadow: inset 200px 0 20em 3em #212122!important;  
+    }
 
-  .btn-contact {
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
-    border-radius: 5px;
-    color: #efefef;
-    font-family: 'Montserrat'; 
-    font-size: 1rem; 
-    background-color: #978249;
-    transition: 0.2s ease-in-out;
-    margin-bottom: 1rem;
+/* =========== Modal Styles ========== */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Changed from 1000 to 1050 to ensure it's on top of the navbar */
+    overflow-y: auto;
 }
 
-.btn-contact:hover {
+.modal-content {
+    background-color: #2b2b2b; /* Dark background matching the theme */
+    color: #efefef; /* Light text */
+    padding: 0; /* REMOVE PADDING HERE: Padding will be added inside the sections */
+    border-radius: 12px;
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+    
+    /* Remove the old inline style or hardcoded gradient that might conflict */
+}
+
+/* Use a custom class for the colored banner/header */
+.modal-header-banner {
+    padding: 2rem;
+    padding-bottom: 0rem;
+    display: flex; /* Set up the flex container */
+    align-items: center;
+    gap: 2rem;
+}
+
+.modal-logo-container {
+    flex-shrink: 0; 
+    width: 150px; /* INCREASED SIZE */
+    height: 150px; /* INCREASED SIZE */
+    padding: 10px;
+    background-color: #efefef;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.2s; /* Add transition for hover effect */
+}
+
+/* New class for the link wrapper to make it clickable and show hover effect */
+.modal-logo-link {
+    text-decoration: none; /* Remove underline from the anchor tag */
+}
+
+.modal-logo {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.modal-info-text {
+    flex-grow: 1; /* Allow the text info to take up remaining space */
+}
+
+.modal-info-text h2 {
+    color: #978249;
+    font-size: 2rem; /* Adjusted for banner size */
+    margin-bottom: 0.25rem;
+}
+
+.modal-info-text h3 {
+    color: #ccc;
+    margin-top: 0;
+    font-size: 1.1rem; /* Adjusted for banner size */
+}
+
+.modal-description-content {
+    padding: 2rem; /* Add padding to the description area */
+    padding-block: 0rem;
+}
+
+.modal-skills-content {
+    padding: 2rem; /* Add padding to the description area */
+    padding-top: 0rem;
+}
+
+.modal-description-content h4 {
+    color: #efefef; /* Subtitle color */
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #444; /* Subtle line separator */
+    padding-bottom: 0.5rem;
+}
+
+.modal-description-content li {
+    line-height: 150%;
+    font-size: 16px;
+    color: #efefef; /* Ensure text color is light */
+}
+
+/* Responsive adjustment for the modal */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 1.5rem;
+        width: 95%;
+    }
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
     color: #efefef;
-    transform: scale(0.90);
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.modal-close-button:hover {
+    color: #978249; /* Hover color for accent */
+}
+
+.modal-details h2 {
+    color: #978249; /* Accent color for the title */
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.modal-details h3 {
+    font-style: italic;
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.modal-details p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.modal-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #978249;
+    color: #2b2b2b;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.modal-link:hover {
+    background-color: #b0955b;
+}
+
+/* =========== Modal Gallery Styles - CAROUSEL UPDATE (FINAL CLEANUP) ========== */
+
+.modal-gallery-section {
+    padding: 0 2rem 2rem;
+}
+
+.modal-gallery-section h4 {
+    color: #efefef;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.5rem;
+}
+
+/* Target the carousel ONLY inside the modal-gallery-section */
+.modal-gallery-section .carousel {
+    border-radius: 8px; 
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    background-color: #1a1a1a;
+    position: relative;
+}
+
+/* Target the image ONLY inside the modal-gallery-section */
+.modal-gallery-section .modal-gallery-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .modal-gallery-section .modal-gallery-image {
+        height: 250px;
+    }
+}
+
+
+/* --- CAROUSEL CONTROLS (ARROWS) FINAL FIX: High Contrast & Consistent --- */
+.modal-gallery-section .carousel-control-prev,
+.modal-gallery-section .carousel-control-next {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    /* Darker semi-transparent black for better contrast on white images */
+    background-color: rgba(0, 0, 0, 0.7); 
+    opacity: 0.8; /* Always visible */
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 5px; 
+}
+
+.modal-gallery-section .carousel-control-prev:hover,
+.modal-gallery-section .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.9); 
+    opacity: 1; 
+}
+
+
+/* --- CAROUSEL INDICATORS (DOTS) FINAL FIX: Visibility and Ellipse Fix --- */
+.modal-gallery-section .carousel-indicators {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.8;
+}
+
+/* ================================================= */
+/* === MOBILE RESPONSIVENESS FIXES (iPhone XR, etc.) === */
+/* ================================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. Stack the Modal Header Columns Vertically */
+    .modal-header-banner {
+        flex-direction: column; /* Forces the logo and text to stack */
+        align-items: flex-start; /* Aligns content to the left */
+        gap: 1rem; /* Reduce the space between stacked elements */
+        padding: 1.5rem; /* Slightly reduced padding for mobile */
+    }
+
+    /* 2. Center the Logo (If you prefer it centered on mobile) */
+    /* If you want the logo left-aligned, comment this block out. */
+    .modal-logo-link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem; /* Add space below the logo */
+    }
+    
+    /* Center the logo container itself if it's within the logo-link */
+    .modal-logo-container {
+        width: 100px; /* Reduce the logo size slightly on mobile */
+        height: 100px;
+    }
+    
+    /* 3. Ensure Text Fits and Stacks Neatly */
+    .modal-info-text {
+        width: 100%; /* Ensure text takes full width */
+        text-align: left; /* Center the text to match the stacked look */
+    }
+
+    /* Override the text alignment from above to center headers */
+    .modal-info-text h2,
+    .modal-info-text h3 {
+        text-align: left;
+    }
+
+    /* 4. Adjust overall modal padding for content and gallery */
+    .modal-description-content,
+    .modal-gallery-section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 }

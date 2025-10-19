@@ -25,22 +25,6 @@
     /*Ensure the button images span the entire width of the button*/
     width: 100%;
 }
-
-/* =============== Skills =============== */
-.btn-skills {
-    background-color: #efefef;
-    border-radius: 15%;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
-    transition: 0.2s ease-in-out;
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-
-.btn-skills:hover {
-    filter: drop-shadow(3px 3px 1px #383838);
-    transform: scale(0.90);
-}
-
 .triggerAnimation {
     animation: slide-in 2s;
     animation-iteration-count: 1;

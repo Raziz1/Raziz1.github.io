@@ -14,7 +14,6 @@ import HillClimbPoster from "../assets/hill-climb-remake.webp";
 import StealthGamePoster from "../assets/stealth_game.webp";
 import FreeRTOS from "../assets/FreeRTOS.webp";
 import NUCELO_MCU from "../assets/NUCELO_MCU.webp";
-import deltahacks9 from "../assets/deltahacks9.webp";
 import news_feed from "../assets/news-feed.webp";
 import desktop_computer from "../assets/desktop-computer.webp";
 import SpeedTrapOST from "../assets/SpeedTrap_OST.webp";
@@ -25,7 +24,7 @@ const projects = [
     id: 1,
     title: 'HV Charger',
     group: 'hardware',
-    description: "The PCB design for the HV charger for MAC EV 6",
+    description: "Safety PCB for a 3.3kW J1772 EV Charger",
     image: HVCharger,
     imageType: 'landscape-img',
     link: 'https://macformularacing.com/',
@@ -36,7 +35,7 @@ const projects = [
       id: 2,
       title: 'HV DCDC',
       group: 'hardware',
-      description: "The PCB design for the HV DCDC converter for MAC EV 6",
+      description: "High voltage DC-DC converter that steps down 600V to 24V",
       image: HVDCDC,
       imageType: 'landscape-img',
       link: 'https://macformularacing.com/',
@@ -47,7 +46,7 @@ const projects = [
       id: 3,
       title: 'HV Controller',
       group: 'hardware',
-      description: 'The PCB design for the high voltage controller for MAC EV V',
+      description: "High voltage safety PCB for the startup of MACEV6's accumulator",
       image: HVController,
       imageType: 'landscape-img',
       link: 'https://macformularacing.com/',
@@ -58,7 +57,7 @@ const projects = [
       id: 4,
       title: 'Front Controller',
       group: 'hardware',
-      description: 'The PCB design for the front controller for MAC EV V',
+      description: 'Primary ECU for MACEV6 that interfaces with various vehicle sensors',
       image: frontController,
       imageType: 'landscape-img',
       link: 'https://macformularacing.com/',
@@ -102,7 +101,7 @@ const projects = [
         id: 8,
         title: "Audio Amplifier",
         group: "hardware",
-        description: "An audio amplifier designed in Altium Designer for a 30 watt car speaker. Characterized and simulated in LTspice",
+        description: "An audio amplifier designed for a 30 watt speaker. Characterized and simulated in LTspice",
         image: AudioAmplifier,
         imageType: 'landscape-img',
         link: "https://github.com/Raziz1/Audio_Amplifier",
@@ -199,17 +198,6 @@ const projects = [
       },
       {
         id: 17,
-        title: "DeltaHacks 9",
-        group: "other",
-        description: "A blood alcohol concentration calculator that keeps track of drinks throughougt the night and actively updates your BAC based on time",
-        image: deltahacks9, // import this at the top
-        imageType: "small-cards-img",
-        link: "https://github.com/Micnasr/Alcohol-Monitor",
-        badge_1: "ReactJS",
-        badge_2: "Firebase",
-      },
-      {
-        id: 18,
         title: "2SI3 Projects",
         group: "other",
         description: "McMaster University's 'Data Structures & Algorithms' (2SI3) course. Linked lists, binary search trees, and hash tables.",
@@ -220,7 +208,7 @@ const projects = [
         badge_2: "VS Studio",
       },
       {
-        id: 19,
+        id: 18,
         title: "School Display",
         group: "other",
         description: "Created a informative school display that webscrapes using Java and the Twitter API. The display retrieves news, weather, bus schedules, snow day predictor, and tweets.",
@@ -231,7 +219,7 @@ const projects = [
         badge_2: "Processing",
       },
       {
-        id: 20,
+        id: 19,
         title: "Audio Visualizer",
         group: "other",
         description: "A simple audio visualizer that uses Fast Fourier Transform to visualize audio input from your microphone",
@@ -242,7 +230,7 @@ const projects = [
         badge_2: "Processing",
       },
       {
-        id: 21,
+        id: 20,
         title: "The Italian Wedge",
         group: "music",
         description: "My first ever piece produced for my game 'Speed Trap'. You have to start somewhere!",
