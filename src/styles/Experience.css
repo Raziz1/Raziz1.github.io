@@ -407,6 +407,7 @@
         align-items: flex-start; /* Aligns content to the left */
         gap: 1rem; /* Reduce the space between stacked elements */
         padding: 1.5rem; /* Slightly reduced padding for mobile */
+        padding-bottom: 0rem;
     }
 
     /* 2. Center the Logo (If you prefer it centered on mobile) */
