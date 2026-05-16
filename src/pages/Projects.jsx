@@ -14,7 +14,7 @@ function Projects() {
       { key: 'hardware', label: 'Hardware', icon: 'memory' },
       { key: 'games', label: 'Games', icon: 'sports_esports' },
       { key: 'other', label: 'Other', icon: 'terminal' },
-      { key: 'music', label: 'Music', icon: 'piano' },
+      /*{ key: 'music', label: 'Music', icon: 'piano' },*/
     ];
     
   return (

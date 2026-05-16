@@ -12,7 +12,11 @@ import NordSpaceLogo from "../assets/NordSpace_Logo.webp";
 import NordSpaceBackground from "../assets/NordSpace_Background.webp";
 import HarbingerLogo from "../assets/Harbinger_Logo.webp";
 import HarbingerBackground from "../assets/Harbinger_Background.webp";
+import TeslaLogo from "../assets/Tesla_Logo.webp";
+import TeslaBackground from "../assets/Megapack.webp";
 
+import TacoTruck from "../assets/gallery/Taco_Truck.webp";
+import HarbingerNight from "../assets/gallery/Harbinger_Night.webp";
 import NordSpaceTeam from "../assets/gallery/nordspace-team.webp";
 import LaunchSite from "../assets/gallery/launch-site.webp";
 import HVRender from "../assets/gallery/HV-render.webp";
@@ -22,21 +26,36 @@ import HVDCDCTesting from "../assets/gallery/dcdc-testing.webp";
 const experiences = [
       {
       id: 1,
-      org: 'Harbinger Motors',
-      role: 'Power Electronics Intern',
-      duration: 'Sept 2025 - Present',
-      image: HarbingerBackground,
-      logo: HarbingerLogo,
-      link: 'https://harbingermotors.com/',
+      org: 'Tesla',
+      role: 'Electronics Design Intern',
+      duration: 'May 2026 - Present',
+      image: TeslaBackground,
+      logo: TeslaLogo,
+      link: 'https://www.tesla.com/',
       description: [
-        '.. Coming Soon ..'
+        '🔋 Megapack'
       ],
-      skills: ['PLECS', 'Altium', 'Power Electronics']
+      skills: ['Altium', 'LTSpice', 'LV Electronics']
       // NEW: GALLERY DATA ADDED HERE
       //gallery: [HarbingerBackground, HarbingerBackground, HarbingerBackground]
     },
     {
       id: 2,
+      org: 'Harbinger Motors',
+      role: 'Power Electronics Intern',
+      duration: 'Sept 2025 - April 2026',
+      image: HarbingerBackground,
+      logo: HarbingerLogo,
+      link: 'https://harbingermotors.com/',
+      description: [
+        '⚡ OBC & SSCB'
+      ],
+      skills: ['PLECS', 'Altium', 'Power Electronics'],
+      // NEW: GALLERY DATA ADDED HERE
+      gallery: [TacoTruck, HarbingerNight]
+    },
+    {
+      id: 3,
       org: 'NordSpace',
       role: 'Avionics & Electrical Engineer Intern',
       duration: 'May 2025 - Aug 2025',
@@ -44,16 +63,13 @@ const experiences = [
       logo: NordSpaceLogo,
       link: 'https://www.nordspace.com/',
       description: [
-        'Supported avionics and electrical systems for Canada’s first commercial liquid suborbital rocket, from ground testing to launch.',
-        'Tested and validated the telemetry system, ensuring reliable real-time data collection during flight and ground operations.',
-        'Developed wireless GSE systems with redundant fiber-optic communication and ruggedized enclosures for field reliability.',
-        'Designed, manufactured, and validated rocket wiring and umbilical harnesses, creating cost-effective, reliable solutions and producing detailed KiCad diagrams for integration.'
+        '🚀 Taiga Rocket'
       ],
       skills: ['KiCad', 'Fusion360'],
       gallery: [NordSpaceTeam, LaunchSite]
     },
     {
-      id: 3,
+      id: 4,
       org: 'Ford',
       role: 'Hardware Development Intern',
       duration: 'May 2024 - Aug 2024',
@@ -61,15 +77,12 @@ const experiences = [
       logo: FordLogo,
       link: 'https://www.ford.ca/',
       description: [
-        'Collaborated on ECU design and validation, encompassing microcontrollers, flash memory, DDR memory, processor interfaces, and power circuits.',
-        'Automated testing procedures using Python with pyvisa library, integrating electronic test instruments (DMM, Oscilloscopes) through SCPI commands',
-        'Performed in-vehicle testing to validate hardware performance under real-world conditions.',
-        'Conducted Worst-Case Circuit Analysis (WCCA) on schematics to ensure the reliability of ECU.'
+        '🛜 TCU Hardware' 
       ],
       skills: ['Siemens Mentor Graphics', 'PyVisa']
     },
     {
-      id: 4,
+      id: 5,
       org: 'Ciena',
       role: 'NPI Hardware Intern',
       duration: 'Sept 2023 - Apr 2024',
@@ -77,15 +90,12 @@ const experiences = [
       logo: CienaLogo,
       link: 'https://www.ciena.ca/',
       description: [
-        "Designed test PCBs for Ciena's Wavelogic 6 transmitter and receiver, focusing on analog circuitry (amplifiers, logarithmic amplifiers) and digital interfaces (I2C, SPI). Conducted SPICE simulations and physical testing.",
-        "Executed schematic design and PCB layout using Cadence for projects including Raspberry Pi Compute Module 4 integration, an analog muxing board, and enhancements to a high-current muxing design.",
-        "Led calibration and validation efforts for test hardware PCBs using lab equipment (DMM, SMU, Oscilloscopes).",
-        "Implemented software sequences for testing the high-speed optical capabilities of product PCBs through the use of MATLAB, C, and the SSH protocol."
+        '⚡ Wavelogic 6'
       ],
-      skills: ['Cadence Allegro', 'OrCAD Capture CIS', 'MATLAB', 'SPI', 'I2C']
+      skills: ['Cadence Allegro', 'OrCAD Capture CIS', 'MATLAB', 'C', 'SPI', 'I2C']
     },
     {
-      id: 5,
+      id: 6,
       org: 'Ciena',
       role: 'Electro-optics Firmware Intern',
       duration: 'May 2023 - Aug 2023',
@@ -93,15 +103,12 @@ const experiences = [
       logo: CienaLogo,
       link: 'https://www.ciena.ca/',
       description: [
-        'Member of Ciena’s Wavelogic 6 optical firmware team developing code (C) for Ciena’s next generation of coherent optical modems',
-        'Designing and implementing the low-level software required to control the DSP assisted coherent optical modem',
-        'Developed tools and interfaces required to support the integration, testing, and verification of the product that was utilized by engineers, technicians, and clients',
-        'Automated and restructured existing web tool interfaces, resulting in a 50% reduction in overhead files'
+        '⚡ Wavelogic 6'
       ],
       skills: ['MATLAB', 'C', 'Java', 'Javascript']
     },
     {
-      id: 6,
+      id: 7,
       org: 'Mac Formula Electric',
       role: 'High Voltage Electronics Lead',
       duration: 'May 2024 - Present',
@@ -117,7 +124,7 @@ const experiences = [
       gallery: [HVRender, Accumulator, HVDCDCTesting]
     },
     {
-      id: 7,
+      id: 8,
       org: 'Mac Formula Electric',
       role: 'Electrical Engineer',
       duration: 'May 2023 - Apr 2024',
@@ -133,7 +140,7 @@ const experiences = [
       skills: ['Altium', 'LTSpice', 'MATLAB'],
     },
     {
-      id: 8,
+      id: 9,
       org: 'Mac Formula Electric',
       role: 'Embedded Software Engineer',
       duration: 'Sept 2021 - Aug 2023',
@@ -149,7 +156,7 @@ const experiences = [
       skills: ['STM32', 'C', 'C++'],
     },
     {
-      id: 9,
+      id: 10,
       org: 'McMaster University',
       role: 'B. Eng Electrical Engineering',
       duration: 'Sept 2021 - Present',
